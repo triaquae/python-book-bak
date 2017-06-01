@@ -1,6 +1,8 @@
 # Summary
 
 * [Introduction](README.md)
-* [python基础](chapter1.md)
-* 笔
+* [第1章     Python基础](chapter1.md)
+  * [笔](bi.md)
+
+
 

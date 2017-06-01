@@ -6,7 +6,7 @@ pluginsConfig:
     shortName: XXXXXXX
 ---
 
-# python  之路
+# python  全栈开发大纲
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+
 
