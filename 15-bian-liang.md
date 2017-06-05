@@ -6,8 +6,6 @@
 
 > **本节时长需控制在15分钟之内**
 
-
-
 ## 变量是什么？
 
 #### 引子
@@ -54,4 +52,66 @@ traffic 30
 ```
 
 eat,cloth,traffic,精神,total这几个名字的作用，就是**把程序运算的中间结果临时存到内存里，以备后面的代码继续调用，这几个名字的学名就叫做“变量”**
+
+#### 变量的作用
+
+**Variables **are used to** store information to be referenced and manipulated in a computer program**. They also provide a way of **labeling data with a descriptive name, **so our programs can be understood more clearly by the reader and ourselves. **It is helpful to think of variables as containers that hold information**. Their sole purpose is to label and store data in memory. This data can then be used throughout your program.
+
+
+
+## 变量定义规范
+
+#### **声明变量**
+
+```py
+name = "Alex Li"
+```
+
+#### ![](/assets/37A7B9E3-6DB2-459E-A5F7-49EFFCC33505.jpeg)
+
+#### **变量定义规则**
+
+1. 变量名只能是 字母、数字或下划线的任意组合
+2. 变量名的第一个字符不能是数字
+3. 以下关键字不能声明为变量名\['and', 'as', 'assert', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except', 'exec', 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 'not', 'or', 'pass', 'print', 'raise', 'return', 'try', 'while', 'with', 'yield'\]
+
+#### **定义方式**
+
+驼峰体
+
+```py
+AgeOfOldboy = 56 
+NumberOfStudents = 80 
+```
+
+下划线
+
+```
+age_of_oldboy = 56 
+number_of_students = 80 
+```
+
+> 你觉得哪种更清晰，哪种就是官方推荐的，我想你肯定会先第2种
+
+#### 
+
+#### **定义变量不好的方式举例**
+
+* 变量名为中文、拼音
+* 变量名过长
+* 变量名词不达意
+
+
+
+## 常量
+
+常量即指不变的量，如pai 3.141592653...,  或在程序运行过程中不会改变的量
+
+举例，假如老男孩老师的年龄会变，那这就是个变量，但在一些情况下，他的年龄不会变了，那就是常量。在Python中没有一个专门的语法代表常量，程序员约定俗成用变量名全部大写代表常量
+
+```py
+AGE_OF_OLDBOY = 56 
+```
+
+
 
