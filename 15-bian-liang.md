@@ -8,7 +8,7 @@
 
 ## 变量是什么？
 
-#### 引子
+#### 引子 （10分钟）
 
 计算机的主要作用之一是进行运算，用python进行数值运算非常容易，跟我们平常用计算器一样简单:
 
@@ -53,13 +53,11 @@ traffic 30
 
 eat,cloth,traffic,精神,total这几个名字的作用，就是**把程序运算的中间结果临时存到内存里，以备后面的代码继续调用，这几个名字的学名就叫做“变量”**
 
-#### 变量的作用
+#### 变量的作用 （3分钟）
 
 **Variables **are used to** store information to be referenced and manipulated in a computer program**. They also provide a way of **labeling data with a descriptive name, **so our programs can be understood more clearly by the reader and ourselves. **It is helpful to think of variables as containers that hold information**. Their sole purpose is to label and store data in memory. This data can then be used throughout your program.
 
-
-
-## 变量定义规范
+## 变量定义规范 \(8-10分钟\)
 
 #### **声明变量**
 
@@ -81,14 +79,14 @@ name = "Alex Li"
 
 ```py
 AgeOfOldboy = 56 
-NumberOfStudents = 80 
+NumberOfStudents = 80
 ```
 
 下划线
 
 ```
 age_of_oldboy = 56 
-number_of_students = 80 
+number_of_students = 80
 ```
 
 > 你觉得哪种更清晰，哪种就是官方推荐的，我想你肯定会先第2种
@@ -101,17 +99,17 @@ number_of_students = 80
 * 变量名过长
 * 变量名词不达意
 
-
-
-## 常量
+## 常量\(2分钟\)
 
 常量即指不变的量，如pai 3.141592653...,  或在程序运行过程中不会改变的量
 
 举例，假如老男孩老师的年龄会变，那这就是个变量，但在一些情况下，他的年龄不会变了，那就是常量。在Python中没有一个专门的语法代表常量，程序员约定俗成用变量名全部大写代表常量
 
 ```py
-AGE_OF_OLDBOY = 56 
+AGE_OF_OLDBOY = 56
 ```
+
+> 在c语言中有专门的常量定义语法，`const int count = 60;`一旦定义为常量，更改即会报错
 
 
 
