@@ -6,7 +6,5 @@
   * [1.2 Python介绍](12-pythonjie-shao.md)
   * [1.3 Python安装](13-pythonan-zhuang.md)
   * [1.4 第一个Python程序](14-di-yi-ge-python-cheng-xu.md)
-  * 1.5 变量
-
-
+  * [1.5 变量](15-bian-liang.md)
 
