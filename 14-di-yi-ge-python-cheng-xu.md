@@ -20,9 +20,7 @@
 
 > 要强调python交互器是主要用来对代码进行调试用的
 
-
-
-精通各种语言的Hello World
+## 精通各种语言的Hello World
 
 C++
 
@@ -62,13 +60,13 @@ PHP
 ```php
 <?php  
              echo "hello world!";  
-?> 
+?>
 ```
 
 Ruby
 
 ```
- puts "Hello world."  
+ puts "Hello world."
 ```
 
 GO
