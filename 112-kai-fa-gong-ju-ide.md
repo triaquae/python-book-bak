@@ -3,7 +3,7 @@
 * 使学生掌握Pycharm开发工具的使用
 * 掌握代码调试功能
 
-> **本节时长需控制在45分钟之内**
+> **本节时长需控制在10分钟之内**
 
 ## 为什么要用IDE？
 
@@ -13,7 +13,7 @@
 
 **安装**
 
-下载地址:https://www.jetbrains.com/pycharm/download 选择Professional 专业版
+下载地址:[https://www.jetbrains.com/pycharm/download](https://www.jetbrains.com/pycharm/download) 选择Professional 专业版
 
 > Comunnity社区版是免费的，但支持的功能不多，比如以后我们会学的Django就不支持，所以还是用专业版，但专业版是收费的，一年一千多，不便宜。唉，万能的淘宝。。。不宜再多说啦。
 
@@ -28,6 +28,4 @@
 #### 代码调试
 
 想不想看代码一步步的执行过程？比如想看每次循环某个变量有没有变化，总是print太low了，试试pycharm 牛逼的debug功能吧![](/assets/代码调试.jpeg)
-
-
 
