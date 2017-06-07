@@ -12,5 +12,5 @@
   * [1.8 格式化输出](18-ge-shi-hua-shu-chu.md)
   * [1.9 基本运算符](19-ji-ben-yun-suan-fu.md)
   * [1.10 流程控制之 if ... else ](110-liu-cheng-kong-zhi-zhi-if-else.md)
-  * 1.11 流程控制之 循环
+  * [1.11 流程控制之 循环](111-liu-cheng-kong-zhi-zhi-xun-huan.md)
 
