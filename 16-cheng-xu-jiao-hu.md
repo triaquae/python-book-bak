@@ -2,9 +2,9 @@
 
 * 使学生掌握如何让程序读取用户输入
 
-> **本节时长需控制在5分钟之内**
+> **本节时长需控制在15分钟之内**
 
-## 读取用户输入
+## 读取用户输入\(5-8分钟\)
 
 ```py
 name = input("What is your name?")
@@ -35,9 +35,7 @@ Hello  Alex Li your are  22 years old, you came from ShanDong
 
 > 为避免学生蒙逼，py2.7 的raw\_input 以后再补充
 
-
-
-## 注释
+## 注释\(5-8分钟\)
 
 随着学习的深入，用不了多久，你就可以写复杂的上千甚至上万行的代码啦，有些代码你花了很久写出来，过了些天再回去看，发现竟然看不懂了，哈哈，这太正常了。 另外，你以后在工作中会发现，一个项目多是由几个甚至几十个开发人员一起做，你要调用别人写的代码，别人也要用你的，如果代码不加注释，你自己都看不懂，更别说别人了，这产会挨打的。所以为了避免这种尴尬的事情发生，一定要增加你代码的可读性。
 
@@ -68,7 +66,6 @@ def subclass_exception(name, parents, module, attached_to=None):
         class_dict['__setstate__'] = __setstate__
 
     return type(name, parents, class_dict)
-
 ```
 
 **代码注释原则:**
