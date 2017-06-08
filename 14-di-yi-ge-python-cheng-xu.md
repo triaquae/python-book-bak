@@ -65,6 +65,8 @@ PHP
 
 Ruby
 
+> 日本人开发的，敏感时期容易挨K
+
 ```
  puts "Hello world."
 ```
