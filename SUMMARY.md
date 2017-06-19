@@ -19,7 +19,7 @@
   * [2.1 上节拾遗](di-2-zhang-python-ji-chu-2/21-shang-jie-shi-yi.md)
   * [2.2 二进制](di-2-zhang-python-ji-chu-2/22-er-jin-zhi.md)
   * [2.3 字符编码](di-2-zhang-python-ji-chu-2/23-zi-fu-bian-ma.md)
-  * 2.4 基本数据类型——数字
+  * [2.4 基本数据类型——数字](di-2-zhang-python-ji-chu-2/24-ji-ben-shu-ju-lei-xing-2014-2014-shu-zi.md)
   * 2.5 基本数据类型——字符串
   * 2.6 基本数据类型——列表
   * 2.7 基本数据类型——元祖
