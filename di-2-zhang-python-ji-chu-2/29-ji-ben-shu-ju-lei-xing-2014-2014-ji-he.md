@@ -57,13 +57,13 @@ frozenset({'l', 'e', 'h', 'o'})
 
 **元素的删除**
 
-　　集合删除单个元素有两种方法：
+集合删除单个元素有两种方法：
 
-　　　　元素不在原集合中时：
+元素不在原集合中时：
 
-　　　　　　set.discard\(x\)不会抛出异常
+set.discard\(x\)不会抛出异常
 
-　　　　　　set.remove\(x\)会抛出KeyError错误
+set.remove\(x\)会抛出KeyError错误
 
 ```py
 >>> a={1,2,3,4}
@@ -96,5 +96,85 @@ Traceback (most recent call last):
 KeyError: 'pop from an empty set'
 ```
 
-集合的**关系运算**
+## 集合的**关系运算**
+
+\|,\|=:合集
+
+```
+a = {1,2,3
+}
+b 
+= {2,3,4,5
+}
+
+print
+(a.union(b))
+
+print
+(a|b)
+```
+
+&.&=:交集
+
+```
+a = {1,2,3
+}
+b 
+= {2,3,4,5
+}
+
+print
+(a.intersection(b))
+
+print
+(a
+&
+b)
+```
+
+－,－=:差集
+
+```
+a = {1,2,3
+}
+b 
+= {2,3,4,5
+}
+
+print
+(a.difference(b))
+
+print
+(a-b) 
+```
+
+^,^=:对称差集
+
+```
+a = {1,2,3
+}
+b 
+= {2,3,4,5
+}
+
+print
+(a.symmetric_difference(b))
+
+print
+(a^b)
+```
+
+包含关系
+
+　　in,not in：判断某元素是否在集合内  
+　　＝＝,！＝:判断两个集合是否相等
+
+　　两个集合之间一般有三种关系，相交、包含、不相交。在Python中分别用下面的方法判断：
+
+* set.isdisjoint\(s\)：判断两个集合是不是不相交
+* set.issuperset\(s\)：判断集合是不是包含其他集合，等同于a&gt;=b
+* set.issubset\(s\)：判断集合是不是被其他集合包含，等同于a&lt;=b
+
+  
+
 
