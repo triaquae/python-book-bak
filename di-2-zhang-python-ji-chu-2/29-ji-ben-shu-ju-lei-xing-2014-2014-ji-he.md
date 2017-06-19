@@ -38,9 +38,9 @@ frozenset({'l', 'e', 'h', 'o'})
 
 **元素的增加**
 
-　　单个元素的增加 : add\(\)，add的作用类似列表中的append
+单个元素的增加 : add\(\)，add的作用类似列表中的append
 
-　　对序列的增加 : update\(\)，而update类似extend方法，update方法可以支持同时传入多个参数：
+对序列的增加 : update\(\)，而update类似extend方法，update方法可以支持同时传入多个参数：
 
 ```py
 >>> a={1,2}
