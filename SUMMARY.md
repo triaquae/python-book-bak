@@ -25,8 +25,8 @@
   * [2.7 基本数据类型——元祖](di-2-zhang-python-ji-chu-2/27-ji-ben-shu-ju-lei-xing-2014-2014-yuan-zu.md)
   * [2.8 基本数据类型——字典](di-2-zhang-python-ji-chu-2/28-ji-ben-shu-ju-lei-xing-2014-2014-zi-dian.md)
   * [2.9 基本数据类型——集合](di-2-zhang-python-ji-chu-2/29-ji-ben-shu-ju-lei-xing-2014-2014-ji-he.md)
-  * 2.10 collections模块
-  * 2.11 本章小结
+  * [2.10 collections模块](di-2-zhang-python-ji-chu-2/210-collectionsmo-kuai.md)
+  * [2.11 本章小结](di-2-zhang-python-ji-chu-2/211-ben-zhang-xiao-jie.md)
 * 第3章  Python基础—文件操作&函数
 * 第4章  Python基础—常用模块
 

@@ -52,8 +52,6 @@ list_test=list([’lhf‘,12,'ok'])
 
 长度
 
-切片
-
 循环
 
 包含

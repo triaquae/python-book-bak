@@ -50,18 +50,18 @@ ages = tuple((11, 22, 33, 44, 55))
 
 **1.可存放多个值**
 
-如果元祖中只有一个值
+如果元组中只有一个值
 
 ```py
 t = (1,)
 t = (1)   #<==>t = 1
 ```
 
-元祖中不仅可以存放数字、字符串，还可以存放更加复杂的数据类型
+元组中不仅可以存放数字、字符串，还可以存放更加复杂的数据类型
 
 **2.不可变**
 
-元祖本身不可变，如果元祖中还包含其他可变元素，这些可变元素可以改变
+元组本身不可变，如果元组中还包含其他可变元素，这些可变元素可以改变
 
 ## 元组的工厂函数
 
@@ -70,7 +70,7 @@ class tuple(object):
     """
     tuple() -> empty tuple
     tuple(iterable) -> tuple initialized from iterable's items
-    
+
     If the argument is a tuple, the return value is the same object.
     """
     def count(self, value): # real signature unknown; restored from __doc__
@@ -123,7 +123,7 @@ class tuple(object):
         """
         tuple() -> empty tuple
         tuple(iterable) -> tuple initialized from iterable's items
-        
+
         If the argument is a tuple, the return value is the same object.
         # (copied from class doc)
         """
@@ -165,7 +165,6 @@ class tuple(object):
     def __rmul__(self, *args, **kwargs): # real signature unknown
         """ Return self*value. """
         pass
-
 ```
 
 
