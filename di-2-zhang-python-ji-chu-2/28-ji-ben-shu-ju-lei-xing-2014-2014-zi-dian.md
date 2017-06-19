@@ -38,14 +38,62 @@
 
 ## 字典的创建与常见操作
 
+**字典的创建**
+
 ```py
 person = {"name": "alex", 'age': 20}
 #或
 person = dict(name='seven', age=20)
+#或
 person = dict({"name": "egon", 'age': 20})
+#或
+
 person = dict((['name','苑昊'],['文周',18]))
 {}.fromkeys(seq,100) #不指定100默认为None
+#注意
+>>> dic={}.fromkeys(['k1','k2'],[])
+>>> dic
+{'k1': [], 'k2': []}
+>>> dic['k1'].append(1)
+>>> dic
+{'k1': [1], 'k2': [1]} 
+
 ```
 
+**字典的常见操作**
 
+**键、值、键值对**
+
+_　　　　1、dic.keys\(\) 返回一个包含字典所有KEY的列表；  
+　　　　2、dic.values\(\) 返回一个包含字典所有value的列表；  
+　　　　3、dic.items\(\) 返回一个包含所有（键，值）元祖的列表；  
+　　　　4、dic.iteritems\(\)、dic.iterkeys\(\)、dic.itervalues\(\) 与它们对应的非迭代方法一样，不同的是它们返回一个迭代子，而不是一个列表；_
+
+**新增**
+
+_　　　　1、dic\['new\_key'\] = 'new\_value'_
+
+_　_2、dic.setdefault\(key, None\) ,如果字典中不存在Key键，由 dic\[key\] = default 为它赋值；
+
+**删除**
+
+_1、dic.pop\(key\[,default\]\) 和get方法相似。如果字典中存在key，删除并返回key对应的vuale；如果key不存在，且没有给出default的值，则引发keyerror异常；_
+
+_　　　　2、dic.clear\(\) 删除字典中的所有项或元素；_
+
+**修改**
+
+_　　　　1、dic\['key'\] = 'new\_value',如果key在字典中存在，'new\_value'将会替代原来的value值。_
+
+_2、dic.update\(dic2\) 将字典dic2的键值对添加到字典dic中。_
+
+**查看**
+
+_　　　　1、dic\['key'\]，返回字典中key对应的值，若key不存在字典中，则报错；_
+
+_　　　　2、adict.get\(key, default = None\) 返回字典中key对应的值，若key不存在字典中，则返回default的值（default默认为None）；_
+
+**循环**
+
+**长度**
 
