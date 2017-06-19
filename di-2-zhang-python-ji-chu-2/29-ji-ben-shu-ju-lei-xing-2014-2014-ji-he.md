@@ -55,7 +55,46 @@ frozenset({'l', 'e', 'h', 'o'})
 {1, 2, 3, 4, 'hello', 7, 'h', 'e', 'l', 'o'}
 ```
 
+**元素的删除**
 
+　　集合删除单个元素有两种方法：
+
+　　　　元素不在原集合中时：
+
+　　　　　　set.discard\(x\)不会抛出异常
+
+　　　　　　set.remove\(x\)会抛出KeyError错误
+
+```py
+>>> a={1,2,3,4}
+>>> a.discard(1)
+>>> a
+{2, 3, 4}
+>>> a.discard(1)
+>>> a
+{2, 3, 4}
+>>> a.remove(1)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+KeyError: 1
+```
+
+pop\(\)：由于集合是无序的，pop返回的结果不能确定，且当集合为空时调用pop会抛出KeyError错误，
+
+clear\(\):清空集合
+
+```py
+>>> a={3,"a",2.1,1}
+>>> a.pop()
+>>> a.pop()
+>>> a.clear()
+>>> a
+set()
+>>> a.pop()
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+KeyError: 'pop from an empty set'
+```
 
 集合的**关系运算**
 
