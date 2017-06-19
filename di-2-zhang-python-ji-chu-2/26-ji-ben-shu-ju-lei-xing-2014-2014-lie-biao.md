@@ -24,15 +24,13 @@
 
 ## 列表的创建
 
-list\_test=\[’lhf‘,12,'ok'\]
-
+```
+list_test=[’lhf‘,12,'ok']
 或
-
-list\_test=list\('abc'\)
-
+list_test=list('abc')
 或
-
-list\_test=list\(\[’lhf‘,12,'ok'\]\)
+list_test=list([’lhf‘,12,'ok'])
+```
 
 
 
