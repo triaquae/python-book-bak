@@ -26,9 +26,9 @@
 
 ```
 list_test=[’lhf‘,12,'ok']
-或
+#或
 list_test=list('abc')
-或
+#或
 list_test=list([’lhf‘,12,'ok'])
 ```
 
