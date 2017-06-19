@@ -6,6 +6,12 @@
 
 3.让学员掌握集合的关系运算和常用操作
 
+## 引子
+
+一个linux班一个python班
+
+
+
 ## 认识集合
 
 由一个或多个确定的元素所构成的整体叫做集合。
@@ -17,8 +23,6 @@
 2.互异性（集合中的元素互不相同。例如：集合A={1，a}，则a不能等于1）
 
 3.无序性（集合中的元素没有先后之分），如集合{3,4,5}和{3,5,4}算作同一个集合。
-
-\*集合概念存在的目的是将不同的值存放到一起，不同的集合间用来做关系运算，无需纠结于集合中某个值
 
 ## 集合的定义
 
@@ -152,13 +156,13 @@ class set(object):
     """
     set() -> new empty set object
     set(iterable) -> new set object
-    
+
     Build an unordered collection of unique elements.
     """
     def add(self, *args, **kwargs): # real signature unknown
         """
         Add an element to a set.
-        
+
         This has no effect if the element is already present.
         """
         pass
@@ -174,9 +178,9 @@ class set(object):
     def difference(self, *args, **kwargs): # real signature unknown
         """
         相当于s1-s2
-        
+
         Return the difference of two or more sets as a new set.
-        
+
         (i.e. all elements that are in this set but not the others.)
         """
         pass
@@ -188,9 +192,9 @@ class set(object):
     def discard(self, *args, **kwargs): # real signature unknown
         """
         与remove功能相同，删除元素不存在时不会抛出异常
-        
+
         Remove an element from a set if it is a member.
-        
+
         If the element is not a member, do nothing.
         """
         pass
@@ -198,9 +202,9 @@ class set(object):
     def intersection(self, *args, **kwargs): # real signature unknown
         """
         相当于s1&s2
-        
+
         Return the intersection of two sets as a new set.
-        
+
         (i.e. all elements that are in both sets.)
         """
         pass
@@ -216,14 +220,14 @@ class set(object):
     def issubset(self, *args, **kwargs): # real signature unknown
         """ 
         相当于s1<=s2
-        
+
         Report whether another set contains this set. """
         pass
 
     def issuperset(self, *args, **kwargs): # real signature unknown
         """
         相当于s1>=s2
-        
+
          Report whether this set contains another set. """
         pass
 
@@ -237,7 +241,7 @@ class set(object):
     def remove(self, *args, **kwargs): # real signature unknown
         """
         Remove an element from a set; it must be a member.
-        
+
         If the element is not a member, raise a KeyError.
         """
         pass
@@ -245,9 +249,9 @@ class set(object):
     def symmetric_difference(self, *args, **kwargs): # real signature unknown
         """
         相当于s1^s2
-        
+
         Return the symmetric difference of two sets as a new set.
-        
+
         (i.e. all elements that are in exactly one of the sets.)
         """
         pass
@@ -259,9 +263,9 @@ class set(object):
     def union(self, *args, **kwargs): # real signature unknown
         """
         相当于s1|s2
-        
+
         Return the union of sets as a new set.
-        
+
         (i.e. all elements that are in either set.)
         """
         pass
@@ -302,7 +306,7 @@ class set(object):
         """
         set() -> new empty set object
         set(iterable) -> new set object
-        
+
         Build an unordered collection of unique elements.
         # (copied from class doc)
         """
