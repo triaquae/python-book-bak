@@ -36,5 +36,16 @@
 4.无序
 ```
 
+字典的创建与常见操作
+
+```py
+person = {"name": "alex", 'age': 20}
+#或
+person = dict(name='seven', age=20)
+person = dict({"name": "egon", 'age': 20})
+person = dict((['name','苑昊'],['文周',18]))
+{}.fromkeys(seq,100) #不指定100默认为None
+```
+
 
 
