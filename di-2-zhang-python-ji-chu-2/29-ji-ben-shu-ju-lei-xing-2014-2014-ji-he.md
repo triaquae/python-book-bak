@@ -100,81 +100,50 @@ KeyError: 'pop from an empty set'
 
 \|,\|=:合集
 
-```
-a = {1,2,3
-}
-b 
-= {2,3,4,5
-}
-
-print
-(a.union(b))
-
-print
-(a|b)
+```py
+a = {1,2,3}
+b = {2,3,4,5}
+print(a.union(b))
+print(a|b)
 ```
 
 &.&=:交集
 
-```
-a = {1,2,3
-}
-b 
-= {2,3,4,5
-}
-
-print
-(a.intersection(b))
-
-print
-(a
-&
-b)
+```py
+a = {1,2,3}
+b = {2,3,4,5}
+print(a.intersection(b))
+print(a&b)
 ```
 
 －,－=:差集
 
-```
-a = {1,2,3
-}
-b 
-= {2,3,4,5
-}
-
-print
-(a.difference(b))
-
-print
-(a-b) 
+```py
+a = {1,2,3}
+b = {2,3,4,5}
+print(a.difference(b))
+print(a-b) 
 ```
 
 ^,^=:对称差集
 
-```
-a = {1,2,3
-}
-b 
-= {2,3,4,5
-}
-
-print
-(a.symmetric_difference(b))
-
-print
-(a^b)
+```py
+a = {1,2,3}
+b = {2,3,4,5}
+print(a.symmetric_difference(b))
+print(a^b)
 ```
 
 包含关系
 
-　　in,not in：判断某元素是否在集合内  
-　　＝＝,！＝:判断两个集合是否相等
+in,not in：判断某元素是否在集合内  
+＝＝,！＝:判断两个集合是否相等
 
-　　两个集合之间一般有三种关系，相交、包含、不相交。在Python中分别用下面的方法判断：
+两个集合之间一般有三种关系，相交、包含、不相交。在Python中分别用下面的方法判断：
 
 * set.isdisjoint\(s\)：判断两个集合是不是不相交
 * set.issuperset\(s\)：判断集合是不是包含其他集合，等同于a&gt;=b
 * set.issubset\(s\)：判断集合是不是被其他集合包含，等同于a&lt;=b
 
-  
 
 
