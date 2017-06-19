@@ -70,21 +70,21 @@ _　　　　1、dic.keys\(\) 返回一个包含字典所有KEY的列表；
 
 **新增**_  
 　　　　1、dic\['new\_key'\] = 'new\_value'；  
-　　　　_2、dic.setdefault\(key, None\) ,如果字典中不存在Key键，由 dic\[key\] = default 为它赋值_；_
+　　　　2、dic.setdefault\(key, None\) ,如果字典中不存在Key键，由 dic\[key\] = default 为它赋值_；\_
 
 **删除**
 
 _　　　　1、dic.pop\(key\[,default\]\) 和get方法相似。如果字典中存在key，删除并返回key对应的vuale；如果key不存在，且没有给出default的值，则引发keyerror异常；  
-　　　　2、dic.clear\(\) 删除字典中的所有项或元素；  
+　　　　2、dic.clear\(\) 删除字典中的所有项或元素；    
 _**修改**
 
 _　　　　1、dic\['key'\] = 'new\_value',如果key在字典中存在，'new\_value'将会替代原来的value值；  
-　　　　_2、_dic.update\(dic2\) 将字典dic2的键值对添加到字典dic中_
+　　　　2、dic.update\(dic2\) 将字典dic2的键值对添加到字典dic中_
 
 **查看**
 
 _　　　　1、dic\['key'\]，返回字典中key对应的值，若key不存在字典中，则报错；  
-　　　　_2、_dict.get\(key, default = None\) 返回字典中key对应的值，若key不存在字典中，则返回default的值（default默认为None）_
+　　　　2、dict.get\(key, default = None\) 返回字典中key对应的值，若key不存在字典中，则返回default的值（default默认为None）_
 
 **循环**
 
