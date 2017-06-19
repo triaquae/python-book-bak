@@ -24,25 +24,15 @@
 
 ## 列表的创建
 
-　list\_test=\[’lhf‘,12,'ok'\]
+list\_test=\[’lhf‘,12,'ok'\]
 
-  
+或
 
+list\_test=list\('abc'\)
 
-　　或
+或
 
-  
-
-
-　　list\_test=list\('abc'\)
-
-  
+list\_test=list\(\[’lhf‘,12,'ok'\]\)
 
 
-　　或
-
-  
-
-
-　　list\_test=list\(\[’lhf‘,12,'ok'\]\)
 
