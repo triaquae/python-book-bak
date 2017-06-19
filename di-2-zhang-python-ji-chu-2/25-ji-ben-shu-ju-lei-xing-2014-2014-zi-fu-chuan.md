@@ -4,27 +4,29 @@
 
 特性：
 
-　　1.只能存放一个值
+1.只能存放一个值
 
-　　2.不可变
+2.不可变
 
-　　3.按照从左到右的顺序定义字符集合，下标从0开始顺序访问，有序
+3.按照从左到右的顺序定义字符集合，下标从0开始顺序访问，有序
 
 补充：
 
-　　1.字符串的单引号和双引号都无法取消特殊字符的含义，如果想让引号内所有字符均取消特殊意义，在引号前面加r，如name＝r'l\thf'
+1.字符串的单引号和双引号都无法取消特殊字符的含义，如果想让引号内所有字符均取消特殊意义，在引号前面加r，如name＝r'l\thf'
 
-　　2.unicode字符串与r连用必需在r前面，如name＝ur'l\thf'
+2.unicode字符串与r连用必需在r前面，如name＝ur'l\thf'
 
 ## 字符串的创建与常用操作
 
 创建：
 
-      s = 'Hello,Eva！How are you?'
+```
+  s = 'Hello,Eva！How are you?'
+```
 
 常用操作：
 
-　移除空白  
+移除空白  
 　分割  
 　长度  
 　索引  
@@ -573,7 +575,7 @@ class str(object):
     def zfill(self, width): # real signature unknown; restored from __doc__
         """
         原来字符右对齐，不够用0补齐
-        
+
         S.zfill(width) -> str
 
         Pad a numeric string S with zeros on the left, to fill a field
@@ -693,7 +695,7 @@ class str(object):
         """ Return str(self). """
         pass
 
-字符串工厂函数
+
 ```
 
 
