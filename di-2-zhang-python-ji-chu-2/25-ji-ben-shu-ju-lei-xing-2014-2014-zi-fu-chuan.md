@@ -1,3 +1,7 @@
+## 本节重点
+
+
+
 ## 字符串的定义与特性
 
 字符串是一个有序的字符的集合，用于存储和表示基本的文本信息，' '或'' ''或''' '''中间包含的内容称之为字符串
@@ -694,8 +698,6 @@ class str(object):
     def __str__(self, *args, **kwargs): # real signature unknown
         """ Return str(self). """
         pass
-
-
 ```
 
 
