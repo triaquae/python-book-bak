@@ -1,12 +1,20 @@
 ## 本节重点
 
-1.了解colloctions模块中的常用数据类型
+1.了解Queue的基本概念和常用操作
 
-2.学员能掌握ChainMap、Counter、deque、defaultdict、namedtuple和OrderedDict数据类型的基本操作
+2.学员了解collections模块
+
+2.学员能掌握Counter、deque、defaultdict、namedtuple和OrderedDict数据类型的基本操作
 
 ## collections模块
 
 collections模块在内置数据类型（dict、list、set、tuple）的基础上，还提供了几个额外的数据类型：ChainMap、Counter、deque、defaultdict、namedtuple和OrderedDict等。
+
+1.namedtuple\(\): 生成可以使用名字来访问元素内容的tuple子类  
+2.deque: 双端队列，可以快速的从另外一侧追加和推出对象  
+3.Counter: 计数器，主要用来计数  
+4.OrderedDict: 有序字典  
+5.defaultdict: 带有默认值的字典
 
 ## namedtuple
 
@@ -151,7 +159,4 @@ Counter({'g': 2, 'm': 2, 'r': 2, 'a': 1, 'i': 1, 'o': 1, 'n': 1, 'p': 1})
 ```
 
 `Counter`实际上也是`dict`的一个子类，上面的结果可以看出，字符`'g'`、`'m'`、`'r'`各出现了两次，其他字符各出现了一次。
-
-  
-
 
