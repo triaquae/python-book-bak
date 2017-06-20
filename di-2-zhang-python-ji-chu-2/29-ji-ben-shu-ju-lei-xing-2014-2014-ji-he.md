@@ -101,8 +101,6 @@ print(l|p)
 
 －,－=:差集——只在linux而不python班的同学
 
-
-
 ![](/assets/差集.png)
 
 ```py
@@ -437,8 +435,6 @@ class set(object):
         pass
 
     __hash__ = None
-
-set
 ```
 
 
