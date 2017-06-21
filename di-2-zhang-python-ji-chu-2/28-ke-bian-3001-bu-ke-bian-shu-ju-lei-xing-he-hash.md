@@ -18,7 +18,7 @@
 
 看着上面这句话，我们来看看什么叫可变什么叫不可变
 
-列表
+**列表**
 
 ```py
 >>> l = [1,2,3,4]
@@ -31,7 +31,7 @@
 4392665160
 ```
 
-数字
+**数字**
 
 ```py
 >>> a = 1
@@ -44,23 +44,32 @@
 
 从内存角度看列表与数字的变与不变
 
-![](/assets/list中的值变化内存图.png)
+![](/assets/数字_list修改内存变化.png)
 
-![](/assets/数字改变内存图.png)
-
-字符串
+**字符串**
 
 ```py
+#例1
 >>> s = 'hello'
 >>> s[1] = 'a'
 Traceback (most recent call last):
   File "<pyshell#5>", line 1, in <module>
     s[1] = 'a'
 TypeError: 'str' object does not support item assignment
->>> 
+#例2
+>>> s = 'hello'
+>>> id(s)
+4392917064
+>>> s += ' world'
+>>> s
+'hello world'
+>>> id(s)
+4393419504
 ```
 
-元组
+字符串也可以像列表一样使用索引操作，但是通过上例可以看出，我们不能像修改列表一样修改一个字符串的值，当我们对字符串进行拼接的时候，原理和整数一样，id值已经发生了变化，相当于变成了另外一个字符串。
+
+**元组**——不允许修改
 
 ```py
 >>> t = (1,2,3,4)
@@ -72,8 +81,6 @@ TypeError: 'tuple' object does not support item assignment
 ```
 
 ## hash
-
-
 
 
 
