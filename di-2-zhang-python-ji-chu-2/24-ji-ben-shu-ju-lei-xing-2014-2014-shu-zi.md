@@ -42,7 +42,7 @@ Python中的整数属于int类型，默认用十进制表示，此外也支持�
 2
 ```
 
-+ - \* /和//和divmod
+* * \* /和//和divmod
 
 ```py
 >>> 2+3
@@ -82,9 +82,19 @@ Python的浮点数就是数学中的小数\(alex一定要强调float是有限小
 整数和浮点数在计算机内部存储的方式是不同的，整数运算永远是精确的而浮点数运算则可能会有四舍五入的误差。
 ```
 
-**关于精度控制——————？？？？**
+**关于小数不精准问题**
 
-Python默认的是17位精度,也就是小数点后16位，但是这里有一个问题，就是当我们的计算需要使用更高的精度（超过16位小数）的时候该怎么做呢？
+Python默认的是17位精度,也就是小数点后16位，尽管有16位，但是这个精确度却是越往后越不准的。
+
+首先，这个问题不是只存在在python中，其他语言也有同样的问题
+
+其次，小数不精准是因为在转换成二进制的过程中会出现无限循环的情况，在约省的时候就会出现偏差。
+
+> 比如：11.2的小数部分0.2转换为2进制则是[无限循环](https://www.baidu.com/s?wd=%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1Ykuhf3P1bLuWckmhRYujfL0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnHRLn1bkn1Rdnjc3PWbvnHD3n0)的00110011001100110011...
+>
+> 单精度在存储的时候用23bit来存放这个尾数部分（前面9比特存储指数和符号）；同样0.6也是[无限循环](https://www.baidu.com/s?wd=%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1Ykuhf3P1bLuWckmhRYujfL0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnHRLn1bkn1Rdnjc3PWbvnHD3n0)的；
+
+这里有一个问题，就是当我们的计算需要使用更高的精度（超过16位小数）的时候该怎么做呢？
 
 ```py
 #借助decimal模块的“getcontext“和“Decimal“ 方法
