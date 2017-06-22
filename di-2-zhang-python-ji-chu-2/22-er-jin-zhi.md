@@ -35,9 +35,9 @@
 >
 > 这里让学生自由发挥5分钟
 
-## 二进制与十进制转换
 
-好了，现在来看看我的方法。。。（各位讲师请自行发挥半小时）
+
+好了，现在来看看我的方法。。。
 
 ![](/assets/城墙.png)
 
@@ -66,4 +66,14 @@
 ![](/assets/二进制狼烟%284%29.png)
 
 。。。剩下的你们自己发挥吧。。。
+
+## 二进制定义
+
+二进制是计算技术中广泛采用的一种[数制](http://baike.baidu.com/item/%E6%95%B0%E5%88%B6)。[二进制数](http://baike.baidu.com/item/%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%95%B0)据是用0和1两个[数码](http://baike.baidu.com/item/%E6%95%B0%E7%A0%81)来表示的数。它的基数为2，进位规则是“逢二进一”，借位规则是“借一当二”，由18世纪德国数理哲学大师[莱布尼兹](http://baike.baidu.com/item/%E8%8E%B1%E5%B8%83%E5%B0%BC%E5%85%B9)发现。当前的[计算机系统](http://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%B3%BB%E7%BB%9F)使用的基本上是[二进制系统](http://baike.baidu.com/item/%E4%BA%8C%E8%BF%9B%E5%88%B6%E7%B3%BB%E7%BB%9F)，数据在[计算机](http://baike.baidu.com/item/%E8%AE%A1%E7%AE%97%E6%9C%BA)中主要是以补码的形式存储的。计算机中的二进制则是一个非常微小的开关，用“开”来表示1，“关”来表示0。
+
+我们发现刚刚我们讲述的狼烟的故事和现在这个新理论出奇相似。假设狼烟点燃用1表示，狼烟灭掉用0表示，那么刚刚我们用狼烟表示百万雄师的理论就可以用在计算机上，这种表示数字的方式就叫做二进制。
+
+你可能会觉得发明计算机的人思路轻奇，为什么要多此一举的用这种方式来表达数字，但事实上计算机不像我们这样智能，CPU是一个包含上百万个精巧的[晶体管](https://www.baidu.com/s?wd=%E6%99%B6%E4%BD%93%E7%AE%A1&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1YkrHfzmHbLuWf1nH9WrjIW0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnWckPjmkrj03)的芯片集合，[晶体管](https://www.baidu.com/s?wd=%E6%99%B6%E4%BD%93%E7%AE%A1&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1YzrHF9PjNBujwhmhN9mWDL0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EPjb3PHmvPH61Pjm3n1cdnW0Y)表达感情的方式很简单，就是通过高低电压\(有电没电\)，低电压的时候表示0，高电压的时候表示1，因此最终能让计算机理解的就只有0和1而已。
+
+
 
