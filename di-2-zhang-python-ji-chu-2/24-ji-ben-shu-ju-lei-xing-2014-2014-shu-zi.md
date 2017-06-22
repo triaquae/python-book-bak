@@ -90,9 +90,9 @@ Python默认的是17位精度,也就是小数点后16位，尽管有16位，但�
 
 其次，小数不精准是因为在转换成二进制的过程中会出现无限循环的情况，在约省的时候就会出现偏差。
 
-> 比如：11.2的小数部分0.2转换为2进制则是[无限循环](https://www.baidu.com/s?wd=%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1Ykuhf3P1bLuWckmhRYujfL0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnHRLn1bkn1Rdnjc3PWbvnHD3n0)的00110011001100110011...
+> 比如：11.2的小数部分0.2转换为2进制则是[无限循环](https://www.baidu.com/s?wd=无限循环&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1Ykuhf3P1bLuWckmhRYujfL0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnHRLn1bkn1Rdnjc3PWbvnHD3n0)的00110011001100110011...
 >
-> 单精度在存储的时候用23bit来存放这个尾数部分（前面9比特存储指数和符号）；同样0.6也是[无限循环](https://www.baidu.com/s?wd=%E6%97%A0%E9%99%90%E5%BE%AA%E7%8E%AF&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1Ykuhf3P1bLuWckmhRYujfL0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnHRLn1bkn1Rdnjc3PWbvnHD3n0)的；
+> 单精度在存储的时候用23bit来存放这个尾数部分（前面9比特存储指数和符号）；同样0.6也是[无限循环](https://www.baidu.com/s?wd=无限循环&tn=44039180_cpr&fenlei=mv6quAkxTZn0IZRqIHckPjm4nH00T1Ykuhf3P1bLuWckmhRYujfL0ZwV5Hcvrjm3rH6sPfKWUMw85HfYnjn4nH6sgvPsT6KdThsqpZwYTjCEQLGCpyw9Uz4Bmy-bIi4WUvYETgN-TLwGUv3EnHRLn1bkn1Rdnjc3PWbvnHD3n0)的；
 
 这里有一个问题，就是当我们的计算需要使用更高的精度（超过16位小数）的时候该怎么做呢？
 
@@ -108,6 +108,10 @@ Context(prec=50, rounding=ROUND_HALF_EVEN, Emin=-999999, Emax=999999, capitals=1
 >>> a = Decimal(1)／Decimal(3)#注，在分数计算中结果正确，如果直接定义超长精度小数会不准确
 >>> a
 Decimal('0.33333333333333333333333333333333333333333333333333')
+
+>>> a = '3.141592653513651054608317828332'
+>>> Decimal(a)
+Decimal('3.141592653513651054608317828332')
 ```
 
 ```py
