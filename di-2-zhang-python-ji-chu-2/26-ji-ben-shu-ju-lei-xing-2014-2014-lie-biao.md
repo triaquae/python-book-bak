@@ -107,7 +107,17 @@ seven
 ### 列表与字符串——split和join
 
 ```py
+#分割
+>>> s = 'hello world'
+>>> s.split(' ')
+['hello', 'world']
+>>> s2= 'hello,world'
+>>> s2.split(',')
 
+#连接
+>>> l = ['hi','eva']
+>>> '!'.join(l)
+'hi!eva'
 ```
 
 ## 列表的工厂函数
