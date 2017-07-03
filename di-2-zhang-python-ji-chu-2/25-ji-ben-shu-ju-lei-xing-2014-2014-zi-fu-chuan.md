@@ -94,6 +94,14 @@ s2.strip('*')
 'higklmn'
 >>> s[:]
 'abcdefghigklmn'
+>>> s[0:7:2]
+'aceg'
+>>> s[7:14:3]
+'hkn'
+>>> s[::2]
+'acegikm'
+>>> s[::-1]
+'nmlkgihgfedcba'
 ```
 
 ## 字符串的工厂函数
