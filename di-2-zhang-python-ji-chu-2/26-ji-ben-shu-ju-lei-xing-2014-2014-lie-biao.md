@@ -45,13 +45,62 @@ list_test=list([‘张三‘,‘李四’,'alex'])
 3.可修改指定索引位置对应的值，可变
 
 ```py
-索引
-切片
-追加
-删除
-长度
-循环
-包含
+#索引
+>>> l = ['egon','alex','seven','yuan']
+>>> l[0]
+'egon'
+>>> l[2]
+'seven'
+
+#切片
+>>> l[0:2]
+['egon', 'alex']
+>>> l[2:5]
+['seven', 'yuan']
+>>> l[:2]
+['egon', 'alex']
+>>> l[2:]
+['seven', 'yuan']
+>>> l[:]
+['egon', 'alex', 'seven', 'yuan']
+>>> l[::2]
+['egon', 'seven']
+>>> l[::-1]
+['yuan', 'seven', 'alex', 'egon']
+
+#追加
+>>> l.append("eva")
+>>> l
+['egon', 'alex', 'seven', 'yuan', 'eva']
+
+#删除
+>>> l.remove('eva')
+>>> l
+['egon', 'alex', 'seven', 'yuan']
+>>> l.pop()
+'yuan'
+>>> l
+['egon', 'alex', 'seven']
+
+#长度
+>>> len(l)
+3
+
+#包含
+>>> 'seven' in l
+True
+>>> 'yuan' in l
+False
+
+#循环:为什么是“i”？
+>>> for i in l:
+	print(i)
+
+	
+egon
+alex
+seven
+
 ```
 
 ## 列表的工厂函数
