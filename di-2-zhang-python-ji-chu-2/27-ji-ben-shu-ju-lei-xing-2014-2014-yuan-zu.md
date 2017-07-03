@@ -34,16 +34,40 @@ ages = tuple((11, 22, 33, 44, 55))
 
 常用操作
 
-```
-索引
+```py
+#索引
+>>> ages = (11, 22, 33, 44, 55)
+>>> ages[0]
+11
+>>> ages[3]
+44
+>>> ages[-1]
+55
 
-切片　　
+#切片:同list　　
 
-循环
+#循环
+>>> for age in ages:
+	print(age)
 
-长度
+	
+11
+22
+33
+44
+55
 
-包含
+#长度
+>>> len(ages)
+5
+
+#包含
+>>> 11 in ages
+True
+>>> 66 in ages
+False
+>>> 11 not in ages
+False
 ```
 
 ## 元组的特性详解
