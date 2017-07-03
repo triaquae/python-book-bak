@@ -44,6 +44,8 @@ list_test=list([‘张三‘,‘李四’,'alex'])
 
 3.可修改指定索引位置对应的值，可变
 
+### 常用操作：
+
 ```py
 #索引
 >>> l = ['egon','alex','seven','yuan']
@@ -94,12 +96,17 @@ False
 
 #循环:为什么是“i”？
 >>> for i in l:
-	print(i)
+    print(i)
 
-	
+
 egon
 alex
 seven
+```
+
+### 列表与字符串——split和join
+
+```py
 
 ```
 

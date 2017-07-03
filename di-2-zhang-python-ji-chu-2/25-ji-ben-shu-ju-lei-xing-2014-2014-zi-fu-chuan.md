@@ -62,19 +62,12 @@ s.rstrip()
 s2 = '***hello,world!***'
 s2.strip('*')
 
-#分割
->>> s = 'hello world'
->>> s.split(' ')
-['hello', 'world']
->>> s2= 'hello,world'
->>> s2.split(',')
-
-长度
+#长度
 >>> s = 'hello,world'
 >>> len(s)
 11
 
-替换
+#替换
 >>> s = 'hello world'
 >>> s.replace('h','H')
 'Hello world'
@@ -82,7 +75,7 @@ s2.strip('*')
 >>> s2.replace('h','H')
 'Hi，How are you？'
 
-切片
+#切片
 >>> s = 'abcdefghigklmn'
 >>> s[0:7]
 'abcdefg'
