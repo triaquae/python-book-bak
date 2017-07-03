@@ -32,16 +32,68 @@
 
 2.unicode字符串与r连用必需在r前面，如name＝ur'l\thf'
 
-
-
 **常用操作：**
 
-```
-移除空白  
-分割
+```py
+#索引
+s = 'hello'
+>>> s[1]
+'e'
+>>> s[-1]
+'o'
+
+
+>>> s.index('e')
+1
+
+
+#查找
+>>> s.find('e')
+1
+>>> s.find('i')
+-1
+
+
+#移除空白
+s = '  hello,world!  '
+s.strip()
+s.lstrip()
+s.rstrip()
+s2 = '***hello,world!***'
+s2.strip('*')
+
+#分割
+>>> s = 'hello world'
+>>> s.split(' ')
+['hello', 'world']
+>>> s2= 'hello,world'
+>>> s2.split(',')
+
 长度
-索引
+>>> s = 'hello,world'
+>>> len(s)
+11
+
+替换
+>>> s = 'hello world'
+>>> s.replace('h','H')
+'Hello world'
+>>> s2 = 'hi，how are you？'
+>>> s2.replace('h','H')
+'Hi，How are you？'
+
 切片
+>>> s = 'abcdefghigklmn'
+>>> s[0:7]
+'abcdefg'
+>>> s[7:14]
+'higklmn'
+>>> s[:7]
+'abcdefg'
+>>> s[7:]
+'higklmn'
+>>> s[:]
+'abcdefghigklmn'
 ```
 
 ## 字符串的工厂函数
