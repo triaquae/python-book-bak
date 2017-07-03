@@ -82,7 +82,11 @@ person = dict((['name','苑昊'],['文周',18]))
 　　　　1、dic['key']，返回字典中key对应的值，若key不存在字典中，则报错；
 　　　　2、dict.get(key, default = None) 返回字典中key对应的值，若key不存在字典中，则返回default的值（default默认为None）
 循环
+　　　　1、for k in dic.keys()
+　　　　2、for k,v in dic.items()
+　　　　3、for k in dic
 长度
+　　　　1、len(dic)　　　
 ```
 
 ## 字典的工厂函数
