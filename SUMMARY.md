@@ -31,5 +31,5 @@
 * [第4章  Python基础—常用模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai.md)
 * [第6章  网络编程-SOCKET开发](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa.md)
   * [6.1 TCP/IP介绍](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/61-tcpipjie-shao.md)
-  * 6.2 
+  * [6.2 TCP/IP 各层详解](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/62.md)
 
