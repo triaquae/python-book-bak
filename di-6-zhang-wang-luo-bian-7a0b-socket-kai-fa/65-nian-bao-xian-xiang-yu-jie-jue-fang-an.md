@@ -5,7 +5,7 @@
 
 > **本节时长需控制在70-80分钟内**
 
-### 简单远程执行命令程序开发
+### 简单远程执行命令程序开发\(30分钟\)
 
 是时候用户socket干点正事呀，我们来写一个远程执行命令的程序，写一个socket client端在windows端发送指令，一个socket server在Linux端执行命令并返回结果给客户端
 
@@ -99,11 +99,11 @@ but 莫开心太早，此时执行一个结果比较长的命令，比如top -bn
    **即面向消息的通信是有消息保护边界的。**
 3. **tcp是基于数据流的，于是收发的消息不能为空，这就需要在客户端和服务端都添加空消息的处理机制，防止程序卡住，而udp是基于数据报的，即便是你输入的是空内容（直接回车），那也不是空消息，udp协议会帮你封装上消息头，实验略**
 
-#### 基于UDP的命令执行程序
+#### 基于UDP的命令执行程序\(10分钟\)
 
 上面说了，udp不存在粘包问题，我们看一下实例
 
-udp server 
+udp server
 
 ```py
 import socket
@@ -130,7 +130,6 @@ while True:
     udp_server.sendto(stdout + stderr, addr)
 
 udp_server.close()
-
 ```
 
 udp client
@@ -153,12 +152,11 @@ while True:
     udp_client.sendto(msg.encode('utf-8'), ip_port)
     data, addr = udp_client.recvfrom(bufsize)
     print(data.decode('utf-8'), end='')
-
 ```
 
 ### 
 
-### 粘包的解决办法
+### 粘包的解决办法\(35分钟\)
 
 问题的根源在于，接收端不知道发送端将要传送的字节流的长度，所以解决粘包的方法就是围绕，如何让发送端在发送数据前，把自己将要发送的字节流总大小让接收端知晓，然后接收端来一个死循环接收完所有数据
 
@@ -238,8 +236,6 @@ while True:
 
 想到了，把head设置成定长的呀，这样对端只要收消息时，先固定收定长的数据，head里写好，后面还有多少是属于这条消息的数据，然后直接写个循环收下来不就完了嘛！唉呀妈呀，我真机智。
 
-
-
 可是、可是如何制作定长的消息头呢？假设你有2条消息要发送，第一条消息长度是 3000个字节，第2条消息是200字节。如果消息头只包含消息长度的话，那两个消息的消息头分别是
 
 ```
@@ -252,7 +248,6 @@ len(msg2) = 200 = 3字节
 server
 
 ```py
-
 import socket,json
 import subprocess
 
@@ -298,7 +293,6 @@ while True:
         print("packed header size",packed_header,len(packed_header))
         conn.send(packed_header)
         conn.send(stdout + stderr)
-
 ```
 
 client
