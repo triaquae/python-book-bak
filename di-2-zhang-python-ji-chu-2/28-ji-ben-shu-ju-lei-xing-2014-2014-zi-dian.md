@@ -86,7 +86,7 @@ person = dict((['name','苑昊'],['文周',18]))
 　　　　2、for k,v in dic.items()
 　　　　3、for k in dic
 长度
-　　　　1、len(dic)　　　
+　　　　1、len(dic)
 ```
 
 ## 字典的工厂函数
