@@ -26,7 +26,7 @@
   * 2.8 基本数据类型——字典
   * 2.9 基本数据类型——集合
   * 2.10 collections模块
-  * 2.11 本章小结
+  * [2.11 本章小结](di-2-zhang-python-ji-chu-2/211-ben-zhang-xiao-jie.md)
 * [第3章  Python基础—文件操作&函数](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu.md)
 * [第4章  Python基础—常用模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai.md)
 
