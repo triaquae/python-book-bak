@@ -28,6 +28,10 @@
   * 2.10 collections模块
   * 2.11 本章小结
 * [第3章  Python基础—文件操作&函数](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu.md)
+  * 3.1 上节拾遗
+  * 3.2 三元运算
+  * 3.3 字符编码转换
+  * 3.4 文件处理
 * [第4章  Python基础—常用模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai.md)
 * [第6章  网络编程-SOCKET开发](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa.md)
   * [6.1 TCP/IP介绍](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/61-tcpipjie-shao.md)
