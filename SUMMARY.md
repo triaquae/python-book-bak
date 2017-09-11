@@ -22,7 +22,7 @@
   * 2.4 基本数据类型——数字
   * 2.5 基本数据类型——字符串
   * 2.6 基本数据类型——列表
-  * 2.7 基本数据类型——元祖
+  * [2.7 基本数据类型——元祖](di-2-zhang-python-ji-chu-2/27-ji-ben-shu-ju-lei-xing-2014-2014-yuan-zu.md)
   * 2.8 基本数据类型——字典
   * 2.9 基本数据类型——集合
   * 2.10 collections模块
@@ -32,8 +32,5 @@
   * [3.2 三元运算](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/32-san-yuan-yun-suan.md)
   * 3.3 字符编码转换
   * 3.4 文件处理
-
 * [第4章  Python基础—常用模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai.md)
-
-
 
