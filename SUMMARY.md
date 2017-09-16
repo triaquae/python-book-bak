@@ -30,8 +30,11 @@
 * [第3章  Python基础—文件操作&函数](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu.md)
   * [3.1 上节拾遗](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/31-shang-jie-shi-yi.md)
   * [3.2 三元运算](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/32-san-yuan-yun-suan.md)
-  * 3.3 字符编码转换
+  * [3.3 字符编码转换](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/33-zi-fu-bian-ma-zhuan-huan.md)
   * [3.4 文件处理](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/34-wen-jian-chu-li.md)
   * [3.5 函数](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/35-han-shu.md)
+  * 3.6 函数进阶
 * [第4章  Python基础—常用模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai.md)
+
+
 
