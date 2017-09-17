@@ -561,12 +561,9 @@ rain     df2@432    25   Teacher   Teching
 
 3.登录时输错3次退出程序
 
-
-
 练习题答案
 
 ```py
-
 def print_personal_info(account_dic,username):
     """
     print user info 
@@ -613,7 +610,7 @@ def change_personal_info(account_dic,username):
     change user info ,思路如下
     1. 把这个人的每个信息打印出来， 让其选择改哪个字段，用户选择了的数字，正好是字段的索引，这样直接 把字段找出来改掉就可以了
     2. 改完后，还要把这个新数据重新写回到account.txt，由于改完后的新数据 是dict类型，还需把dict转成字符串后，再写回硬盘 
-    
+
     :param account_dic: all account's data 
     :param username: username 
     :return: None
@@ -635,7 +632,7 @@ def change_personal_info(account_dic,username):
             if new_val:#不为空
                 person_data[choice] = new_val
                 print(person_data)
-                
+
                 save_back_to_file(account_dic) #改完写回文件
             else:
                 print("不能为空。。。")
