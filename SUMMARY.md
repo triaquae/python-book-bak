@@ -37,4 +37,5 @@
   * [3.7 生成器&迭代器](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/37-sheng-cheng-566826-die-dai-qi.md)
   * [3.8 本章小节](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/38-ben-zhang-xiao-jie.md)
 * [第4章  Python基础—常用模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai.md)
+    * [test ](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/2017-09-20.md)
 
