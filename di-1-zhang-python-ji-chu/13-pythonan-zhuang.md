@@ -10,7 +10,7 @@ Python目前已支持所有主流操作系统，在Linux,Unix,Mac系统上自带
 
 ## Windows安装
 
-打开官网 https://www.python.org/downloads/windows/ 下载中心![](/assets/python download.png)
+打开官网 https://www.python.org/downloads/windows/ 下载中心![](/assets/%08python%20download.png)
 
 测试安装是否成功
 
