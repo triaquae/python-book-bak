@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 
 * [第1章     Python基础](di-1-zhang-python-ji-chu/chapter1.md)
+
   * [1.1 编程语言介绍](di-1-zhang-python-ji-chu/bi.md)
   * [1.2 Python介绍](di-1-zhang-python-ji-chu/12-pythonjie-shao.md)
   * [1.3 Python安装](di-1-zhang-python-ji-chu/13-pythonan-zhuang.md)
@@ -18,6 +19,7 @@
   * [1.13 本章小节](di-1-zhang-python-ji-chu/112-ben-zhang-xiao-jie.md)
 
 * [第2章  Python基础](di-2-zhang-python-ji-chu-2.md)
+
   * [2.1 上节拾遗](di-2-zhang-python-ji-chu-2/21-shang-jie-shi-yi.md)
   * [2.2 二进制](di-2-zhang-python-ji-chu-2/22-er-jin-zhi.md)
   * [2.3 字符编码](di-2-zhang-python-ji-chu-2/23-zi-fu-bian-ma.md)
@@ -32,6 +34,7 @@
   * [2.12 本章小结](di-2-zhang-python-ji-chu-2/211-ben-zhang-xiao-jie.md)
 
 * [第3章  Python基础—文件操作&函数](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu.md)
+
   * [3.1 上节拾遗](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/31-shang-jie-shi-yi.md)
   * [3.2 三元运算](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/32-san-yuan-yun-suan.md)
   * [3.3 字符编码转换](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/33-zi-fu-bian-ma-zhuan-huan.md)
@@ -42,4 +45,11 @@
   * [3.8 本章小节](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/38-ben-zhang-xiao-jie.md)
 
 * [第4章  Python基础—常用模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai.md)
-    * [test ](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/2017-09-20.md)
+
+  * 模块、包介绍和相关语法
+  * 常用模块学习
+  * 软件开发目录规范
+  * 本章小结
+
+
+
