@@ -22,7 +22,7 @@
   * [2.4 基本数据类型——数字](di-2-zhang-python-ji-chu-2/24-ji-ben-shu-ju-lei-xing-2014-2014-shu-zi.md)
   * [2.5 基本数据类型——字符串](di-2-zhang-python-ji-chu-2/25-ji-ben-shu-ju-lei-xing-2014-2014-zi-fu-chuan.md)
   * [2.6 基本数据类型——列表](di-2-zhang-python-ji-chu-2/26-ji-ben-shu-ju-lei-xing-2014-2014-lie-biao.md)
-  * [2.7 基本数据类型——元祖](di-2-zhang-python-ji-chu-2/27-ji-ben-shu-ju-lei-xing-2014-2014-yuan-zu.md)
+  * [2.7 基本数据类型——元组](di-2-zhang-python-ji-chu-2/27-ji-ben-shu-ju-lei-xing-2014-2014-yuan-zu.md)
   * [2.8 可变、不可变数据类型和hash](di-2-zhang-python-ji-chu-2/28-ke-bian-3001-bu-ke-bian-shu-ju-lei-xing-he-hash.md)
   * [2.9 基本数据类型——字典](di-2-zhang-python-ji-chu-2/28-ji-ben-shu-ju-lei-xing-2014-2014-zi-dian.md)
   * [2.10 基本数据类型——集合](di-2-zhang-python-ji-chu-2/29-ji-ben-shu-ju-lei-xing-2014-2014-ji-he.md)
