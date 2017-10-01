@@ -39,7 +39,7 @@
   * [3.8 本章小节](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/38-ben-zhang-xiao-jie.md)
 * [第4章  Python基础—常用模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai.md)
   * [模块、包介绍和相关语法](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/mo-kuai-3001-bao-jie-shao-he-xiang-guan-yu-fa.md)
-  * 常用模块学习
+  * [常用模块学习](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/chang-yong-mo-kuai-xue-xi.md)
   * 软件开发目录规范
   * 本章小结
 
