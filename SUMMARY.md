@@ -39,7 +39,21 @@
   * [3.8 本章小节](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/38-ben-zhang-xiao-jie.md)
 * [第4章  Python基础—常用模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai.md)
   * [模块、包介绍和相关语法](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/mo-kuai-3001-bao-jie-shao-he-xiang-guan-yu-fa.md)
-  * [常用模块学习](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/chang-yong-mo-kuai-xue-xi.md)
-  * 软件开发目录规范
+  * [time & datetime 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/chang-yong-mo-kuai-xue-xi.md)
+  * [random 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/random-mo-kuai.md)
+  * [os 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/os-mo-kuai.md)
+  * sys 模块
+  * shutil 模块
+  * json & pickle 模块
+  * shelve 模块
+  * xml 模块
+  * ConfigParser 模块
+  * hashlib 模块
+  * subprocess 模块
+  * logging 模块
+  * re 模块
+  * zipfile 模块
+  * traceback 模块？
+  * [软件开发目录规范](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/ruan-jian-kai-fa-mu-lu-gui-fan.md)
   * 本章小结
 
