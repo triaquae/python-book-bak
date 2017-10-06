@@ -42,9 +42,9 @@
   * [time & datetime 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/chang-yong-mo-kuai-xue-xi.md)
   * [random 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/random-mo-kuai.md)
   * [os 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/os-mo-kuai.md)
-  * sys 模块
-  * shutil 模块
-  * json & pickle 模块
+  * [sys 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/sys-mo-kuai.md)
+  * [shutil 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/shutil-mo-kuai.md)
+  * [json & pickle 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/json-and-pickle-mo-kuai.md)
   * shelve 模块
   * xml 模块
   * ConfigParser 模块
