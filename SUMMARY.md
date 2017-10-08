@@ -45,9 +45,9 @@
   * [sys 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/sys-mo-kuai.md)
   * [shutil 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/shutil-mo-kuai.md)
   * [json & pickle 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/json-and-pickle-mo-kuai.md)
-  * shelve 模块
-  * xml 模块
-  * ConfigParser 模块
+  * [shelve 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/shelve-mo-kuai.md)
+  * [xml 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/xml-mo-kuai.md)
+  * [ConfigParser 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/configparser-mo-kuai.md)
   * hashlib 模块
   * subprocess 模块
   * logging 模块
