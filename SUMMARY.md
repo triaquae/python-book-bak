@@ -48,7 +48,7 @@
   * [shelve 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/shelve-mo-kuai.md)
   * [xml 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/xml-mo-kuai.md)
   * [ConfigParser 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/configparser-mo-kuai.md)
-  * hashlib 模块
+  * [hashlib 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/hashlib-mo-kuai.md)
   * subprocess 模块
   * logging 模块
   * re 模块
