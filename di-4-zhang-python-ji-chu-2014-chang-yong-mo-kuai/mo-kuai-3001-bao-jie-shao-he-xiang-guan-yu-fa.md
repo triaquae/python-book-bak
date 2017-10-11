@@ -188,8 +188,6 @@ hello world!
 
 > 注意，在python3里，即使目录下没\_\_int\_\_.py文件也能创建成功，猜应该是解释器优化所致，但创建包还是要记得加上这个文件 吧。
 
-
-
 ## 跨模块导入
 
 目录结构如下
@@ -198,12 +196,12 @@ hello world!
 .
 ├── __init__.py
 ├── crm
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── views.py  
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── views.py  
 ├── manage.py   
 └── proj
     ├── __init__.py
@@ -224,7 +222,7 @@ Traceback (most recent call last):
 ModuleNotFoundError: No module named 'proj'
 ```
 
-是因为路径找不到，proj/settings.py 相当于是crm/views.py的父亲\(crm\)的兄弟\(proj\)的儿子\(settings.py\)，settings.py算是views.py的表弟啦，在views.py里只能导入同级别兄弟模块代码，或者子级别包里的模块，根本不知道表弟表哥的存在。这可怎么办呢？ 
+是因为路径找不到，proj/settings.py 相当于是crm/views.py的父亲\(crm\)的兄弟\(proj\)的儿子\(settings.py\)，settings.py算是views.py的表弟啦，在views.py里只能导入同级别兄弟模块代码，或者子级别包里的模块，根本不知道表弟表哥的存在。这可怎么办呢？
 
 答案是**添加环境变量，把父亲级的路径添加到sys.path中，就可以了，这样导入 就相当于从父亲级开始找模块了。**
 
@@ -273,7 +271,7 @@ print('in proj/settings.py')
 ModuleNotFoundError: No module named 'urls'
 ```
 
-为什么呢？ 因为现在的程序入口是views.py , 你在settings.py导入import urls,其实相当于在crm目录找urls.py,而不是proj目录，若想正常导入，要改成如下 
+为什么呢？ 因为现在的程序入口是views.py , 你在settings.py导入import urls,其实相当于在crm目录找urls.py,而不是proj目录，若想正常导入，要改成如下
 
 ```py
 DATABASES= {
@@ -283,8 +281,6 @@ DATABASES= {
 from proj import urls  #proj这一层目录已经添加到sys.path里，可以直接找到
 print('in proj/settings.py')
 ```
-
-
 
 ## 绝对导入&相对导入
 
@@ -296,19 +292,18 @@ print('in proj/settings.py')
 .
 ├── __init__.py
 ├── crm
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── views.py  #from ..proj import settings 
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── views.py  #from ..proj import settings 
 ├── manage.py   
 └── proj
     ├── __init__.py
     ├── settings.py #from .import urls  
     ├── urls.py
     └── wsgi.py
-
 ```
 
 views.py里代码
@@ -349,12 +344,12 @@ ValueError: attempted relative import beyond top-level package
 .
 ├── __init__.py
 ├── crm
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── views.py  #from ..proj import settings 
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── views.py  #from ..proj import settings 
 ├── manage.py  #from crm import views 
 └── proj
     ├── __init__.py
@@ -369,7 +364,7 @@ ValueError: attempted relative import beyond top-level package
 ValueError: attempted relative import beyond top-level package
 ```
 
-但把`from ..proj import settings` 改成`  from . import models` 后却执行成功了，为什么呢？
+但把`from ..proj import settings` 改成`from . import models` 后却执行成功了，为什么呢？
 
 `from .. import models`会报错的原因是，这句代码会把manage.py所在的这一层视作package,但实际上它不是，因为package不能是顶层入口代码，若想不出错，只能把manage.py往上再移一层。
 
@@ -377,23 +372,23 @@ ValueError: attempted relative import beyond top-level package
 
 ```
     packages/
-	├── __init__.py
-	├── manage.py #from my_proj.crm  import views
-	└── my_proj
-	    ├── crm
-	    │   ├── admin.py
-	    │   ├── apps.py
-	    │   ├── models.py
-	    │   ├── tests.py
-	    │   ├── views.py  #from . import models;  from ..proj import settings 
-	    └── proj
-	        ├── __init__.py
-	        ├── settings.py
-	        ├── urls.py
-	        └── wsgi.py
+    ├── __init__.py
+    ├── manage.py #from my_proj.crm  import views
+    └── my_proj
+        ├── crm
+        │   ├── admin.py
+        │   ├── apps.py
+        │   ├── models.py
+        │   ├── tests.py
+        │   ├── views.py  #from . import models;  from ..proj import settings 
+        └── proj
+            ├── __init__.py
+            ├── settings.py
+            ├── urls.py
+            └── wsgi.py
 ```
 
-再执行manage.py就不会报错了。 
+再执行manage.py就不会报错了。
 
 > 注:虽然python支持相对导入，但对模块间的路径关系要求比较严格，处理不当就容易出错，so并不建议在项目里经常使用。
 
