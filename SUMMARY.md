@@ -50,7 +50,7 @@
   * [ConfigParser 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/configparser-mo-kuai.md)
   * [hashlib 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/hashlib-mo-kuai.md)
   * [subprocess 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/subprocess-mo-kuai.md)
-  * logging 模块
+  * [logging 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/logging-mo-kuai.md)
   * re 模块
   * zipfile 模块
   * traceback 模块？
