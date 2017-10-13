@@ -52,9 +52,6 @@
   * [subprocess 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/subprocess-mo-kuai.md)
   * [logging 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/logging-mo-kuai.md)
   * [re 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/re-mo-kuai.md)
-
   * [软件开发目录规范](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/ruan-jian-kai-fa-mu-lu-gui-fan.md)
-  * 本章小结
-
-
+  * [本章小结](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/ben-zhang-xiao-jie.md)
 
