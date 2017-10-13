@@ -4,8 +4,6 @@
 
 > **本节时长需控制在15分钟内**
 
-
-
 os 模块提供了很多允许你的程序与操作系统直接交互的功能
 
 ```py
@@ -26,20 +24,18 @@ os 模块提供了很多允许你的程序与操作系统直接交互的功能
 读取操作系统环境变量HOME的值:os.getenv("HOME") 
 返回操作系统所有的环境变量： os.environ 
 设置系统环境变量，仅程序运行时有效：os.environ.setdefault('HOME','/home/alex')
-给出当前平台使用的行终止符:os.linesep    Windows使用'\r\n'，Linux使用'\n'而Mac使用'\r'
+给出当前平台使用的行终止符:os.linesep    Windows使用'\r\n'，Linux and MAC使用'\n'
 指示你正在使用的平台：os.name       对于Windows，它是'nt'，而对于Linux/Unix用户，它是'posix'
 重命名：os.rename（old， new）
 创建多级目录：os.makedirs（r“c：\python\test”）
 创建单个目录：os.mkdir（“test”）
 获取文件属性：os.stat（file）
 修改文件权限与时间戳：os.chmod（file）
-终止当前进程：os.exit（）
 获取文件大小：os.path.getsize（filename）
 结合目录名与文件名：os.path.join(dir,filename)
 改变工作目录到dirname: os.chdir(dirname)
 获取当前终端的大小: os.get_terminal_size()
-杀死进程: os.kill(10884,signal.SIGKILL) 
-
+杀死进程: os.kill(10884,signal.SIGKILL)
 ```
 
 ![](/assets/chapter5/os-import.png)
