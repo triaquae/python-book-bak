@@ -1,0 +1,52 @@
+{
+  "title": "python指南",
+  "description": "come from luffycity",
+  "author":"alex",
+  "language": "zh-hans",
+  "links" : {
+    "sidebar" : {
+        "路飞学城" : "http://47.94.172.250:33334"
+    }
+  },
+  "theme-default": {
+      "showLevel": true
+  },
+  
+  
+  "plugins": [
+    "-highlight",
+    "toggle-chapters",
+    "codeblock-filename",
+    "sectionx",
+    "splitter",
+    "-search",
+    "-lunr",
+    "search-pro",
+    "prism",
+    "prism-themes",
+    "theme-comscore"
+  ],
+  "pluginsConfig": {
+    "search-pro": {
+        "cutWordLib": "nodejieba",
+        "defineWord" : ["Gitbook Use"]
+    },
+  "sharing": {
+      "weibo": true,
+      "facebook": true,
+      "twitter": true,
+      "google": false,
+      "instapaper": false,
+      "vk": false,
+      "all": [
+          "facebook", "google", "twitter",
+              "weibo", "instapaper"
+      ]
+    },
+    "prism": {
+        "css": [
+            "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
+        ]
+    }
+  }
+}
