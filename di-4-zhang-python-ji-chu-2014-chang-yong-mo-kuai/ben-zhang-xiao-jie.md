@@ -1,10 +1,4 @@
-
-
-
-
 **本章作业 **
-
-
 
 作业需求：
 
@@ -17,11 +11,11 @@
 5. 支持账户间转账
 6. 记录每月日常消费流水
 7. 提供还款接口
-8. ATM记录操作日志 
+8. ATM记录操作日志 
 9. 提供管理接口，包括添加账户、用户额度，冻结账户等。。。
 10. 用户认证用装饰器
 
-示例代码 https://github.com/triaquae/py3\_training/tree/master/atm　
+示例代码 https://github.com/triaquae/py3\_training/tree/master/atm
 
-简易流程图：https://www.processon.com/view/link/589eb841e4b0999184934329  
+简易流程图：[https://www.processon.com/view/link/589eb841e4b0999184934329](https://www.processon.com/view/link/589eb841e4b0999184934329)
 
