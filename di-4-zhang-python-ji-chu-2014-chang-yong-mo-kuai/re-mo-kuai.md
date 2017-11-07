@@ -55,15 +55,15 @@ print(phones)
 '.'     默认匹配除\n之外的任意一个字符，若指定flag DOTALL,则匹配任意字符，包括换行
 '^'     匹配字符开头，若指定flags MULTILINE,这种也可以匹配上(r"^a","\nabc\neee",flags=re.MULTILINE)
 '$'     匹配字符结尾， 若指定flags MULTILINE ,re.search('foo.$','foo1\nfoo2\n',re.MULTILINE).group() 会匹配到foo1
-'*'     匹配*号前的字符0次或多次，re.findall("ab*","cabb3abcbbac")  结果为['abb', 'ab', 'a']
+'*'     匹配*号前的字符0次或多次， re.search('a*','aaaabac')  结果'aaaa'
 '+'     匹配前一个字符1次或多次，re.findall("ab+","ab+cd+abb+bba") 结果['ab', 'abb']
 '?'     匹配前一个字符1次或0次 ,re.search('b?','alex').group() 匹配b 0次
 '{m}'   匹配前一个字符m次 ,re.search('b{3}','alexbbbs').group()  匹配到'bbb'
 '{n,m}' 匹配前一个字符n到m次，re.findall("ab{1,3}","abb abc abbcbbb") 结果'abb', 'ab', 'abb']
 '|'     匹配|左或|右的字符，re.search("abc|ABC","ABCBabcCD").group() 结果'ABC'
 '(...)' 分组匹配， re.search("(abc){2}a(123|45)", "abcabca456c").group() 结果为'abcabca45'
- 
- 
+
+
 '\A'    只从字符开头匹配，re.search("\Aabc","alexabc") 是匹配不到的，相当于re.match('abc',"alexabc") 或^
 '\Z'    匹配字符结尾，同$ 
 '\d'    匹配数字0-9
@@ -71,21 +71,18 @@ print(phones)
 '\w'    匹配[A-Za-z0-9]
 '\W'    匹配非[A-Za-z0-9]
 's'     匹配空白字符、\t、\n、\r , re.search("\s+","ab\tc1\n3").group() 结果 '\t'
- 
-'(?P<name>...)' 分组匹配 re.search("(?P<province>[0-9]{4})(?P<city>[0-9]{2})(?P<birthday>[0-9]{4})","371481199306143242").groupdict("city") 结果{'province': '3714', 'city': '81', 'birthday': '1993'}
 
+'(?P<name>...)' 分组匹配 re.search("(?P<province>[0-9]{4})(?P<city>[0-9]{2})(?P<birthday>[0-9]{4})","371481199306143242").groupdict("city") 结果{'province': '3714', 'city': '81', 'birthday': '1993'}
 ```
 
 #### re的匹配语法有以下几种
 
-* re.match 	从头开始匹配
-* re.search 	匹配包含
-* re.findall 	把所有匹配到的字符放到以列表中的元素返回
+* re.match     从头开始匹配
+* re.search     匹配包含
+* re.findall     把所有匹配到的字符放到以列表中的元素返回
 * re.splitall 以匹配到的字符当做列表分隔符
 * re.sub      匹配字符并替换
 * re.fullmatch 全部匹配
-
-
 
 **re.compile\(pattern, flags=0\)**
 
@@ -179,7 +176,7 @@ print obj
 ['9', '2', '5', '3', '7', '3', '99', '4', '2998', '10', '568', '14']
 
 >>> re.split('[\*\-\/\+]',s,3)
-['9', '2', '5', '3+7/3*99/4*2998+10*568/14'] 
+['9', '2', '5', '3+7/3*99/4*2998+10*568/14']
 ```
 
 **re.fullmatch\(pattern, string, flags=0\)**
@@ -189,8 +186,6 @@ print obj
 ```py
 re.fullmatch('\w+@\w+.com|cn|edu',"alex@oldboyedu.com")
 ```
-
-
 
 #### 练习：
 
@@ -204,9 +199,11 @@ re.fullmatch('\w+@\w+.com|cn|edu',"alex@oldboyedu.com")
 
 > hint:
 >
-> 	&gt;&gt;&gt;re.search\(r'\\(\[^\(\)\]+\\)',s\).group\(\) \#可拿到最里层的\(\)中的值 
+> ```
+> re.search(r'\([^()]+\)',s).group()#可拿到最里层的括号中的值 
 >
-> 	'\(-40/5\)'
+> '(-40/5)'
+> ```
 
 
 
