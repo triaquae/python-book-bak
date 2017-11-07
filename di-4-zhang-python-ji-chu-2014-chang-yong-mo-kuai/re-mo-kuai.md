@@ -80,7 +80,7 @@ print(phones)
 * re.match     从头开始匹配
 * re.search     匹配包含
 * re.findall     把所有匹配到的字符放到以列表中的元素返回
-* re.splitall 以匹配到的字符当做列表分隔符
+* re.split 以匹配到的字符当做列表分隔符
 * re.sub      匹配字符并替换
 * re.fullmatch 全部匹配
 
@@ -184,7 +184,7 @@ print obj
 整个字符串匹配成功就返回re object, 否则返回None
 
 ```py
-re.fullmatch('\w+@\w+.com|cn|edu',"alex@oldboyedu.com")
+re.fullmatch('\w+@\w+\.(com|cn|edu)',"alex@oldboyedu.cn")
 ```
 
 #### 练习：
