@@ -178,8 +178,6 @@ exc1('127.0.0.1',3306,'db1','utf8','select * from tb1;')
 exc2('127.0.0.1',3306,'db1','utf8','存储过程的名字')
 
 
-
-
 #2、我们能想到的解决方法是，把这些变量都定义成全局变量
 HOST=‘127.0.0.1’
 PORT=3306
@@ -202,7 +200,6 @@ exc2(HOST,PORT,DB,CHARSET,'存储过程的名字')
 
 
 #3、但是2的解决方法也是有问题的，按照2的思路，我们将会定义一大堆全局变量，这些全局变量并没有做任何区分，即能够被所有功能使用，然而事实上只有HOST，PORT，DB，CHARSET是给exc1和exc2这两个功能用的。言外之意：我们必须找出一种能够将数据与操作数据的方法组合到一起的解决方法，这就是我们说的类了
-
 class MySQLHandler:
     def __init__(self,host,port,db,charset='utf8'):
         self.host=host
@@ -245,14 +242,6 @@ obj=MySQLHandler('127.0.0.1',3306,'db1')
 obj.exc1('select * from tb1;')
 obj.exc2('存储过程的名字')
 ```
-
-
-
-
-
-
-
-
 
 
 
