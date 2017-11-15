@@ -1,10 +1,10 @@
 ## 本节重点
 
 * 掌握什么是类、什么是对象
-* 掌握如何定义类、如何定义对象
+* 掌握如何定义及使用类与对象
 * 了解对类与对象之间的关系
 
-> **本节时长需控制在30分钟内**
+> **本节时长需控制在45分钟内**
 
 ### 类与对象的概念
 
@@ -80,7 +80,7 @@
 * 在程序中，务必保证：先定义（类），后使用类（用来产生对象）
 
 ```py
-#程序中的类，在程序中特征用变量标识，技能用函数标识，因而类中最常见的无非是：变量和函数的定义
+#在Python中程序中的类用class关键字定义，而在程序中特征用变量标识，技能用函数标识，因而类中最常见的无非是：变量和函数的定义
 class OldboyStudent:
     school='oldboy'
     def learn(self):
@@ -95,8 +95,7 @@ class OldboyStudent:
 
 注意：
 
-* 类中可以有任意python代码，这些代码在类定义阶段便会执行
-  ，因而会产生新的名称空间，用来存放类的变量名与函数名，可以通过OldboyStudent.\_\_dict\_\_查看
+* 类中可以有任意python代码，这些代码在类定义阶段便会执行，因而会产生新的名称空间，用来存放类的变量名与函数名，可以通过OldboyStudent.\_\_dict\_\_查看
 * 类中定义的名字，都是类的属性，点是访问属性的语法。
 * 对于经典类来说我们可以通过该字典操作类名称空间的名字，但新式类有限制（新式类与经典类的区别我们将在后续章节介绍）
 
@@ -105,17 +104,15 @@ class OldboyStudent:
 * 引用类的属性
 
 ```py
-.:专门用来访问属性，本质操作的就是__dict__
-OldboyStudent.school #等于经典类的操作OldboyStudent.__dict__['school']
-OldboyStudent.school='Oldboy' #等于经典类的操作OldboyStudent.__dict__['school']='Oldboy'
-OldboyStudent.x=1 #等于经典类的操作OldboyStudent.__dict__['x']=1
-del OldboyStudent.x #等于经典类的操作OldboyStudent.__dict__.pop('x')
+OldboyStudent.school
+OldboyStudent.school='Oldboy'
+OldboyStudent.x=1
+del OldboyStudent.x
 ```
 
-* 实例化得到程序中的对象
+* 调用类，或称为实例化，得到程序中的对象
 
 ```py
-#调用类，或称为实例化，得到对象
 s1=OldboyStudent()
 s2=OldboyStudent()
 s3=OldboyStudent()
