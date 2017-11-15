@@ -26,7 +26,129 @@
 体代码返回的是函数体执行的结果，而调用类会产生对象，返回的是对象
 ```
 
+按照上述步骤，我们来定义一个类（我们站在老男孩学校的角度去看，在座的各位都是学生）
+
+* 在现实世界中，站在老男孩学校的角度：先有对象，再有类
+
+```py
+对象1：李坦克
+    特征:
+        学校=oldboy
+        姓名=李坦克
+        性别=男
+        年龄=18
+    技能：
+        学习
+        吃饭
+        睡觉
+
+对象2：王大炮
+    特征:
+        学校=oldboy
+        姓名=王大炮
+        性别=女
+        年龄=38
+    技能：
+        学习
+        吃饭
+        睡觉
+
+对象3：牛榴弹
+    特征:
+        学校=oldboy
+        姓名=牛榴弹
+        性别=男
+        年龄=78
+    技能：
+        学习
+        吃饭
+        睡觉
+
+
+现实中的老男孩学生类
+    相似的特征:
+        学校=oldboy
+    相似的技能：
+        学习
+        吃饭
+        睡觉
+```
+
+* 在程序中，务必保证：先定义（类），后使用类（用来产生对象）
+
+```py
+PS:
+  1. 在程序中特征用变量标识，技能用函数标识
+  2. 因而类中最常见的无非是：变量和函数的定义
+
+#程序中的类
+class OldboyStudent:
+    school='oldboy'
+    def learn(self):
+        print('is learning')
+        
+    def eat(self):
+        print('is eating')
+    
+    def sleep(self):
+        print('is sleeping')
+  
+
+
+#注意：
+  1.类中可以有任意python代码，这些代码在类定义阶段便会执行
+  2.因而会产生新的名称空间，用来存放类的变量名与函数名，可以通过OldboyStudent.__dict__查看
+  3.对于经典类来说我们可以通过该字典操作类名称空间的名字（新式类有限制），但python为我们提供专门的.语法
+  4.点是访问属性的语法，类中定义的名字，都是类的属性
+
+#程序中类的用法
+.:专门用来访问属性，本质操作的就是__dict__
+OldboyStudent.school #等于经典类的操作OldboyStudent.__dict__['school']
+OldboyStudent.school='Oldboy' #等于经典类的操作OldboyStudent.__dict__['school']='Oldboy'
+OldboyStudent.x=1 #等于经典类的操作OldboyStudent.__dict__['x']=1
+del OldboyStudent.x #等于经典类的操作OldboyStudent.__dict__.pop('x')
+
+
+#程序中的对象
+#调用类，或称为实例化，得到对象
+s1=OldboyStudent()
+s2=OldboyStudent()
+s3=OldboyStudent()
+
+#如此，s1、s2、s3都一样了，而这三者除了相似的属性之外还各种不同的属性，这就用到了__init__
+#注意：该方法是在对象产生之后才会执行，只用来为对象进行初始化操作，可以有任意代码，但一定不能有返回值
+class OldboyStudent:
+    ......
+    def __init__(self,name,age,sex):
+        self.name=name
+        self.age=age
+        self.sex=sex
+    ......
+
+
+s1=OldboyStudent('李坦克','男',18) #先调用类产生空对象s1，然后调用OldboyStudent.__init__(s1,'李坦克','男',18)
+s2=OldboyStudent('王大炮','女',38)
+s3=OldboyStudent('牛榴弹','男',78)
+
+
+#程序中对象的用法
+#执行__init__,s1.name='牛榴弹'，很明显也会产生对象的名称空间
+s2.__dict__
+{'name': '王大炮', 'age': '女', 'sex': 38}
+
+s2.name #s2.__dict__['name']
+s2.name='王三炮' #s2.__dict__['name']='王三炮'
+s2.course='python' #s2.__dict__['course']='python'
+del s2.course #s2.__dict__.pop('course')
+
+在程序中：先定义类，后产生对象
+```
+
+
+
 ### 对象
+
+
 
 ### 从代码级别看面向对象
 
