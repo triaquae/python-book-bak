@@ -132,7 +132,6 @@ class OldboyStudent:
         self.sex=sex
     ......
 
-
 s1=OldboyStudent('李坦克','男',18) #先调用类产生空对象s1，然后调用OldboyStudent.__init__(s1,'李坦克','男',18)
 s2=OldboyStudent('王大炮','女',38)
 s3=OldboyStudent('牛榴弹','男',78)
