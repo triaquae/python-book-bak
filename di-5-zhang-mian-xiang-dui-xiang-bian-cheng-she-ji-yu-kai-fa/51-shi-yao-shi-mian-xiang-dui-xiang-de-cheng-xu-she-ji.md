@@ -19,29 +19,28 @@
 举个典型的面向过程的例子， 写一个数据远程备份程序， 分三步，本地数据打包，上传至云服务器，测试备份文件可用性。
 
 ```py
-def cloud_upload(file):
-
-        print("\nconnecting cloud storage center...")
-        print("cloud storage connected.")
-        print("upload file...xxx..to cloud...", file)
-        print('close connection.....')
-
-
 def data_backup(folder):
     print("找到要备份的目录...", folder)
     print("将备份文件打包，移至相应目录...")
     return '/tmp/backup20181103.zip'
 
-def data_backup_test():
+def cloud_upload(file):
+    print("\nconnecting cloud storage center...")
+    print("cloud storage connected.")
+    print("upload file...xxx..to cloud...", file)
+    print('close connection.....')
 
+def data_backup_test():
     print("\n从另外一台机器将备份文件从远程cloud center下载，看文件是否无损")
 
-
 def main():
+    #步骤一：本地数据打包
     zip_file = data_backup("c:\\users\\alex\欧美100G高清无码")
 
+    #步骤二：上传至云服务器
     cloud_upload(zip_file)
 
+    #步骤三：测试备份文件的可用性
     data_backup_test()
 
 
@@ -49,7 +48,7 @@ if __name__ == '__main__':
     main()
 ```
 
-这个变量，那这个子过程你也要修改，假如又有一个其它子程序依赖这个子过程 ， 那就会发生一连串的影响，随着程序越来越大， 这种编程方式的维护难度会越来越高。
+加个变量，那这个子过程你也要修改，假如又有一个其它子程序依赖这个子过程 ， 那就会发生一连串的影响，随着程序越来越大， 这种编程方式的维护难度会越来越高。
 
 ```py
 test = 1
