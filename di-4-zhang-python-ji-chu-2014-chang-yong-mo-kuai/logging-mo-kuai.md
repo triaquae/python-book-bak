@@ -203,10 +203,7 @@ logger.debug("test ....")
 logger.info("test info ....")
 logger.warning("start to run db backup job ....")
 logger.error("test error ....")
-
 ```
-
-
 
 一个同时输出到屏幕、文件、带filter的完成例子
 
@@ -254,8 +251,6 @@ logger.debug("test ....")
 logger.info("test info ....")
 logger.warning("start to run db backup job ....")
 logger.error("test error ....")
-
-
 ```
 
 文件自动截断例子
