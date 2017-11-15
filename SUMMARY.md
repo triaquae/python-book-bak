@@ -55,8 +55,8 @@
   * [4.15 软件开发目录规范](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/ruan-jian-kai-fa-mu-lu-gui-fan.md)
   * [4.16 本章小结](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/ben-zhang-xiao-jie.md)
 * [第5章 面向对象编程设计与开发](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa.md)
-  * [面向对象编程介绍](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/mian-xiang-dui-xiang-bian-cheng-jie-shao.md)
   * [类、实例、属性、方法详解](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/lei-3001-shi-li-3001-shu-xing-3001-fang-fa-xiang-jie.md)
+  * [面向对象介绍](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/mian-xiang-dui-xiang-bian-cheng-jie-shao.md)
   * [5.1 什么是面向对象的程序设计](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/51-shi-yao-shi-mian-xiang-dui-xiang-de-cheng-xu-she-ji.md)
   * [5.2 类与对象](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/52-lei-yu-dui-xiang.md)
   * [5.3 属性查找与绑定方法](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/53-shu-xing-cha-zhao-yu-bang-ding-fang-fa.md)
@@ -65,7 +65,6 @@
   * 5.6 封装
   * 5.7 绑定方法与非绑定方法
   * [5.8 面向对象实战](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/58-mian-xiang-dui-xiang-shi-zhan.md)
-  * [5.9 面向对象高级](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/59-mian-xiang-dui-xiang-gao-ji.md)
 * [第6章  网络编程-SOCKET开发](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa.md)
   * [6.1 TCP/IP介绍](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/61-tcpipjie-shao.md)
   * [6.2 TCP/IP 各层详解](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/62.md)
