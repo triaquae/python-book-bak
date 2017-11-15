@@ -19,74 +19,84 @@
 举个典型的面向过程的例子， 写一个数据远程备份程序， 分三步，本地数据打包，上传至云服务器，测试备份文件可用性。
 
 ```py
+import os
+
 def data_backup(folder):
-    print("找到要备份的目录...", folder)
-    print("将备份文件打包，移至相应目录...")
-    return '/tmp/backup20181103.zip'
+    print("找到备份目录: %s" %folder)
+    print('正在备份......')
+    zip_file='/tmp/backup20181103.zip'
+    print('备份成功，备份文件为: %s' %zip_file)
+    return zip_file
 
 def cloud_upload(file):
     print("\nconnecting cloud storage center...")
     print("cloud storage connected.")
-    print("upload file...xxx..to cloud...", file)
+    print("upload file...%s...to cloud..." %file)
+    link='http://www.xxx.com/bak/%s' %os.path.basename(file)
     print('close connection.....')
+    return link
 
-def data_backup_test():
-    print("\n从另外一台机器将备份文件从远程cloud center下载，看文件是否无损")
+def data_backup_test(link):
+    print("\n下载文件: %s , 验证文件是否无损" %link)
 
 def main():
     #步骤一：本地数据打包
     zip_file = data_backup("c:\\users\\alex\欧美100G高清无码")
 
     #步骤二：上传至云服务器
-    cloud_upload(zip_file)
+    link=cloud_upload(zip_file)
 
     #步骤三：测试备份文件的可用性
-    data_backup_test()
-
+    data_backup_test(link)
 
 if __name__ == '__main__':
     main()
 ```
 
-加个变量，那这个子过程你也要修改，假如又有一个其它子程序依赖这个子过程 ， 那就会发生一连串的影响，随着程序越来越大， 这种编程方式的维护难度会越来越高。
+如果我们修改了步骤二，即函数cloudupload的逻辑，那么依赖于步骤二结果才能正常执行的步骤三，即函数data\_backup\_test的逻辑也需要修改
 
 ```py
-test = 1
-
-def cloud_upload(file):
-
-    if test == 1:
-        print("\nconnecting cloud storage center...")
-        print("cloud storage connected.")
-        print("upload file...xxx..to cloud...", file)
-        print('close connection.....')
-        return True
-    else:
-        print("不备份")
-        return False
+import os
 
 def data_backup(folder):
-    print("找到要备份的目录...", folder)
-    print("将备份文件打包，移至相应目录...")
-    return '/tmp/backup20181103.zip'
+    print("找到备份目录: %s" %folder)
+    print('正在备份......')
+    zip_file='/tmp/backup20181103.zip'
+    print('备份成功，备份文件为: %s' %zip_file)
+    return zip_file
 
-def data_backup_test(upload_res):
-    if upload_res == 1:
-        print("\n从另外一台机器将备份文件从远程cloud center下载，看文件是否无损")
+def cloud_upload(file): #加上异常处理，在出现异常的情况下，没有link返回
+    try:
+        print("\nconnecting cloud storage center...")
+        print("cloud storage connected.")
+        print("upload file...%s...to cloud..." % file)
+        link = 'http://www.xxx.com/bak/%s' % os.path.basename(file)
+        return link
+    except Exception:
+        print('upload error')
+    finally:
+        print('close connection.....')
+
+def data_backup_test(link): #加上对参数link的判断
+    if link:
+        print("\n下载文件: %s , 验证文件是否无损" %link)
     else:
-        print("upload error,不备份")
-
+        print('\n链接不存在')
 def main():
+    #步骤一：本地数据打包
     zip_file = data_backup("c:\\users\\alex\欧美100G高清无码")
 
-    res = cloud_upload(zip_file)
+    #步骤二：上传至云服务器
+    link=cloud_upload(zip_file)
 
-    data_backup_test(res)
-
+    #步骤三：测试备份文件的可用性
+    data_backup_test(link)
 
 if __name__ == '__main__':
     main()
 ```
+
+基于面向过程设计的程序在扩展一个功能时带来的是连锁反应，而这一弊端会随着程序的增大而变得越发的糟糕， 维护难度会越来越高。
 
 所以我们一般认为， 如果你只是写一些简单的脚本，去做一些一次性任务，用面向过程的方式是极好的，但如果你要处理的任务是复杂的，且需要不断迭代和维护 的， 那还是用面向对象最方便了。
 
