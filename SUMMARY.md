@@ -63,7 +63,7 @@
   * [5.4 小结](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/aaa.md)
   * [5.5 继承与派生](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/ji-cheng-yu-pai-sheng.md)
   * [5.6 组合](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/56-zu-he.md)
-  * 5.7 抽象类
+  * [5.7 抽象类](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/57-chou-xiang-lei.md)
   * 5.8 多态与多态性
   * [5.9 封装](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/57-feng-zhuang.md)
   * [5.10 绑定方法与非绑定方法](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/511-bang-ding-fang-fa-yu-fei-bang-ding-fang-fa.md)
