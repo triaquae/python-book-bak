@@ -61,9 +61,9 @@ class SubClass2(ParentClass1,ParentClass2): #python支持多继承，用逗号�
 
 抽象即抽取类似或者说比较像的部分。
 
-抽象分成两个层次： 
+抽象分成两个层次：
 
-1.将奥巴马和梅西这俩对象比较像的部分抽取成类； 
+1.将奥巴马和梅西这俩对象比较像的部分抽取成类；
 
 2.将人，猪，狗这三个类比较像的部分抽取成父类。
 
@@ -79,7 +79,7 @@ class SubClass2(ParentClass1,ParentClass2): #python支持多继承，用逗号�
 
 ### 继承与重用性
 
- 在开发程序的过程中，如果我们定义了一个类A，然后又想新建立另外一个类B，但是类B的大部分内容与类A的相同时
+在开发程序的过程中，如果我们定义了一个类A，然后又想新建立另外一个类B，但是类B的大部分内容与类A的相同时
 
 我们不可能从头开始写一个类B，这就用到了类的继承的概念。
 
@@ -247,6 +247,87 @@ print(F.__mro__) #只有新式才有这个属性可以查看线性列表，经�
 ```
 
 ### 在子类中调用父类的方法
+
+在子类派生出的新方法中，往往需要重用父类的方法，我们有两种方式实现
+
+方式一：指名道姓，即父类名.父类方法\(\)
+
+```py
+class Vehicle: #定义交通工具类
+     Country='China'
+     def __init__(self,name,speed,load,power):
+         self.name=name
+         self.speed=speed
+         self.load=load
+         self.power=power
+
+     def run(self):
+         print('开动啦...')
+
+class Subway(Vehicle): #地铁
+    def __init__(self,name,speed,load,power,line):
+        Vehicle.__init__(self,name,speed,load,power)
+        self.line=line
+
+    def run(self):
+        print('地铁%s号线欢迎您' %self.line)
+        Vehicle.run(self)
+
+line13=Subway('中国地铁','180m/s','1000人/箱','电',13)
+line13.run()
+```
+
+方式二：super\(\)
+
+```py
+class Vehicle: #定义交通工具类
+     Country='China'
+     def __init__(self,name,speed,load,power):
+         self.name=name
+         self.speed=speed
+         self.load=load
+         self.power=power
+
+     def run(self):
+         print('开动啦...')
+
+class Subway(Vehicle): #地铁
+    def __init__(self,name,speed,load,power,line):
+        #super(Subway,self) 就相当于实例本身 在python3中super()等同于super(Subway,self)
+        super().__init__(name,speed,load,power)
+        self.line=line
+
+    def run(self):
+        print('地铁%s号线欢迎您' %self.line)
+        super(Subway,self).run()
+
+class Mobike(Vehicle):#摩拜单车
+    pass
+
+line13=Subway('中国地铁','180m/s','1000人/箱','电',13)
+line13.run()
+```
+
+这两种方式的区别是：方式一是跟继承没有关系的，而方式二的super\(\)是依赖于继承的，并且即使没有直接继承关系，super仍然会按照mro继续往后查找
+
+```py
+#A没有继承B,但是A内super会基于C.mro()继续往后找
+class A:
+    def test(self):
+        super().test()
+class B:
+    def test(self):
+        print('from B')
+class C(A,B):
+    pass
+
+c=C()
+c.test() #打印结果:from B
+
+
+print(C.mro())
+#[<class '__main__.C'>, <class '__main__.A'>, <class '__main__.B'>, <class 'object'>]
+```
 
 
 
