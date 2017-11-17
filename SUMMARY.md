@@ -60,11 +60,11 @@
   * [5.1 什么是面向对象的程序设计](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/51-shi-yao-shi-mian-xiang-dui-xiang-de-cheng-xu-she-ji.md)
   * [5.2 类与对象](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/52-lei-yu-dui-xiang.md)
   * [5.3 属性查找与绑定方法](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/53-shu-xing-cha-zhao-yu-bang-ding-fang-fa.md)
-  * [5.4 继承与派生](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/ji-cheng-yu-pai-sheng.md)
-  * [5.5 多态与多态性](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/55-duo-tai-yu-duo-tai-xing.md)
-  * 5.6 封装
-  * 5.7 绑定方法与非绑定方法
-  * [5.8 面向对象实战](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/58-mian-xiang-dui-xiang-shi-zhan.md)
+  * [5.4 小结](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/aaa.md)
+  * [5.5 继承与派生](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/ji-cheng-yu-pai-sheng.md)
+  * [5.6 多态与多态性](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/55-duo-tai-yu-duo-tai-xing.md)
+  * [5.7 封装](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/56-feng-zhuang.md)
+  * [5.8 绑定方法与非绑定方法](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/57-bang-ding-fang-fa-yu-fei-bang-ding-fang-fa.md)
 * [第6章  网络编程-SOCKET开发](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa.md)
   * [6.1 TCP/IP介绍](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/61-tcpipjie-shao.md)
   * [6.2 TCP/IP 各层详解](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/62.md)
