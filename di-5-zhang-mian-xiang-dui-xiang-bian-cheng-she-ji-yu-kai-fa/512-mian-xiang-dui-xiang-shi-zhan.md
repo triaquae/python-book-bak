@@ -798,3 +798,482 @@ class Str:
         instance.__dict__[self.name]=value
     def __delete__(self, instance):
         print('delete--->',instance)
+        instance.__dict__.pop(self.name)
+
+
+class People:
+    name=Str('name')
+    def __init__(self,name,age,salary):
+        self.name=name
+        self.age=age
+        self.salary=salary
+print(People.name) #完美,解决
+```
+**磨刀霍霍**
+```
+class Str:
+    def __init__(self,name,expected_type):
+        self.name=name
+        self.expected_type=expected_type
+    def __get__(self, instance, owner):
+        print('get--->',instance,owner)
+        if instance is None:
+            return self
+        return instance.__dict__[self.name]
+
+    def __set__(self, instance, value):
+        print('set--->',instance,value)
+        if not isinstance(value,self.expected_type): #如果不是期望的类型，则抛出异常
+            raise TypeError('Expected %s' %str(self.expected_type))
+        instance.__dict__[self.name]=value
+    def __delete__(self, instance):
+        print('delete--->',instance)
+        instance.__dict__.pop(self.name)
+
+
+class People:
+    name=Str('name',str) #新增类型限制str
+    def __init__(self,name,age,salary):
+        self.name=name
+        self.age=age
+        self.salary=salary
+
+p1=People(123,18,3333.3)#传入的name因不是字符串类型而抛出异常
+```
+**大刀阔斧**
+```
+class Typed:
+    def __init__(self,name,expected_type):
+        self.name=name
+        self.expected_type=expected_type
+    def __get__(self, instance, owner):
+        print('get--->',instance,owner)
+        if instance is None:
+            return self
+        return instance.__dict__[self.name]
+
+    def __set__(self, instance, value):
+        print('set--->',instance,value)
+        if not isinstance(value,self.expected_type):
+            raise TypeError('Expected %s' %str(self.expected_type))
+        instance.__dict__[self.name]=value
+    def __delete__(self, instance):
+        print('delete--->',instance)
+        instance.__dict__.pop(self.name)
+
+
+class People:
+    name=Typed('name',str)
+    age=Typed('name',int)
+    salary=Typed('name',float)
+    def __init__(self,name,age,salary):
+        self.name=name
+        self.age=age
+        self.salary=salary
+
+p1=People(123,18,3333.3)
+p1=People('egon','18',3333.3)
+p1=People('egon',18,3333)
+```
+大刀阔斧之后我们已然能实现功能了，但是问题是，如果我们的类有很多属性，你仍然采用在定义一堆类属性的方式去实现，low，这时候我需要教你一招：独孤九剑
+**类的装饰器:无参**
+```
+def decorate(cls):
+    print('类的装饰器开始运行啦------>')
+    return cls
+
+@decorate #无参:People=decorate(People)
+class People:
+    def __init__(self,name,age,salary):
+        self.name=name
+        self.age=age
+        self.salary=salary
+
+p1=People('egon',18,3333.3)
+```
+**类的装饰器:有参**
+```
+def typeassert(**kwargs):
+    def decorate(cls):
+        print('类的装饰器开始运行啦------>',kwargs)
+        return cls
+    return decorate
+@typeassert(name=str,age=int,salary=float) #有参:1.运行typeassert(...)返回结果是decorate,此时参数都传给kwargs 2.People=decorate(People)
+class People:
+    def __init__(self,name,age,salary):
+        self.name=name
+        self.age=age
+        self.salary=salary
+
+p1=People('egon',18,3333.3)
+```
+终极大招
+**刀光剑影**
+```
+class Typed:
+    def __init__(self,name,expected_type):
+        self.name=name
+        self.expected_type=expected_type
+    def __get__(self, instance, owner):
+        print('get--->',instance,owner)
+        if instance is None:
+            return self
+        return instance.__dict__[self.name]
+
+    def __set__(self, instance, value):
+        print('set--->',instance,value)
+        if not isinstance(value,self.expected_type):
+            raise TypeError('Expected %s' %str(self.expected_type))
+        instance.__dict__[self.name]=value
+    def __delete__(self, instance):
+        print('delete--->',instance)
+        instance.__dict__.pop(self.name)
+
+def typeassert(**kwargs):
+    def decorate(cls):
+        print('类的装饰器开始运行啦------>',kwargs)
+        for name,expected_type in kwargs.items():
+            setattr(cls,name,Typed(name,expected_type))
+        return cls
+    return decorate
+@typeassert(name=str,age=int,salary=float) #有参:1.运行typeassert(...)返回结果是decorate,此时参数都传给kwargs 2.People=decorate(People)
+class People:
+    def __init__(self,name,age,salary):
+        self.name=name
+        self.age=age
+        self.salary=salary
+
+print(People.__dict__)
+p1=People('egon',18,3333.3)
+```
+6 描述符总结
+
+描述符是可以实现大部分python类特性中的底层魔法,包括@classmethod,@staticmethd,@property甚至是\_\_slots\_\_属性
+
+描述父是很多高级库和框架的重要工具之一,描述符通常是使用到装饰器或者元类的大型框架中的一个组件.
+
+7 利用描述符原理完成一个自定制@property,实现延迟计算（本质就是把一个函数属性利用装饰器原理做成一个描述符：类的属性字典中函数名为key，value为描述符类产生的对象）
+
+**@property回顾**
+```
+class Room:
+    def __init__(self,name,width,length):
+        self.name=name
+        self.width=width
+        self.length=length
+
+    @property
+    def area(self):
+        return self.width * self.length
+
+r1=Room('alex',1,1)
+print(r1.area)
+```
+**自己做一个@property**
+```
+class Lazyproperty:
+    def __init__(self,func):
+        self.func=func
+    def __get__(self, instance, owner):
+        print('这是我们自己定制的静态属性,r1.area实际是要执行r1.area()')
+        if instance is None:
+            return self
+        return self.func(instance) #此时你应该明白,到底是谁在为你做自动传递self的事情
+
+class Room:
+    def __init__(self,name,width,length):
+        self.name=name
+        self.width=width
+        self.length=length
+
+    @Lazyproperty #area=Lazyproperty(area) 相当于定义了一个类属性,即描述符
+    def area(self):
+        return self.width * self.length
+
+r1=Room('alex',1,1)
+print(r1.area)
+```
+**实现延迟计算功能**
+```
+class Lazyproperty:
+    def __init__(self,func):
+        self.func=func
+    def __get__(self, instance, owner):
+        print('这是我们自己定制的静态属性,r1.area实际是要执行r1.area()')
+        if instance is None:
+            return self
+        else:
+            print('--->')
+            value=self.func(instance)
+            setattr(instance,self.func.__name__,value) #计算一次就缓存到实例的属性字典中
+            return value
+
+class Room:
+    def __init__(self,name,width,length):
+        self.name=name
+        self.width=width
+        self.length=length
+
+    @Lazyproperty #area=Lazyproperty(area) 相当于'定义了一个类属性,即描述符'
+    def area(self):
+        return self.width * self.length
+
+r1=Room('alex',1,1)
+print(r1.area) #先从自己的属性字典找,没有再去类的中找,然后出发了area的__get__方法
+print(r1.area) #先从自己的属性字典找,找到了,是上次计算的结果,这样就不用每执行一次都去计算
+```
+**一个小的改动，延迟计算的美梦就破碎了**
+```
+#缓存不起来了
+
+class Lazyproperty:
+    def __init__(self,func):
+        self.func=func
+    def __get__(self, instance, owner):
+        print('这是我们自己定制的静态属性,r1.area实际是要执行r1.area()')
+        if instance is None:
+            return self
+        else:
+            value=self.func(instance)
+            instance.__dict__[self.func.__name__]=value
+            return value
+        # return self.func(instance) #此时你应该明白,到底是谁在为你做自动传递self的事情
+    def __set__(self, instance, value):
+        print('hahahahahah')
+
+class Room:
+    def __init__(self,name,width,length):
+        self.name=name
+        self.width=width
+        self.length=length
+
+    @Lazyproperty #area=Lazyproperty(area) 相当于定义了一个类属性,即描述符
+    def area(self):
+        return self.width * self.length
+
+print(Room.__dict__)
+r1=Room('alex',1,1)
+print(r1.area)
+print(r1.area)
+print(r1.area)
+print(r1.area) #缓存功能失效,每次都去找描述符了,为何,因为描述符实现了set方法,它由非数据描述符变成了数据描述符,数据描述符比实例属性有更高的优先级,因而所有的属性操作都去找描述符了
+```
+8 利用描述符原理完成一个自定制@classmethod
+**自己做一个@classmethod**
+```
+class ClassMethod:
+    def __init__(self,func):
+        self.func=func
+
+    def __get__(self, instance, owner): #类来调用,instance为None,owner为类本身,实例来调用,instance为实例,owner为类本身,
+        def feedback():
+            print('在这里可以加功能啊...')
+            return self.func(owner)
+        return feedback
+
+class People:
+    name='linhaifeng'
+    @ClassMethod # say_hi=ClassMethod(say_hi)
+    def say_hi(cls):
+        print('你好啊,帅哥 %s' %cls.name)
+
+People.say_hi()
+
+p1=People()
+p1.say_hi()
+#疑问,类方法如果有参数呢,好说,好说
+
+class ClassMethod:
+    def __init__(self,func):
+        self.func=func
+
+    def __get__(self, instance, owner): #类来调用,instance为None,owner为类本身,实例来调用,instance为实例,owner为类本身,
+        def feedback(*args,**kwargs):
+            print('在这里可以加功能啊...')
+            return self.func(owner,*args,**kwargs)
+        return feedback
+
+class People:
+    name='linhaifeng'
+    @ClassMethod # say_hi=ClassMethod(say_hi)
+    def say_hi(cls,msg):
+        print('你好啊,帅哥 %s %s' %(cls.name,msg))
+
+People.say_hi('你是那偷心的贼')
+
+p1=People()
+p1.say_hi('你是那偷心的贼')
+```
+9 利用描述符原理完成一个自定制的@staticmethod
+**自己做一个@staticmethod**
+```
+class StaticMethod:
+    def __init__(self,func):
+        self.func=func
+
+    def __get__(self, instance, owner): #类来调用,instance为None,owner为类本身,实例来调用,instance为实例,owner为类本身,
+        def feedback(*args,**kwargs):
+            print('在这里可以加功能啊...')
+            return self.func(*args,**kwargs)
+        return feedback
+
+class People:
+    @StaticMethod# say_hi=StaticMethod(say_hi)
+    def say_hi(x,y,z):
+        print('------>',x,y,z)
+
+People.say_hi(1,2,3)
+
+p1=People()
+p1.say_hi(4,5,6)
+```
+### 六 再看property
+一个静态属性property本质就是实现了get，set，delete三种方法
+**用法一**
+```
+class Foo:
+    @property
+    def AAA(self):
+        print('get的时候运行我啊')
+
+    @AAA.setter
+    def AAA(self,value):
+        print('set的时候运行我啊')
+
+    @AAA.deleter
+    def AAA(self):
+        print('delete的时候运行我啊')
+
+#只有在属性AAA定义property后才能定义AAA.setter,AAA.deleter
+f1=Foo()
+f1.AAA
+f1.AAA='aaa'
+del f1.AAA
+```
+**用法二**
+```
+class Foo:
+    def get_AAA(self):
+        print('get的时候运行我啊')
+
+    def set_AAA(self,value):
+        print('set的时候运行我啊')
+
+    def delete_AAA(self):
+        print('delete的时候运行我啊')
+    AAA=property(get_AAA,set_AAA,delete_AAA) #内置property三个参数与get,set,delete一一对应
+
+f1=Foo()
+f1.AAA
+f1.AAA='aaa'
+del f1.AAA
+```
+怎么用？
+**案例一**
+```
+class Goods:
+
+    def __init__(self):
+        # 原价
+        self.original_price = 100
+        # 折扣
+        self.discount = 0.8
+
+    @property
+    def price(self):
+        # 实际价格 = 原价 * 折扣
+        new_price = self.original_price * self.discount
+        return new_price
+
+    @price.setter
+    def price(self, value):
+        self.original_price = value
+
+    @price.deleter
+    def price(self):
+        del self.original_price
+
+
+obj = Goods()
+obj.price         # 获取商品价格
+obj.price = 200   # 修改商品原价
+print(obj.price)
+del obj.price     # 删除商品原价
+```
+**案例二**
+```
+#实现类型检测功能
+
+#第一关：
+class People:
+    def __init__(self,name):
+        self.name=name
+
+    @property
+    def name(self):
+        return self.name
+
+# p1=People('alex') #property自动实现了set和get方法属于数据描述符,比实例属性优先级高,所以你这面写会触发property内置的set,抛出异常
+
+
+#第二关：修订版
+
+class People:
+    def __init__(self,name):
+        self.name=name #实例化就触发property
+
+    @property
+    def name(self):
+        # return self.name #无限递归
+        print('get------>')
+        return self.DouNiWan
+
+    @name.setter
+    def name(self,value):
+        print('set------>')
+        self.DouNiWan=value
+
+    @name.deleter
+    def name(self):
+        print('delete------>')
+        del self.DouNiWan
+
+p1=People('alex') #self.name实际是存放到self.DouNiWan里
+print(p1.name)
+print(p1.name)
+print(p1.name)
+print(p1.__dict__)
+
+p1.name='egon'
+print(p1.__dict__)
+
+del p1.name
+print(p1.__dict__)
+
+
+#第三关:加上类型检查
+class People:
+    def __init__(self,name):
+        self.name=name #实例化就触发property
+
+    @property
+    def name(self):
+        # return self.name #无限递归
+        print('get------>')
+        return self.DouNiWan
+
+    @name.setter
+    def name(self,value):
+        print('set------>')
+        if not isinstance(value,str):
+            raise TypeError('必须是字符串类型')
+        self.DouNiWan=value
+
+    @name.deleter
+    def name(self):
+        print('delete------>')
+        del self.DouNiWan
+
+p1=People('alex') #self.name实际是存放到self.DouNiWan里
+p1.name=1
+```
