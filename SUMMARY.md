@@ -68,6 +68,7 @@
   * [5.9 封装](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/57-feng-zhuang.md)
   * [5.10 绑定方法与非绑定方法](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/511-bang-ding-fang-fa-yu-fei-bang-ding-fang-fa.md)
   * [5.11 内置方法](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/512-mian-xiang-dui-xiang-shi-zhan.md)
+  * [5.11 内置方法（补充）](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/511-nei-zhi-fang-fa-ff08-bu-chong-ff09.md)
   * [5.12 元类](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/512-yuan-lei.md)
   * [5.13 面向对象的软件开发](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/511-mian-xiang-dui-xiang-de-ruan-jian-kai-fa.md)
 * [第6章  网络编程-SOCKET开发](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa.md)
