@@ -78,4 +78,5 @@
   * [6.4 Socket代码实例](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/64-socketdai-ma-shi-li.md)
   * [6.5 粘包现象与解决方案](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/65-nian-bao-xian-xiang-yu-jie-jue-fang-an.md)
   * 6.6 通过socket发送文件
+  * [6.1 C/S架构介绍](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/61-csjia-gou-jie-shao.md)
 
