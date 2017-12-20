@@ -72,11 +72,10 @@
   * [5.12 元类](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/512-yuan-lei.md)
   * [5.13 面向对象的软件开发](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/511-mian-xiang-dui-xiang-de-ruan-jian-kai-fa.md)
 * [第6章  网络编程-SOCKET开发](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa.md)
-  * [6.1 TCP/IP介绍](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/61-tcpipjie-shao.md)
+  * [6.1 C/S架构介绍](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/61-csjia-gou-jie-shao.md)
   * [6.2 TCP/IP 各层详解](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/62.md)
   * [6.3 Socket介绍](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/63-socketjie-shao.md)
   * [6.4 Socket代码实例](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/64-socketdai-ma-shi-li.md)
   * [6.5 粘包现象与解决方案](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/65-nian-bao-xian-xiang-yu-jie-jue-fang-an.md)
-  * 6.6 通过socket发送文件
-  * [6.1 C/S架构介绍](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/61-csjia-gou-jie-shao.md)
+  * [6.6 通过socket发送文件](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/66-tong-guo-socket-fa-song-wen-jian.md)
 
