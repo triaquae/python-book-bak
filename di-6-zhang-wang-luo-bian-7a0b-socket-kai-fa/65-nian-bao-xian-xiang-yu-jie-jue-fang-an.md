@@ -228,7 +228,7 @@ while True:
 
 刚才上面 在发送消息之前需先发送消息长度给对端，还必须要等对端返回一个ready收消息的确认，不等到对端确认就直接发消息的话，还是会产生粘包问题\(承载消息长度的那条消息和消息本身粘在一起\)。 有没有优化的好办法么？
 
-#### 文艺青年版
+#### 文艺青年版一
 
 思考一个问题，为什么不能在发送了消息长度\(称为消息头head吧\)给对端后，立刻发消息内容\(称为body吧\)，是因为怕head 和body 粘在一起，所以通过等对端返回确认来把两条消息中断开。
 
@@ -321,6 +321,120 @@ while True:
     print("received res size ",len(res))
     print(res.decode('utf-8'), end='')
 ```
+
+#### 文艺青年版二
+
+为字节流加上自定义固定长度报头也可以借助于第三方模块struct，用法为
+
+```
+import json,struct
+#假设通过客户端上传1T:1073741824000的文件a.txt
+
+#为避免粘包,必须自定制报头
+header={'file_size':1073741824000,'file_name':'/a/b/c/d/e/a.txt','md5':'8f6fbf8347faa4924a76856701edb0f3'} #1T数据,文件路径和md5值
+
+#为了该报头能传送,需要序列化并且转为bytes
+head_bytes=bytes(json.dumps(header),encoding='utf-8') #序列化并转成bytes,用于传输
+
+#为了让客户端知道报头的长度,用struck将报头长度这个数字转成固定长度:4个字节
+head_len_bytes=struct.pack('i',len(head_bytes)) #这4个字节里只包含了一个数字,该数字是报头的长度
+
+#客户端开始发送
+conn.send(head_len_bytes) #先发报头的长度,4个bytes
+conn.send(head_bytes) #再发报头的字节格式
+conn.sendall(文件内容) #然后发真实内容的字节格式
+
+#服务端开始接收
+head_len_bytes=s.recv(4) #先收报头4个bytes,得到报头长度的字节格式
+x=struct.unpack('i',head_len_bytes)[0] #提取报头的长度
+
+head_bytes=s.recv(x) #按照报头长度x,收取报头的bytes格式
+header=json.loads(json.dumps(header)) #提取报头
+
+#最后根据报头的内容提取真实的数据,比如
+real_data_len=s.recv(header['file_size'])
+s.recv(real_data_len)
+```
+
+使用struct模块实现方式如下
+
+server
+
+```
+import socket,struct,json
+import subprocess
+phone=socket.socket(socket.AF_INET,socket.SOCK_STREAM)
+phone.setsockopt(socket.SOL_SOCKET,socket.SO_REUSEADDR,1) #就是它，在bind前加
+
+phone.bind(('127.0.0.1',8080))
+
+phone.listen(5)
+
+while True:
+    conn,addr=phone.accept()
+    while True:
+        cmd=conn.recv(1024)
+        if not cmd:break
+        print('cmd: %s' %cmd)
+
+        res=subprocess.Popen(cmd.decode('utf-8'),
+                             shell=True,
+                             stdout=subprocess.PIPE,
+                             stderr=subprocess.PIPE)
+        err=res.stderr.read()
+        print(err)
+        if err:
+            back_msg=err
+        else:
+            back_msg=res.stdout.read()
+
+        headers={'data_size':len(back_msg)}
+        head_json=json.dumps(headers)
+        head_json_bytes=bytes(head_json,encoding='utf-8')
+
+        conn.send(struct.pack('i',len(head_json_bytes))) #先发报头的长度
+        conn.send(head_json_bytes) #再发报头
+        conn.sendall(back_msg) #在发真实的内容
+
+    conn.close()
+```
+
+client
+
+```
+from socket import *
+import struct,json
+
+ip_port=('127.0.0.1',8080)
+client=socket(AF_INET,SOCK_STREAM)
+client.connect(ip_port)
+
+while True:
+    cmd=input('>>: ')
+    if not cmd:continue
+    client.send(bytes(cmd,encoding='utf-8'))
+
+    head=client.recv(4) #先收4个bytes，这里4个bytes里包含了报头的长度
+    head_json_len=struct.unpack('i',head)[0] #解出报头的长度
+    head_json=json.loads(client.recv(head_json_len).decode('utf-8')) #拿到报头
+    data_len=head_json['data_size'] #取出报头内包含的信息
+
+    #开始收数据
+    recv_size=0
+    recv_data=b''
+    while recv_size < data_len:
+        recv_data+=client.recv(1024)
+        recv_size+=len(recv_data)
+
+    print(recv_data.decode('utf-8'))
+    #print(recv_data.decode('gbk')) #windows默认gbk编码
+```
+
+
+
+
+
+
 
 
 
