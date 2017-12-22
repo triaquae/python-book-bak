@@ -48,9 +48,9 @@ ages = tuple((11, 22, 33, 44, 55))
 
 #循环
 >>> for age in ages:
-	print(age)
+    print(age)
 
-	
+
 11
 22
 33
@@ -87,109 +87,7 @@ t = (1)   #<==>t = 1
 
 元组本身不可变，如果元组中还包含其他可变元素，这些可变元素可以改变
 
-## 元组的工厂函数
 
-```py
-class tuple(object):
-    """
-    tuple() -> empty tuple
-    tuple(iterable) -> tuple initialized from iterable's items
-
-    If the argument is a tuple, the return value is the same object.
-    """
-    def count(self, value): # real signature unknown; restored from __doc__
-        """ T.count(value) -> integer -- return number of occurrences of value """
-        return 0
-
-    def index(self, value, start=None, stop=None): # real signature unknown; restored from __doc__
-        """
-        T.index(value, [start, [stop]]) -> integer -- return first index of value.
-        Raises ValueError if the value is not present.
-        """
-        return 0
-
-    def __add__(self, *args, **kwargs): # real signature unknown
-        """ Return self+value. """
-        pass
-
-    def __contains__(self, *args, **kwargs): # real signature unknown
-        """ Return key in self. """
-        pass
-
-    def __eq__(self, *args, **kwargs): # real signature unknown
-        """ Return self==value. """
-        pass
-
-    def __getattribute__(self, *args, **kwargs): # real signature unknown
-        """ Return getattr(self, name). """
-        pass
-
-    def __getitem__(self, *args, **kwargs): # real signature unknown
-        """ Return self[key]. """
-        pass
-
-    def __getnewargs__(self, *args, **kwargs): # real signature unknown
-        pass
-
-    def __ge__(self, *args, **kwargs): # real signature unknown
-        """ Return self>=value. """
-        pass
-
-    def __gt__(self, *args, **kwargs): # real signature unknown
-        """ Return self>value. """
-        pass
-
-    def __hash__(self, *args, **kwargs): # real signature unknown
-        """ Return hash(self). """
-        pass
-
-    def __init__(self, seq=()): # known special case of tuple.__init__
-        """
-        tuple() -> empty tuple
-        tuple(iterable) -> tuple initialized from iterable's items
-
-        If the argument is a tuple, the return value is the same object.
-        # (copied from class doc)
-        """
-        pass
-
-    def __iter__(self, *args, **kwargs): # real signature unknown
-        """ Implement iter(self). """
-        pass
-
-    def __len__(self, *args, **kwargs): # real signature unknown
-        """ Return len(self). """
-        pass
-
-    def __le__(self, *args, **kwargs): # real signature unknown
-        """ Return self<=value. """
-        pass
-
-    def __lt__(self, *args, **kwargs): # real signature unknown
-        """ Return self<value. """
-        pass
-
-    def __mul__(self, *args, **kwargs): # real signature unknown
-        """ Return self*value.n """
-        pass
-
-    @staticmethod # known case of __new__
-    def __new__(*args, **kwargs): # real signature unknown
-        """ Create and return a new object.  See help(type) for accurate signature. """
-        pass
-
-    def __ne__(self, *args, **kwargs): # real signature unknown
-        """ Return self!=value. """
-        pass
-
-    def __repr__(self, *args, **kwargs): # real signature unknown
-        """ Return repr(self). """
-        pass
-
-    def __rmul__(self, *args, **kwargs): # real signature unknown
-        """ Return self*value. """
-        pass
-```
 
 
 

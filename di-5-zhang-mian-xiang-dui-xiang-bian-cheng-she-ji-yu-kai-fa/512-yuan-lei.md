@@ -1,10 +1,9 @@
-#
-# 本节重点
+## 本节重点
 
 * 了解元类
 * 了解元类的用途
 
-> ### **本节时长需控制在45分钟内**
+> **本节时长需控制在45分钟内**
 
 ### 一 知识储备
 
@@ -17,6 +16,7 @@ exec：三个参数
 
 参数三：局部作用域（字典形式），如果不指定，默认为locals()
 ```
+
 **exec的使用**
 
 ```py
@@ -48,7 +48,7 @@ pass
 f1=Foo() #f1是通过Foo类实例化的对象
 ```
 
-python中一切皆是对象，类本身也是一个对象，当使用关键字class的时候，python解释器在加载class的时候就会创建一个对象(这里的对象指的是类而非类的实例)，因而我们可以将类当作一个对象去使用，同样满足第一类对象的概念，可以：
+python中一切皆是对象，类本身也是一个对象，当使用关键字class的时候，python解释器在加载class的时候就会创建一个对象\(这里的对象指的是类而非类的实例\)，因而我们可以将类当作一个对象去使用，同样满足第一类对象的概念，可以：
 
 把类赋值给一个变量
 
@@ -72,12 +72,15 @@ print(type(Foo)) # 输出：<type 'type'>
 
 元类是用来控制如何创建类的，正如类是创建对象的模板一样，而元类的主要目的是为了控制类的创建行为
 
-元类的实例化的结果为我们用class定义的类，正如类的实例为对象(f1对象是Foo类的一个实例，Foo类是 type 类的一个实例)
+元类的实例化的结果为我们用class定义的类，正如类的实例为对象\(f1对象是Foo类的一个实例，Foo类是 type 类的一个实例\)
 
-type是python的一个内建元类，用来直接控制生成类，python中任何class定义的类其实都是type类实例化的对象
-![image_1c1p03hmh198t1skn1ulrps57h19.png-80.6kB][1]
+type是python的一个内建元类，用来直接控制生成类，python中任何class定义的类其实都是type类实例化的对象  
+!\[image\_1c1p03hmh198t1skn1ulrps57h19.png-80.6kB\]\[1\]
+
 ### 四 创建类的两种方式
+
 **方式一：使用class关键字**
+
 ```py
 class Chinese(object):
     country='China'
@@ -87,7 +90,9 @@ class Chinese(object):
     def talk(self):
         print('%s is talking' %self.name)
 ```
+
 **方式二：就是手动模拟class创建类的过程）：将创建类的步骤拆分开，手动去创建**
+
 ```
 #准备工作：
 
@@ -114,7 +119,9 @@ def talk(self):
     print('%s is talking' %self.name)
 """
 ```
-步骤一（先处理类体->名称空间）：类体定义的名字都会存放于类的名称空间中（一个局部的名称空间），我们可以事先定义一个空字典，然后用exec去执行类体的代码（exec产生名称空间的过程与真正的class过程类似，只是后者会将__开头的属性变形），生成类的局部名称空间，即填充字典
+
+步骤一（先处理类体-&gt;名称空间）：类体定义的名字都会存放于类的名称空间中（一个局部的名称空间），我们可以事先定义一个空字典，然后用exec去执行类体的代码（exec产生名称空间的过程与真正的class过程类似，只是后者会将\_\_开头的属性变形），生成类的局部名称空间，即填充字典
+
 ```
 class_dic={}
 exec(class_body,globals(),class_dic)
@@ -123,7 +130,9 @@ exec(class_body,globals(),class_dic)
 print(class_dic)
 #{'country': 'China', 'talk': <function talk at 0x101a560c8>, '__init__': <function __init__ at 0x101a56668>}
 ```
+
 步骤二：调用元类type（也可以自定义）来产生类Chinense
+
 ```
 Foo=type(class_name,class_bases,class_dic) #实例化type得到对象Foo，即我们用class定义的类Foo
 
@@ -137,18 +146,21 @@ print(isinstance(Foo,type))
 True
 '''
 ```
+
 我们看到，type 接收三个参数：
 
- - 第 1 个参数是字符串 ‘Foo’，表示类名
- - 第 2 个参数是元组 (object, )，表示所有的父类
- - 第 3 个参数是字典，这里是一个空字典，表示没有定义属性和方法
+* 第 1 个参数是字符串 ‘Foo’，表示类名
+* 第 2 个参数是元组 \(object, \)，表示所有的父类
+* 第 3 个参数是字典，这里是一个空字典，表示没有定义属性和方法
 
-补充：若Foo类有继承，即class Foo(Bar):.... 则等同于type('Foo',(Bar,),{})
+补充：若Foo类有继承，即class Foo\(Bar\):.... 则等同于type\('Foo',\(Bar,\),{}\)
 
 ### 五 自定义元类控制类的行为
+
 ```
 #一个类没有声明自己的元类，默认他的元类就是type，除了使用元类type，用户也可以通过继承type来自定义元类（顺便我们也可以瞅一瞅元类如何控制类的行为，工作流程是什么）
 ```
+
 **egon5步带你学会元类**
 
 ```
@@ -319,7 +331,9 @@ print(obj1 is obj2)
 ```
 
 ### 六 练习题
+
 **练习一：在元类中控制把自定义类的数据属性都变成大写**
+
 ```
 class Mymetaclass(type):
     def __new__(cls,name,bases,attrs):
@@ -350,10 +364,10 @@ print(Chinese.__dict__)
 '''
 ```
 
-**练习二：在元类中控制自定义的类无需__init__方法**
+**练习二：在元类中控制自定义的类无需init方法**
 
-　　1.元类帮其完成创建对象，以及初始化操作；
-　　2.要求实例化时传参必须为关键字形式，否则抛出异常TypeError: must use keyword argument
+1.元类帮其完成创建对象，以及初始化操作；  
+　　2.要求实例化时传参必须为关键字形式，否则抛出异常TypeError: must use keyword argument  
 　　3.key作为用户自定义类产生对象的属性，且所有属性变成大写
 
 ```
@@ -386,4 +400,6 @@ class Chinese(metaclass=Mymetaclass):
 p=Chinese(name='egon',age=18,sex='male')
 print(p.__dict__)
 ```
-  [1]: http://static.zybuluo.com/agocan/1rt5gasw99sxveikp3fxsoeg/image_1c1p03hmh198t1skn1ulrps57h19.png
+
+\[1\]: [http://static.zybuluo.com/agocan/1rt5gasw99sxveikp3fxsoeg/image\_1c1p03hmh198t1skn1ulrps57h19.png](http://static.zybuluo.com/agocan/1rt5gasw99sxveikp3fxsoeg/image_1c1p03hmh198t1skn1ulrps57h19.png)
+

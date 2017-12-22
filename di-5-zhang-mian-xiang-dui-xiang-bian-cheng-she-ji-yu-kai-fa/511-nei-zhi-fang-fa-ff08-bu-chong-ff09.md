@@ -1,4 +1,5 @@
 ### 七 \_\_setitem\_\_,\_\_getitem\_\_,\_\_delitem\_\_
+
 ```
 class Foo:
     def __init__(self,name):
@@ -24,9 +25,12 @@ del f1['age']
 f1['name']='alex'
 print(f1.__dict__)
 ```
+
 ### 八 \_\_str\_\_,\_\_repr\_\_,\_\_format\_\_
-改变对象的字符串显示\_\_str\_\_,\_\_repr\_\_
+
+改变对象的字符串显示\_\_str\_\_,\_\_repr\_\_  
 自定制格式化字符串\_\_format\_\_
+
 ```
 #_*_coding:utf-8_*_
 __author__ = 'Linhaifeng'
@@ -69,7 +73,9 @@ print(format(s1,'tna'))
 print(format(s1,'tan'))
 print(format(s1,'asfdasdffd'))
 ```
+
 **自定义format练习**
+
 ```
 date_dic={
     'ymd':'{0.year}:{0.month}:{0.day}',
@@ -92,7 +98,9 @@ d1=Date(2016,12,29)
 print(format(d1))
 print('{:mdy}'.format(d1))
 ```
+
 **issubclass和isinstance**
+
 ```
 #_*_coding:utf-8_*_
 __author__ = 'Linhaifeng'
@@ -108,8 +116,11 @@ print(issubclass(B,A)) #B是A的子类,返回True
 a1=A()
 print(isinstance(a1,A)) #a1是A的实例
 ```
-### 九 __slots__
-**__slots__使用**
+
+### 九 **slots**
+
+**slots使用**
+
 ```
 '''
 1.__slots__是什么:是一个类变量,变量值可以是列表,元祖,或者可迭代对象,也可以是一个字符串(意味着所有实例只有一个数据属性)
@@ -139,7 +150,9 @@ n=Bar()
 n.x,n.y=1,2
 n.z=3#报错
 ```
+
 **刨根问底**
+
 ```
 class Foo:
     __slots__=['name','age']
@@ -157,8 +170,11 @@ print(f2.__slots__)
 print(Foo.__dict__)
 #f1与f2都没有属性字典__dict__了,统一归__slots__管,节省内存
 ```
+
 ### 十 \_\_next\_\_和\_\_iter\_\_实现迭代器协议
+
 **简单示范**
+
 ```
 #_*_coding:utf-8_*_
 __author__ = 'Linhaifeng'
@@ -178,6 +194,7 @@ f=Foo(3)
 for i in f:
     print(i)
 ```
+
 ```
 class Foo:
     def __init__(self,start,stop):
@@ -199,7 +216,9 @@ print(isinstance(f,Iterator))
 for i in Foo(1,5):
     print(i)
 ```
+
 **练习：简单模拟range，加上步长**
+
 ```
 class Range:
     def __init__(self,n,stop,step):
@@ -220,7 +239,9 @@ class Range:
 for i in Range(1,7,3): #
     print(i)
 ```
+
 **斐波那契数列**
+
 ```
 class Fib:
     def __init__(self):
@@ -245,8 +266,11 @@ for i in f1:
         break
     print('%s ' %i,end='')
 ```
+
 ### 十一 \_\_doc\_\_
+
 **它类的描述信息**
+
 ```
 class Foo:
     '我是描述信息'
@@ -254,7 +278,9 @@ class Foo:
 
 print(Foo.__doc__)
 ```
+
 **该属性无法被继承**
+
 ```
 class Foo:
     '我是描述信息'
@@ -264,11 +290,14 @@ class Bar(Foo):
     pass
 print(Bar.__doc__) #该属性无法继承给子类
 ```
-### 十二 \_\_module\_\_和\_\_class\_\_
-　　\_\_module\_\_ 表示当前操作的对象在那个模块
 
-　　\_\_class\_\_ 表示当前操作的对象的类是什么
+### 十二 \_\_module\_\_和\_\_class\_\_
+
+\_\_module\_\_ 表示当前操作的对象在那个模块
+
+\_\_class\_\_ 表示当前操作的对象的类是什么  
 **lib/aa.py**
+
 ```
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
@@ -278,7 +307,9 @@ class C:
     def __init__(self):
         self.name = ‘SB'
 ```
+
 **index.py**
+
 ```
 from lib.aa import C
 
@@ -286,11 +317,14 @@ obj = C()
 print obj.__module__  # 输出 lib.aa，即：输出模块
 print obj.__class__      # 输出 lib.aa.C，即：输出类
 ```
+
 ### 十三  \_\_del\_\_
+
 析构方法，当对象在内存中被释放时，自动触发执行。
 
-注：如果产生的对象仅仅只是python程序级别的（用户级），那么无需定义\_\_del\_\_,如果产生的对象的同时还会向操作系统发起系统调用，即一个对象有用户级与内核级两种资源，比如（打开一个文件，创建一个数据库链接），则必须在清除对象的同时回收系统资源，这就用到了\_\_del\_\_。
+注：如果产生的对象仅仅只是python程序级别的（用户级），那么无需定义\_\_del\_\_,如果产生的对象的同时还会向操作系统发起系统调用，即一个对象有用户级与内核级两种资源，比如（打开一个文件，创建一个数据库链接），则必须在清除对象的同时回收系统资源，这就用到了\_\_del\_\_。  
 **简单示范**
+
 ```
 class Foo:
 
@@ -305,7 +339,9 @@ print('------->')
 执行我啦
 ------->
 ```
+
 **挖坑埋了你**
+
 ```
 class Foo:
 
@@ -323,6 +359,7 @@ print('------->')
 
 #为何啊？？？
 ```
+
 典型的应用场景：
 
 创建数据库类，用该类实例化出数据库链接对象，对象本身是存放于用户空间内存中，而链接则是由操作系统管理的，存放于内核空间内存中
@@ -330,6 +367,7 @@ print('------->')
 当程序结束时，python只会回收自己的内存空间，即用户态内存，而操作系统的资源则没有被回收，这就需要我们定制\_\_del\_\_，在对象被删除前向操作系统发起关闭数据库链接的系统调用，回收资源
 
 这与文件处理是一个道理：
+
 ```
 f=open('a.txt') #做了两件事，在用户空间拿到一个f变量，在操作系统内核空间打开一个文件
 del f #只回收用户空间的f，操作系统的文件还处于打开状态
@@ -340,14 +378,19 @@ f=open('a.txt')
 f.close()
 很多情况下大家都容易忽略f.close,这就用到了with上下文管理
 ```
+
 ### 十四 \_\_enter\_\_和\_\_exit\_\_
+
 我们知道在操作文件对象的时候可以这么写
+
 ```
 with open('a.txt') as f:
 　　'代码块'
 ```
-上述叫做上下文管理协议，即with语句，为了让一个对象兼容with语句，必须在这个对象的类中声明\_\_enter\_\_和\_\_exit\_\_方法
+
+上述叫做上下文管理协议，即with语句，为了让一个对象兼容with语句，必须在这个对象的类中声明\_\_enter\_\_和\_\_exit\_\_方法  
 **上下文管理协议**
+
 ```
 class Open:
     def __init__(self,name):
@@ -364,7 +407,9 @@ with Open('a.txt') as f:
     print('=====>执行代码块')
     # print(f,f.name)
 ```
-\_\_exit\_\_()中的三个参数分别代表异常类型，异常值和追溯信息,with语句中代码块出现异常，则with后的代码都无法执行
+
+\_\_exit\_\_\(\)中的三个参数分别代表异常类型，异常值和追溯信息,with语句中代码块出现异常，则with后的代码都无法执行
+
 ```
 class Open:
     def __init__(self,name):
@@ -386,7 +431,9 @@ with Open('a.txt') as f:
     raise AttributeError('***着火啦,救火啊***')
 print('0'*100) #------------------------------->不会执行
 ```
-如果\_\_exit()返回值为True,那么异常会被清空，就好像啥都没发生一样，with后的语句正常执行
+
+如果\_\_exit\(\)返回值为True,那么异常会被清空，就好像啥都没发生一样，with后的语句正常执行
+
 ```
 class Open:
     def __init__(self,name):
@@ -409,7 +456,9 @@ with Open('a.txt') as f:
     raise AttributeError('***着火啦,救火啊***')
 print('0'*100) #------------------------------->会执行
 ```
+
 **练习：模拟Open**
+
 ```
 class Open:
     def __init__(self,filepath,mode='r',encoding='utf-8'):
@@ -434,6 +483,7 @@ with Open('a.txt','w') as f:
     f.write('aaaaaa')
     f.wasdf #抛出异常，交给__exit__处理
 ```
+
 用途或者说好处：
 
 1. 使用with语句的目的就是把代码块放入with中执行，with结束后，自动完成清理工作，无须手动干预
@@ -441,9 +491,10 @@ with Open('a.txt','w') as f:
 2. 在需要管理一些资源比如文件，网络连接和锁的编程环境中，可以在\_\_exit\_\_中定制自动释放资源的机制，你无须再去关系这个问题，这将大有用处
 
 ### 十五 \_\_call\_\_
+
 对象后面加括号，触发执行。
 
-注：构造方法的执行是由创建对象触发的，即：对象 = 类名() ；而对于 \_\_call\_\_ 方法的执行是由对象后加括号触发的，即：对象() 或者 类()()
+注：构造方法的执行是由创建对象触发的，即：对象 = 类名\(\) ；而对于 \_\_call\_\_ 方法的执行是由对象后加括号触发的，即：对象\(\) 或者 类\(\)\(\)
 
 ```
 class Foo:
@@ -459,3 +510,6 @@ class Foo:
 obj = Foo() # 执行 __init__
 obj()       # 执行 __call__
 ```
+
+
+
