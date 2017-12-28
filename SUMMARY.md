@@ -82,4 +82,8 @@
   * [6.7 本章总结](di-6-zhang-wang-luo-bian-7a0b-socket-kai-fa/67-ben-zhang-zong-jie.md)
 * [第7章 并发编程](di-7-zhang-bing-fa-bian-cheng.md)
   * [7.1 操作系统介绍](di-7-zhang-bing-fa-bian-cheng/71-cao-zuo-xi-tong.md)
+    * [操作系统介绍](di-7-zhang-bing-fa-bian-cheng/71-cao-zuo-xi-tong/1-cao-zuo-xi-tong-jie-shao.md)
+  * [7.2 进程相关理论](di-7-zhang-bing-fa-bian-cheng/72-bing-fa-bian-cheng-zhi-duo-jin-cheng.md)
+    * [1](di-7-zhang-bing-fa-bian-cheng/72-bing-fa-bian-cheng-zhi-duo-jin-cheng/1.md)
+  * [7.3 多进程实现](73-duo-jin-cheng-shi-xian.md)
 
