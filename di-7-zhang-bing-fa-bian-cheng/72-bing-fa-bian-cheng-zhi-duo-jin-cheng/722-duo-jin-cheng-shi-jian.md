@@ -60,9 +60,95 @@ p.name:进程的名称
 p.pid：进程的pid
 ```
 
+### 三 Process类的使用
+
+**注意：在windows中Process\(\)必须放到\# if \_\_name\_\_ == '\_\_main\_\_':下**
+
+**创建并开启子进程的方式一**
+
+```
+import time
+import random
+from multiprocessing import Process
+
+def piao(name):
+    print('%s piaoing' %name)
+    time.sleep(random.randrange(1,5))
+    print('%s piao end' %name)
+
+if __name__ == '__main__':
+    #实例化得到四个对象
+    p1=Process(target=piao,args=('egon',)) #必须加,号
+    p2=Process(target=piao,args=('alex',))
+    p3=Process(target=piao,args=('wupeqi',))
+    p4=Process(target=piao,args=('yuanhao',))
+
+    #调用对象下的方法，开启四个进程
+    p1.start()
+    p2.start()
+    p3.start()
+    p4.start()
+    print('主')
+```
+
+**创建并开启子进程的方式二**
+
+```
+import time
+import random
+from multiprocessing import Process
+
+class Piao(Process):
+    def __init__(self,name):
+        super().__init__()
+        self.name=name
+    def run(self):
+        print('%s piaoing' %self.name)
+
+        time.sleep(random.randrange(1,5))
+        print('%s piao end' %self.name)
+
+if __name__ == '__main__':
+    #实例化得到四个对象
+    p1=Piao('egon')
+    p2=Piao('alex')
+    p3=Piao('wupeiqi')
+    p4=Piao('yuanhao')
+
+    #调用对象下的方法，开启四个进程
+    p1.start() #start会自动调用run
+    p2.start()
+    p3.start()
+    p4.start()
+    print('主')
+```
+
+### 四 练习题
+
+1、思考开启进程的方式一和方式二各开启了几个进程？
+
+2、进程之间的内存空间是共享的还是隔离的？下述代码的执行结果是什么？
+
+```
+from multiprocessing import Process
+
+n=100 #在windows系统中应该把全局变量定义在if __name__ == '__main__'之上就可以了
+
+def work():
+    global n
+    n=0
+    print('子进程内: ',n)
 
 
+if __name__ == '__main__':
+    p=Process(target=work)
+    p.start()
+    print('主进程内: ',n)
+```
 
+3、基于多进程实现并发的套接字通信？
+
+4、思考每来一个客户端，服务端就开启一个新的进程来服务它，这种实现方式有无问题？
 
 
 
