@@ -87,7 +87,7 @@
   * [7.2 并发编程之多进程](di-7-zhang-bing-fa-bian-cheng/72-bing-fa-bian-cheng-zhi-duo-jin-cheng.md)
     * [7.2.1 进程理论](di-7-zhang-bing-fa-bian-cheng/72-bing-fa-bian-cheng-zhi-duo-jin-cheng/721-jin-cheng-li-lun.md)
     * [7.2.2 开启进程的两种方式](di-7-zhang-bing-fa-bian-cheng/72-bing-fa-bian-cheng-zhi-duo-jin-cheng/722-duo-jin-cheng-shi-jian.md)
-    * [7.2.3 基于多进程实现并发](di-7-zhang-bing-fa-bian-cheng/72-bing-fa-bian-cheng-zhi-duo-jin-cheng/723.md)
+    * [7.2.3 join方法](di-7-zhang-bing-fa-bian-cheng/72-bing-fa-bian-cheng-zhi-duo-jin-cheng/723.md)
     * [7.2.4 join方法](di-7-zhang-bing-fa-bian-cheng/72-bing-fa-bian-cheng-zhi-duo-jin-cheng/724-joinfang-fa.md)
     * [7.2.5 生产者消费者模型](di-7-zhang-bing-fa-bian-cheng/72-bing-fa-bian-cheng-zhi-duo-jin-cheng/725-sheng-chan-zhe-xiao-fei-zhe-mo-xing.md)
   * [7.3 多进程实现](73-duo-jin-cheng-shi-xian.md)
