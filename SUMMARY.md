@@ -93,7 +93,7 @@
     * [7.2.5 互斥锁](di-7-zhang-bing-fa-bian-cheng/72-bing-fa-bian-cheng-zhi-duo-jin-cheng/725-sheng-chan-zhe-xiao-fei-zhe-mo-xing.md)
     * [7.2.6 队列](di-7-zhang-bing-fa-bian-cheng/72-bing-fa-bian-cheng-zhi-duo-jin-cheng/726-dui-lie.md)
     * [7.2.7 生产者消费者模型](di-7-zhang-bing-fa-bian-cheng/72-bing-fa-bian-cheng-zhi-duo-jin-cheng/727-sheng-chan-zhe-xiao-fei-zhe-mo-xing.md)
-  * [7.3 多进程实现](73-duo-jin-cheng-shi-xian.md)
+  * [7.3 并发编程之多线程](73-duo-jin-cheng-shi-xian.md)
     * [7.3.1 线程理论](73-duo-jin-cheng-shi-xian/731-xian-cheng-li-lun.md)
     * [7.3.2 开启线程的两种方式](73-duo-jin-cheng-shi-xian/732.md)
     * [7.3.3 多线程与多进程的区别](73-duo-jin-cheng-shi-xian/732/733-duo-jin-cheng-yu-duo-xian-cheng-de-qu-bie-yan-zheng.md)
