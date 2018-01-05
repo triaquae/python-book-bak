@@ -1,110 +1,87 @@
 ## 本节重点
 
-* 了解死锁现象与解决方法
+* 掌握线程queue的三种用法
 
-> **本节时长需控制在15分钟内**
+> **本节时长需控制在5分钟内**
 
-### 一 死锁现象
+### 一 线程queue
 
-所谓死锁： 是指两个或两个以上的进程或线程在执行过程中，因争夺资源而造成的一种互相等待的现象，若无外力作用，它们都将无法推进下去。此时称系统处于死锁状态或系统产生了死锁，这些永远在互相等待的进程称为死锁进程，如下就是死锁
+queue is especially useful in threaded programming when information must be exchanged safely between multiple threads.
 
-```
-from threading import Thread,Lock
-import time
-mutexA=Lock()
-mutexB=Lock()
+有三种不同的用法
 
-class MyThread(Thread):
-    def run(self):
-        self.func1()
-        self.func2()
-    def func1(self):
-        mutexA.acquire()
-        print('\033[41m%s 拿到A锁\033[0m' %self.name)
-
-        mutexB.acquire()
-        print('\033[42m%s 拿到B锁\033[0m' %self.name)
-        mutexB.release()
-
-        mutexA.release()
-
-    def func2(self):
-        mutexB.acquire()
-        print('\033[43m%s 拿到B锁\033[0m' %self.name)
-        time.sleep(2)
-
-        mutexA.acquire()
-        print('\033[44m%s 拿到A锁\033[0m' %self.name)
-        mutexA.release()
-
-        mutexB.release()
-
-if __name__ == '__main__':
-    for i in range(10):
-        t=MyThread()
-        t.start()
-```
-
-执行效果
+**class queue.Queue\(maxsize=0\) \#队列：先进先出**
 
 ```
-Thread-1 拿到A锁
-Thread-1 拿到B锁
-Thread-1 拿到B锁
-Thread-2 拿到A锁 #出现死锁，整个程序阻塞住
+import queue
+
+q=queue.Queue()
+q.put('first')
+q.put('second')
+q.put('third')
+
+print(q.get())
+print(q.get())
+print(q.get())
+
+
+
+'''
+结果(先进先出):
+first
+second
+third
+'''
 ```
 
-### 二 递归锁
-
-解决方法，递归锁，在Python中为了支持在同一线程中多次请求同一资源，python提供了可重入锁RLock。
-
-这个RLock内部维护着一个Lock和一个counter变量，counter记录了acquire的次数，从而使得资源可以被多次require。直到一个线程所有的acquire都被release，其他的线程才能获得资源。上面的例子如果使用RLock代替Lock，则不会发生死锁，二者的区别是：递归锁可以连续acquire多次，而互斥锁只能acquire一次
+**class queue.LifoQueue\(maxsize=0\) \#堆栈：last in fisrt out **
 
 ```
-from threading import Thread,RLock
-import time
+import queue
 
-mutexA=mutexB=RLock() #一个线程拿到锁，counter加1,该线程内又碰到加锁的情况，则counter继续加1，这期间所有其他线程都只能等待，等待该线程释放所有锁，即counter递减到0为止
+q=queue.LifoQueue()
+q.put('first')
+q.put('second')
+q.put('third')
 
-class MyThread(Thread):
-    def run(self):
-        self.func1()
-        self.func2()
-    def func1(self):
-        mutexA.acquire()
-        print('\033[41m%s 拿到A锁\033[0m' %self.name)
+print(q.get())
+print(q.get())
+print(q.get())
 
-        mutexB.acquire()
-        print('\033[42m%s 拿到B锁\033[0m' %self.name)
-        mutexB.release()
 
-        mutexA.release()
 
-    def func2(self):
-        mutexB.acquire()
-        print('\033[43m%s 拿到B锁\033[0m' %self.name)
-        time.sleep(2)
-
-        mutexA.acquire()
-        print('\033[44m%s 拿到A锁\033[0m' %self.name)
-        mutexA.release()
-
-        mutexB.release()
-
-if __name__ == '__main__':
-    for i in range(10):
-        t=MyThread()
-        t.start()
+'''
+结果(后进先出):
+third
+second
+first
+'''
 ```
 
-  
+**class queue.PriorityQueue\(maxsize=0\) \#优先级队列：存储数据时可设置优先级的队列**
+
+```
+import queue
+
+q=queue.PriorityQueue()
+#put进入一个元组,元组的第一个元素是优先级(通常是数字,也可以是非数字之间的比较),数字越小优先级越高
+q.put((20,'a'))
+q.put((10,'b'))
+q.put((30,'c'))
+
+print(q.get())
+print(q.get())
+print(q.get())
 
 
 
-
-
-
-
+'''
+结果(数字越小优先级越高,优先级高的优先出队):
+(10, 'b')
+(20, 'a')
+(30, 'c')
+'''
+```
 
 
 
