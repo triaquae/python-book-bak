@@ -101,9 +101,7 @@
     * [7.3.5 守护线程](73-duo-jin-cheng-shi-xian/734-shou-hu-xian-cheng.md)
     * [7.4.6 GIL全局解释器锁](73-duo-jin-cheng-shi-xian/746-gilquan-ju-jie-shi-qi-suo.md)
     * [7.4.7 死锁现象与递归锁](73-duo-jin-cheng-shi-xian/748-si-suo-xian-xiang-yu-di-gui-suo.md)
-    * [7.4.8 信号量](73-duo-jin-cheng-shi-xian/749-xin-hao-liang.md)
-    * [7.4.9 Event](73-duo-jin-cheng-shi-xian/7410-event.md)
-    * [7.4.10 定时器](73-duo-jin-cheng-shi-xian/7411-ding-shi-qi.md)
-    * [7.4.11 线程queue](73-duo-jin-cheng-shi-xian/7412-ding-shi-qi.md)
-    * [7.4.12 进程池与线程池](73-duo-jin-cheng-shi-xian/7413-jin-cheng-chi-yu-xian-cheng-chi.md)
+    * [7.4.8 信号量,Event,定时器](73-duo-jin-cheng-shi-xian/749-xin-hao-liang.md)
+    * [7.4.9 线程queue](73-duo-jin-cheng-shi-xian/7412-ding-shi-qi.md)
+    * [7.4.10 进程池与线程池](73-duo-jin-cheng-shi-xian/7413-jin-cheng-chi-yu-xian-cheng-chi.md)
 
