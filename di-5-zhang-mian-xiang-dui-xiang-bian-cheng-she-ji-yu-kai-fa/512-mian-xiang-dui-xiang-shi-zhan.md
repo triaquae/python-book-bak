@@ -20,14 +20,15 @@ issubclass(Bar, Foo)
 反射的概念是由Smith在1982年首次提出的，主要是指程序可以访问、检测和修改它本身状态或行为的一种能力（自省）。这一概念的提出很快引发了计算机科学领域关于应用反射性的研究。它首先被程序语言的设计领域所采用,并在Lisp和面向对象方面取得了成绩。
 ### 2 python面向对象中的反射：通过字符串的形式操作对象相关的属性。python中的一切事物都是对象（都可以使用反射）
 四个可以实现自省的函数
-下列方法适用于类和对象（一切皆对象，类本身也是一个对象）
+下列方法适用于类和对象（一切皆对象，类本身也是一个对象）  
+
 **hasattr(object,name)**
 ```
 判断object中有没有一个name字符串对应的方法或属性
 ```
 
 **getattr(object, name, default=None)**
-```
+```py
 def getattr(object, name, default=None): # known special case of getattr
     """
     getattr(object, name[, default]) -> value
@@ -38,8 +39,9 @@ def getattr(object, name, default=None): # known special case of getattr
     """
     pass
 ```
+
 **setattr(x, y, v)**
-```
+```py
 def setattr(x, y, v): # real signature unknown; restored from __doc__
     """
     Sets the named attribute on the given object to the specified value.
@@ -48,8 +50,9 @@ def setattr(x, y, v): # real signature unknown; restored from __doc__
     """
     pass
 ```
+
 **delattr(x, y)**
-```
+```py
 def delattr(x, y): # real signature unknown; restored from __doc__
     """
     Deletes the named attribute from the given object.
@@ -58,8 +61,9 @@ def delattr(x, y): # real signature unknown; restored from __doc__
     """
     pass
 ```
+
 **四个方法的使用演示**
-```
+```py
 class BlackMedium:
     feature='Ugly'
     def __init__(self,name,addr):
@@ -101,7 +105,7 @@ print(b1.__dict__)
 ```
 
 **类也是对象**
-```
+```py
 class Foo(object):
 
     staticField = "old boy"
@@ -120,8 +124,10 @@ print getattr(Foo, 'staticField')
 print getattr(Foo, 'func')
 print getattr(Foo, 'bar')
 ```
+
 **反射当前模块成员**
-```
+```py
+
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
@@ -142,8 +148,9 @@ hasattr(this_module, 's1')
 getattr(this_module, 's2')
 ```
 导入其他模块，利用反射查找该模块是否存在某个方法
+
 **module_test.py**
-```
+```py
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
@@ -170,18 +177,19 @@ getattr(obj,'test')()
 
 有俩程序员，一个lili，一个是egon，lili在写程序的时候需要用到egon所写的类，但是egon去跟女朋友度蜜月去了，还没有完成他写的类，lili想到了反射，使用了反射机制lili可以继续完成自己的代码，等egon度蜜月回来后再继续完成类的定义并且去实现lili想要的功能。
 
-总之反射的好处就是，可以事先定义好接口，接口只有在被完成后才会真正执行，这实现了即插即用，这其实是一种‘后期绑定’，什么意思？即你可以事先把主要的逻辑写好（只定义接口），然后后期再去实现接口的功能
+总之反射的好处就是，可以事先定义好接口，接口只有在被完成后才会真正执行，这实现了即插即用，这其实是一种‘后期绑定’，什么意思？即你可以事先把主要的逻辑写好（只定义接口），然后后期再去实现接口的功能  
 
 **egon还没有实现全部功能**
-```
+```py
 class FtpClient:
     'ftp客户端,但是还么有实现具体的功能'
     def __init__(self,addr):
         print('正在连接服务器[%s]' %addr)
         self.addr=addr
 ```
+
 **不影响lili的代码编写**
-```
+```py
 #from module import FtpClient
 f1=FtpClient('192.168.1.1')
 if hasattr(f1,'get'):
@@ -196,8 +204,9 @@ else:
 ![image_1c1n9gdpmugf188t143n3v33a99.png-131.7kB][7]
 
 ### 三 \_\_setattr\_\_,\_\_delattr\_\_,\_\_getattr\_\_
+
 **三者的用法演示**
-```
+```py
 class Foo:
     x=1
     def __init__(self,y):
@@ -231,10 +240,12 @@ print(f1.__dict__)
 #__getattr__只有在使用点调用属性且属性不存在的时候才会触发
 f1.xxxxxx
 ```
+
 ### 四 二次加工标准类型(包装)
 包装：python为大家提供了标准数据类型，以及丰富的内置方法，其实在很多场景下我们都需要基于标准数据类型来定制我们自己的数据类型，新增/改写方法，这就用到了我们刚学的继承/派生知识（其他的标准类型均可以通过下面的方式进行二次加工）
+
 **二次加工标准类型(基于继承实现)**
-```
+```py
 class List(list): #继承list所有的属性，也可以派生出自己新的，比如append和mid
     def append(self, p_object):
         ' 派生自己的append：加上类型检查'
@@ -263,7 +274,7 @@ l.clear()
 print(l)
 ```
 ### 练习（clear加权限限制）
-```
+```py
 class List(list):
     def __init__(self,item,tag=False):
         super().__init__(item)
@@ -288,12 +299,13 @@ print(l)
 
 l.tag=True
 l.clear()
-```
+```py
 授权：授权是包装的一个特性, 包装一个类型通常是对已存在的类型的一些定制,这种做法可以新建,修改或删除原有产品的功能。其它的则保持原样。授权的过程,即是所有更新的功能都是由新类的某部分来处理,但已存在的功能就授权给对象的默认属性。
 
 实现授权的关键点就是覆盖\_\_getattr\_\_方法
+
 **授权示范一**
-```
+```py
 import time
 class FileHandle:
     def __init__(self,filename,mode='r',encoding='utf-8'):
@@ -311,8 +323,9 @@ f1.seek(0)
 print(f1.read())
 f1.close()
 ```
+
 **授权示范二**
-```
+```py
 #_*_coding:utf-8_*_
 __author__ = 'Linhaifeng'
 #我们来加上b模式支持
@@ -348,8 +361,9 @@ f1.write('你好啊'.encode('utf-8'))
 print(f1)
 f1.close()
 ```
+
 **练习题（授权）**
-```
+```py
 #练习一
 class List:
     def __init__(self,seq):
@@ -418,6 +432,7 @@ l.insert(0,-123)
 print(l)
 ```
 ### 五 \_\_getattribute\_\_
+
 **回顾\_\_getattr\_\_**
 ```python
 class Foo:
@@ -445,8 +460,9 @@ f1=Foo(10)
 f1.x
 f1.xxxxxx
 ```
+
 **二者同时出现**
-```
+```py
 #_*_coding:utf-8_*_
 __author__ = 'Linhaifeng'
 
@@ -473,8 +489,9 @@ f1.xxxxxx
 \_\_get\_\_():调用一个属性时,触发
 \_\_set\_\_():为一个属性赋值时,触发
 \_\_delete\_\_():采用del删除属性时,触发
+
 **定义一个描述符**
-```
+```py
 class Foo: #在python3中Foo是新式类,它实现了三种方法,这个类就被称作一个描述符
     def __get__(self, instance, owner):
         pass
@@ -484,8 +501,9 @@ class Foo: #在python3中Foo是新式类,它实现了三种方法,这个类就�
         pass
 ```
 2 描述符是干什么的:描述符的作用是用来代理另外一个类的属性的(必须把描述符定义成这个类的类属性，不能定义到构造函数中)
+
 **引子:描述符类产生的实例进行属性操作并不会触发三个方法的执行**
-```
+```py
 class Foo:
     def __get__(self, instance, owner):
         print('触发get')
@@ -501,8 +519,9 @@ f1.name
 del f1.name
 #疑问:何时,何地,会触发这三个方法的执行
 ```
+
 **描述符应用之何时?何地?**
-```
+```py
 #描述符Str
 class Str:
     def __get__(self, instance, owner):
@@ -554,7 +573,8 @@ print(type(p1).__dict__ == People.__dict__)
 ```
 3 描述符分两种
 一 数据描述符:至少实现了\_\_get\_\_()和\_\_set\_\_()
-```
+
+```py
 class Foo:
     def __set__(self, instance, value):
         print('set')
@@ -562,7 +582,8 @@ class Foo:
         print('get')
 ```
 二 非数据描述符:没有实现\_\_set\_\_()
-```
+
+```py
 class Foo:
     def __get__(self, instance, owner):
         print('get')
@@ -576,6 +597,7 @@ class Foo:
 3.实例属性
 4.非数据描述符
 5.找不到的属性触发\_\_getattr\_\_()
+
 **类属性>数据描述符**
 ```
 #描述符Str
