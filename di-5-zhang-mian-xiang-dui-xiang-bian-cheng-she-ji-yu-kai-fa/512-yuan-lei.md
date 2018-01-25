@@ -43,7 +43,7 @@ print(l) #{'m': 300}
 
 ```py
 class Foo:
-pass
+      pass
 
 f1=Foo() #f1是通过Foo类实例化的对象
 ```
