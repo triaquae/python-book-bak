@@ -1,6 +1,6 @@
 ### 七 \_\_setitem\_\_,\_\_getitem\_\_,\_\_delitem\_\_
 
-```
+```py
 class Foo:
     def __init__(self,name):
         self.name=name
@@ -31,7 +31,7 @@ print(f1.__dict__)
 改变对象的字符串显示\_\_str\_\_,\_\_repr\_\_  
 自定制格式化字符串\_\_format\_\_
 
-```
+```py
 #_*_coding:utf-8_*_
 __author__ = 'Linhaifeng'
 format_dict={
@@ -76,7 +76,7 @@ print(format(s1,'asfdasdffd'))
 
 **自定义format练习**
 
-```
+```py
 date_dic={
     'ymd':'{0.year}:{0.month}:{0.day}',
     'dmy':'{0.day}/{0.month}/{0.year}',
@@ -101,7 +101,7 @@ print('{:mdy}'.format(d1))
 
 **issubclass和isinstance**
 
-```
+```py
 #_*_coding:utf-8_*_
 __author__ = 'Linhaifeng'
 
@@ -121,7 +121,7 @@ print(isinstance(a1,A)) #a1是A的实例
 
 **slots使用**
 
-```
+```py
 '''
 1.__slots__是什么:是一个类变量,变量值可以是列表,元祖,或者可迭代对象,也可以是一个字符串(意味着所有实例只有一个数据属性)
 2.引子:使用点来访问属性本质就是在访问类或者对象的__dict__属性字典(类的字典是共享的,而每个实例的是独立的)
@@ -153,7 +153,7 @@ n.z=3#报错
 
 **刨根问底**
 
-```
+```py
 class Foo:
     __slots__=['name','age']
 
@@ -175,7 +175,7 @@ print(Foo.__dict__)
 
 **简单示范**
 
-```
+```py
 #_*_coding:utf-8_*_
 __author__ = 'Linhaifeng'
 class Foo:
@@ -195,7 +195,7 @@ for i in f:
     print(i)
 ```
 
-```
+```py
 class Foo:
     def __init__(self,start,stop):
         self.num=start
@@ -219,7 +219,7 @@ for i in Foo(1,5):
 
 **练习：简单模拟range，加上步长**
 
-```
+```py
 class Range:
     def __init__(self,n,stop,step):
         self.n=n
@@ -242,7 +242,7 @@ for i in Range(1,7,3): #
 
 **斐波那契数列**
 
-```
+```py
 class Fib:
     def __init__(self):
         self._a=0
@@ -271,7 +271,7 @@ for i in f1:
 
 **它类的描述信息**
 
-```
+```py
 class Foo:
     '我是描述信息'
     pass
@@ -281,7 +281,7 @@ print(Foo.__doc__)
 
 **该属性无法被继承**
 
-```
+```py
 class Foo:
     '我是描述信息'
     pass
@@ -296,9 +296,10 @@ print(Bar.__doc__) #该属性无法继承给子类
 \_\_module\_\_ 表示当前操作的对象在那个模块
 
 \_\_class\_\_ 表示当前操作的对象的类是什么  
+
 **lib/aa.py**
 
-```
+```py
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
@@ -322,10 +323,11 @@ print obj.__class__      # 输出 lib.aa.C，即：输出类
 
 析构方法，当对象在内存中被释放时，自动触发执行。
 
-注：如果产生的对象仅仅只是python程序级别的（用户级），那么无需定义\_\_del\_\_,如果产生的对象的同时还会向操作系统发起系统调用，即一个对象有用户级与内核级两种资源，比如（打开一个文件，创建一个数据库链接），则必须在清除对象的同时回收系统资源，这就用到了\_\_del\_\_。  
+注：如果产生的对象仅仅只是python程序级别的（用户级），那么无需定义\_\_del\_\_,如果产生的对象的同时还会向操作系统发起系统调用，即一个对象有用户级与内核级两种资源，比如（打开一个文件，创建一个数据库链接），则必须在清除对象的同时回收系统资源，这就用到了\_\_del\_\_。 
+ 
 **简单示范**
 
-```
+```py
 class Foo:
 
     def __del__(self):
@@ -342,7 +344,7 @@ print('------->')
 
 **挖坑埋了你**
 
-```
+```py
 class Foo:
 
     def __del__(self):
@@ -368,7 +370,7 @@ print('------->')
 
 这与文件处理是一个道理：
 
-```
+```py
 f=open('a.txt') #做了两件事，在用户空间拿到一个f变量，在操作系统内核空间打开一个文件
 del f #只回收用户空间的f，操作系统的文件还处于打开状态
 
@@ -383,15 +385,16 @@ f.close()
 
 我们知道在操作文件对象的时候可以这么写
 
-```
+```py
 with open('a.txt') as f:
 　　'代码块'
 ```
 
 上述叫做上下文管理协议，即with语句，为了让一个对象兼容with语句，必须在这个对象的类中声明\_\_enter\_\_和\_\_exit\_\_方法  
+
 **上下文管理协议**
 
-```
+```py
 class Open:
     def __init__(self,name):
         self.name=name
@@ -410,7 +413,7 @@ with Open('a.txt') as f:
 
 \_\_exit\_\_\(\)中的三个参数分别代表异常类型，异常值和追溯信息,with语句中代码块出现异常，则with后的代码都无法执行
 
-```
+```py
 class Open:
     def __init__(self,name):
         self.name=name
@@ -434,7 +437,7 @@ print('0'*100) #------------------------------->不会执行
 
 如果\_\_exit\(\)返回值为True,那么异常会被清空，就好像啥都没发生一样，with后的语句正常执行
 
-```
+```py
 class Open:
     def __init__(self,name):
         self.name=name
@@ -459,7 +462,7 @@ print('0'*100) #------------------------------->会执行
 
 **练习：模拟Open**
 
-```
+```py
 class Open:
     def __init__(self,filepath,mode='r',encoding='utf-8'):
         self.filepath=filepath
@@ -496,7 +499,7 @@ with Open('a.txt','w') as f:
 
 注：构造方法的执行是由创建对象触发的，即：对象 = 类名\(\) ；而对于 \_\_call\_\_ 方法的执行是由对象后加括号触发的，即：对象\(\) 或者 类\(\)\(\)
 
-```
+```py
 class Foo:
 
     def __init__(self):
