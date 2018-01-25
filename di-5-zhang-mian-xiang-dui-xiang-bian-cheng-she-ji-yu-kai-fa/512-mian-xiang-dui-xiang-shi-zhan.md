@@ -23,7 +23,7 @@ issubclass(Bar, Foo)
 下列方法适用于类和对象（一切皆对象，类本身也是一个对象）  
 
 **hasattr(object,name)**
-```
+```py
 判断object中有没有一个name字符串对应的方法或属性
 ```
 
@@ -633,8 +633,9 @@ People.name='egon' #那赋值呢,直接赋值了一个类属性,它拥有更高�
 del People.name #同上
 '''
 ```
+
 **数据描述符>实例属性**
-```
+```py
 #描述符Str
 class Str:
     def __get__(self, instance, owner):
@@ -659,8 +660,9 @@ p1.name
 print(p1.__dict__)#实例的属性字典中没有name,因为name是一个数据描述符,优先级高于实例属性,查看/赋值/删除都是跟描述符有关,与实例无关了
 del p1.name
 ```
+
 **实例属性>非数据描述符**
-```
+```py
 class Foo:
     def func(self):
         print('我胡汉三又回来了')
@@ -683,8 +685,9 @@ print(f1.func)
 del f1.func #删掉了非数据
 f1.func()
 ```
+
 **再次验证：实例属性>非数据描述符**
-```
+```py
 class Foo:
     def __set__(self, instance, value):
         print('set')
@@ -723,8 +726,9 @@ r1=Room('厕所',1,1)
 r1.name
 r1.name='厨房'
 ```
+
 **非数据描述符>找不到**
-```
+```py
 class Foo:
     def func(self):
         print('我胡汉三又回来了')
@@ -738,8 +742,9 @@ f1.xxxxxxxxxxx
 5 描述符使用
 
 众所周知，python是弱类型语言，即参数的赋值没有类型限制，下面我们通过描述符机制来实现类型限制功能
+
 **牛刀小试**
-```
+```py
 class Str:
     def __init__(self,name):
         self.name=name
@@ -778,8 +783,9 @@ print(p1.__dict__)
 del p1.name
 print(p1.__dict__)
 ```
+
 **拔刀相助**
-```
+```py
 class Str:
     def __init__(self,name):
         self.name=name
@@ -831,8 +837,9 @@ class People:
         self.salary=salary
 print(People.name) #完美,解决
 ```
+
 **磨刀霍霍**
-```
+```py
 class Str:
     def __init__(self,name,expected_type):
         self.name=name
@@ -862,8 +869,9 @@ class People:
 
 p1=People(123,18,3333.3)#传入的name因不是字符串类型而抛出异常
 ```
+
 **大刀阔斧**
-```
+```py
 class Typed:
     def __init__(self,name,expected_type):
         self.name=name
@@ -898,8 +906,9 @@ p1=People('egon','18',3333.3)
 p1=People('egon',18,3333)
 ```
 大刀阔斧之后我们已然能实现功能了，但是问题是，如果我们的类有很多属性，你仍然采用在定义一堆类属性的方式去实现，low，这时候我需要教你一招：独孤九剑
+
 **类的装饰器:无参**
-```
+```py
 def decorate(cls):
     print('类的装饰器开始运行啦------>')
     return cls
@@ -913,8 +922,9 @@ class People:
 
 p1=People('egon',18,3333.3)
 ```
+
 **类的装饰器:有参**
-```
+```py
 def typeassert(**kwargs):
     def decorate(cls):
         print('类的装饰器开始运行啦------>',kwargs)
@@ -929,9 +939,11 @@ class People:
 
 p1=People('egon',18,3333.3)
 ```
+
 终极大招
+
 **刀光剑影**
-```
+```py
 class Typed:
     def __init__(self,name,expected_type):
         self.name=name
@@ -977,7 +989,7 @@ p1=People('egon',18,3333.3)
 7 利用描述符原理完成一个自定制@property,实现延迟计算（本质就是把一个函数属性利用装饰器原理做成一个描述符：类的属性字典中函数名为key，value为描述符类产生的对象）
 
 **@property回顾**
-```
+```py
 class Room:
     def __init__(self,name,width,length):
         self.name=name
@@ -991,8 +1003,9 @@ class Room:
 r1=Room('alex',1,1)
 print(r1.area)
 ```
+
 **自己做一个@property**
-```
+```py
 class Lazyproperty:
     def __init__(self,func):
         self.func=func
@@ -1015,8 +1028,9 @@ class Room:
 r1=Room('alex',1,1)
 print(r1.area)
 ```
+
 **实现延迟计算功能**
-```
+```py
 class Lazyproperty:
     def __init__(self,func):
         self.func=func
@@ -1081,8 +1095,9 @@ print(r1.area)
 print(r1.area) #缓存功能失效,每次都去找描述符了,为何,因为描述符实现了set方法,它由非数据描述符变成了数据描述符,数据描述符比实例属性有更高的优先级,因而所有的属性操作都去找描述符了
 ```
 8 利用描述符原理完成一个自定制@classmethod
+
 **自己做一个@classmethod**
-```
+```py
 class ClassMethod:
     def __init__(self,func):
         self.func=func
@@ -1126,9 +1141,11 @@ People.say_hi('你是那偷心的贼')
 p1=People()
 p1.say_hi('你是那偷心的贼')
 ```
+
 9 利用描述符原理完成一个自定制的@staticmethod
+
 **自己做一个@staticmethod**
-```
+```py
 class StaticMethod:
     def __init__(self,func):
         self.func=func
@@ -1151,8 +1168,9 @@ p1.say_hi(4,5,6)
 ```
 ### 六 再看property
 一个静态属性property本质就是实现了get，set，delete三种方法
+
 **用法一**
-```
+```py
 class Foo:
     @property
     def AAA(self):
@@ -1172,8 +1190,9 @@ f1.AAA
 f1.AAA='aaa'
 del f1.AAA
 ```
+
 **用法二**
-```
+```py
 class Foo:
     def get_AAA(self):
         print('get的时候运行我啊')
@@ -1190,9 +1209,11 @@ f1.AAA
 f1.AAA='aaa'
 del f1.AAA
 ```
+
 怎么用？
+
 **案例一**
-```
+```py
 class Goods:
 
     def __init__(self):
@@ -1222,8 +1243,9 @@ obj.price = 200   # 修改商品原价
 print(obj.price)
 del obj.price     # 删除商品原价
 ```
+
 **案例二**
-```
+```py
 #实现类型检测功能
 
 #第一关：
