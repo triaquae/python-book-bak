@@ -22,7 +22,7 @@ def test:
 class Foo
     pass
 #语法错误示范四
-print(haha
+print(haha)
 ```
 
 2.逻辑错误
