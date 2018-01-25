@@ -401,5 +401,5 @@ p=Chinese(name='egon',age=18,sex='male')
 print(p.__dict__)
 ```
 
-\[1\]: [http://static.zybuluo.com/agocan/1rt5gasw99sxveikp3fxsoeg/image\_1c1p03hmh198t1skn1ulrps57h19.png](http://static.zybuluo.com/agocan/1rt5gasw99sxveikp3fxsoeg/image_1c1p03hmh198t1skn1ulrps57h19.png)
+[1]: [http://static.zybuluo.com/agocan/1rt5gasw99sxveikp3fxsoeg/image\_1c1p03hmh198t1skn1ulrps57h19.png](http://static.zybuluo.com/agocan/1rt5gasw99sxveikp3fxsoeg/image_1c1p03hmh198t1skn1ulrps57h19.png)
 
