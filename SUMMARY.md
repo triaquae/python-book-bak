@@ -112,7 +112,7 @@
     * [7.5.1 IO模型介绍](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/751-iomo-xing-jie-shao.md)
     * [7.5.2 阻塞IO](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/752-zu-sai-io-blocking-io.md)
     * [7.5.3 非阻塞IO](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/753-fei-zu-sai-io.md)
-    * 7.5.4 多路复用IO
+    * [7.5.4 多路复用IO](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/754-duo-lu-fu-yong-io.md)
     * [7.5.5 异步IO](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/yi-bu-io.md)
     * 7.5.6 IO模型比较分析
     * 7.5.7 selectors模块
