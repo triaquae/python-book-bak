@@ -39,7 +39,7 @@ mysql就是一个基于socket编写的C/S架构的软件
 yum -y install mysql-server mysql
 ```
 
-源码安装见：http://www.cnblogs.com/linhaifeng/articles/7126847.html
+源码安装见：[http://www.cnblogs.com/linhaifeng/articles/7126847.html](http://www.cnblogs.com/linhaifeng/articles/7126847.html)
 
 **Window版本**
 
@@ -52,7 +52,7 @@ http://dev.mysql.com/downloads/mysql/
 
 #3、添加环境变量
 【右键计算机】--》【属性】--》【高级系统设置】--》【高级】--》【环境变量】--》【在第二个内容框中找到 变量名为Path 的一行，双击】 --> 【将MySQL的bin目录路径追加到变值值中，用 ； 分割】
- 
+
 #4、初始化
 mysqld --initialize-insecure
 
@@ -69,7 +69,7 @@ mysql -u root -p # 连接MySQL服务器
 注意：--install前，必须用mysql启动命令的绝对路径
 # 制作MySQL的Windows服务，在终端执行此命令：
 "c:\mysql-5.7.16-winx64\bin\mysqld" --install
- 
+
 # 移除MySQL的Windows服务，在终端执行此命令：
 "c:\mysql-5.7.16-winx64\bin\mysqld" --remove
 
@@ -77,7 +77,7 @@ mysql -u root -p # 连接MySQL服务器
 注册成服务之后，以后再启动和关闭MySQL服务时，仅需执行如下命令：
 # 启动MySQL服务
 net start mysql
- 
+
 # 关闭MySQL服务
 net stop mysql
 ```
@@ -126,19 +126,133 @@ windows平台到服务中查看即可
 [root@egon ~]# mysql                    以root用户登录本机，密码为空
 ```
 
+### 三、破解密码
+
+**linux平台下，破解密码的两种方式**
+
+方法一：删除授权库mysql，重新初始化
+
+```
+[root@egon ~]# rm -rf /var/lib/mysql/mysql #所有授权信息全部丢失！！！
+[root@egon ~]# systemctl restart mariadb
+[root@egon ~]# mysql
+```
+
+方法二：启动时，跳过授权库
+
+```
+[root@egon ~]# vim /etc/my.cnf    #mysql主配置文件
+[mysqld]
+skip-grant-table
+[root@egon ~]# systemctl restart mariadb
+[root@egon ~]# mysql
+MariaDB [(none)]> update mysql.user set password=password("123") where user="root" and host="localhost";
+MariaDB [(none)]> flush privileges;
+MariaDB [(none)]> \q
+[root@egon ~]# #打开/etc/my.cnf去掉skip-grant-table,然后重启
+[root@egon ~]# systemctl restart mariadb
+[root@egon ~]# mysql -u root -p123 #以新密码登录
+```
+
+**windows平台下，5.7版本mysql，破解密码的两种方式：**
+
+方式一
+
+```
+#1 关闭mysql
+#2 在cmd中执行：mysqld --skip-grant-tables
+#3 在cmd中执行：mysql
+#4 执行如下sql：
+update mysql.user set authentication_string=password('') where user = 'root';
+flush privileges;
+
+#5 tskill mysqld #或taskkill -f /PID 7832
+#6 重新启动mysql
+```
+
+ 方式二
+
+```
+#1. 关闭mysql，可以用tskill mysqld将其杀死
+#2. 在解压目录下，新建mysql配置文件my.ini
+#3. my.ini内容,指定
+[mysqld]
+skip-grant-tables
+
+#4.启动mysqld
+#5.在cmd里直接输入mysql登录，然后操作
+update mysql.user set authentication_string=password('') where user='root and host='localhost';
+
+flush privileges;
+
+#6.注释my.ini中的skip-grant-tables，然后启动myqsld，然后就可以以新密码登录了
+```
+
+### 四、统一字符编码
+
+**强调：配置文件中的注释可以有中文，但是配置项中不能出现中文**
+
+```
+#在mysql的解压目录下，新建my.ini,然后配置
+#1. 在执行mysqld命令时，下列配置会生效，即mysql服务启动时生效
+[mysqld]
+;skip-grant-tables
+port=3306
+character_set_server=utf8
+default-storage-engine=innodb
+innodb_file_per_table=1
+
+
+#解压的目录
+basedir=E:\mysql-5.7.19-winx64
+#data目录
+datadir=E:\my_data #在mysqld --initialize时，就会将初始数据存入此处指定的目录，在初始化之后，启动mysql时，就会去这个目录里找数据
 
 
 
+#2. 针对客户端命令的全局配置，当mysql客户端命令执行时，下列配置生效
+[client]
+port=3306
+default-character-set=utf8
+user=root
+password=123
+
+#3. 只针对mysql这个客户端的配置，2中的是全局配置，而此处的则是只针对mysql这个命令的局部配置
+[mysql]
+;port=3306
+;default-character-set=utf8
+user=egon
+password=4573
 
 
+#！！！如果没有[mysql],则用户在执行mysql命令时的配置以[client]为准
+```
 
+**统一字符编码**
 
+```
+#1. 修改配置文件
+[mysqld]
+default-character-set=utf8 
+[client]
+default-character-set=utf8 
+[mysql]
+default-character-set=utf8
 
+#mysql5.5以上：修改方式有所改动
+[mysqld]
+character-set-server=utf8
+collation-server=utf8_general_ci
+[client]
+default-character-set=utf8
+[mysql]
+default-character-set=utf8
 
-
-
-
-
+#2. 重启服务
+#3. 查看修改结果：
+\s
+show variables like '%char%'
+```
 
 
 
