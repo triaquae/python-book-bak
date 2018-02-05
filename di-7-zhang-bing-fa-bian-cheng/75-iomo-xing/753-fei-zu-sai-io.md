@@ -26,35 +26,54 @@ Linux下，可以通过设置socket使其变为non-blocking。当对一个non-bl
 ```
 #服务端
 from socket import *
-import time
-s=socket(AF_INET,SOCK_STREAM)
-s.bind(('127.0.0.1',8080))
-s.listen(5)
-s.setblocking(False) #设置socket的接口为非阻塞
-conn_l=[]
-del_l=[]
+
+server = socket(AF_INET, SOCK_STREAM)
+server.bind(('127.0.0.1',8099))
+server.listen(5)
+server.setblocking(False)
+
+
+rlist=[]
+wlist=[]
 while True:
     try:
-        conn,addr=s.accept()
-        conn_l.append(conn)
+        conn, addr = server.accept()
+        rlist.append(conn)
+        print(rlist)
+
     except BlockingIOError:
-        print(conn_l)
-        for conn in conn_l:
+        del_rlist=[]
+        for sock in rlist:
             try:
-                data=conn.recv(1024)
+                data=sock.recv(1024)
                 if not data:
-                    del_l.append(conn)
-                    continue
-                conn.send(data.upper())
+                    del_rlist.append(sock)
+                wlist.append((sock,data.upper()))
+            except BlockingIOError:
+                continue
+            except Exception:
+                sock.close()
+                del_rlist.append(sock)
+
+        del_wlist=[]
+        for item in wlist:
+            try:
+                sock = item[0]
+                data = item[1]
+                sock.send(data)
+                del_wlist.append(item)
             except BlockingIOError:
                 pass
-            except ConnectionResetError:
-                del_l.append(conn)
 
-        for conn in del_l:
-            conn_l.remove(conn)
-            conn.close()
-        del_l=[]
+        for item in del_wlist:
+            wlist.remove(item)
+
+
+        for sock in del_rlist:
+            rlist.remove(sock)
+
+server.close()
+
 
 #客户端
 from socket import *
