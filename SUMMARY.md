@@ -116,4 +116,21 @@
     * [7.5.5 异步IO](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/yi-bu-io.md)
     * [7.5.6 IO模型比较分析](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/756-iomo-xing-bi-jiao-fen-xi.md)
     * [7.5.7 selectors模块](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/757-selectorsmo-kuai.md)
+* [第8章 MySQL数据库](di-8-zhang-mysql-shu-ju-ku.md)
+  * [8.1 初识数据库](di-8-zhang-mysql-shu-ju-ku/81-chu-shi-shu-ju-ku.md)
+    * [8.1.1 数据库管理软件的由来](di-8-zhang-mysql-shu-ju-ku/81-chu-shi-shu-ju-ku/811-shu-ju-ku-guan-li-ruan-jian-de-you-lai.md)
+    * 8.1.2 数据库概述
+    * 8.1.3 mysql安装与基本管理
+    * 8.1.4 初识sql语句
+  * [8.2 库操作](di-8-zhang-mysql-shu-ju-ku/82-ku-cao-zuo.md)
+    * [8.2.1 库的增删改查](di-8-zhang-mysql-shu-ju-ku/82-ku-cao-zuo/821-ku-cao-zuo.md)
+  * [8.3 表操作](di-8-zhang-mysql-shu-ju-ku/83-biao-cao-zuo.md)
+    * [8.3.1 存储引擎介绍](di-8-zhang-mysql-shu-ju-ku/83-biao-cao-zuo/831-cun-chu-yin-qing-jie-shao.md)
+    * 8.3.2 表的增删改查
+    * [8.3.3 数据类型](di-8-zhang-mysql-shu-ju-ku/83-biao-cao-zuo/833-shu-ju-lei-xing.md)
+    * [8.3.4 完整性约束](di-8-zhang-mysql-shu-ju-ku/83-biao-cao-zuo/834-wan-zheng-xing-yue-shu.md)
+  * 8.4 数据操作
+  * 8.5 索引原理与慢查询优化
+  * 8.6 数据备份、pymysql模块
+  * [8.7 mysql内置功能](di-8-zhang-mysql-shu-ju-ku/87-mysqlnei-zhi-gong-neng.md)
 
