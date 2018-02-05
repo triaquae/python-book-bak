@@ -129,8 +129,14 @@
     * 8.3.2 表的增删改查
     * [8.3.3 数据类型](di-8-zhang-mysql-shu-ju-ku/83-biao-cao-zuo/833-shu-ju-lei-xing.md)
     * [8.3.4 完整性约束](di-8-zhang-mysql-shu-ju-ku/83-biao-cao-zuo/834-wan-zheng-xing-yue-shu.md)
-  * 8.4 数据操作
-  * 8.5 索引原理与慢查询优化
-  * 8.6 数据备份、pymysql模块
+  * [8.4 数据操作](di-8-zhang-mysql-shu-ju-ku/84-shu-ju-cao-zuo.md)
+    * 8.4.1 数据的增删改
+    * 8.4.2 单表查询
+    * 8.4.3 多表查询
+  * [8.5 索引原理与慢查询优化](di-8-zhang-mysql-shu-ju-ku/85-suo-yin-yuan-li-yu-man-cha-xun-you-hua.md)
+    * 8.5.1
+  * [8.6 数据备份、pymysql模块](di-8-zhang-mysql-shu-ju-ku/86-shu-ju-bei-fen-3001-pymysql-mo-kuai.md)
+    * 8.6.1
   * [8.7 mysql内置功能](di-8-zhang-mysql-shu-ju-ku/87-mysqlnei-zhi-gong-neng.md)
+    * 8.7.1
 
