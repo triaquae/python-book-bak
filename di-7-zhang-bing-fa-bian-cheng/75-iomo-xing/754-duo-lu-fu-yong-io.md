@@ -33,31 +33,41 @@ select网络IO模型示例
 #服务端
 from socket import *
 import select
+server = socket(AF_INET, SOCK_STREAM)
+server.bind(('127.0.0.1',8093))
+server.listen(5)
+server.setblocking(False)
+print('starting...')
 
-s=socket(AF_INET,SOCK_STREAM)
-s.setsockopt(SOL_SOCKET,SO_REUSEADDR,1)
-s.bind(('127.0.0.1',8081))
-s.listen(5)
-s.setblocking(False) #设置socket的接口为非阻塞
-read_l=[s,]
+rlist=[server,]
+wlist=[]
+wdata={}
+
 while True:
-    r_l,w_l,x_l=select.select(read_l,[],[])
-    print(r_l)
-    for ready_obj in r_l:
-        if ready_obj == s:
-            conn,addr=ready_obj.accept() #此时的ready_obj等于s
-            read_l.append(conn)
+    rl,wl,xl=select.select(rlist,wlist,[],0.5)
+    print(wl)
+    for sock in rl:
+        if sock == server:
+            conn,addr=sock.accept()
+            rlist.append(conn)
         else:
             try:
-                data=ready_obj.recv(1024) #此时的ready_obj等于conn
+                data=sock.recv(1024)
                 if not data:
-                    ready_obj.close()
-                    read_l.remove(ready_obj)
+                    sock.close()
+                    rlist.remove(sock)
                     continue
-                ready_obj.send(data.upper())
-            except ConnectionResetError:
-                ready_obj.close()
-                read_l.remove(ready_obj)
+                wlist.append(sock)
+                wdata[sock]=data.upper()
+            except Exception:
+                sock.close()
+                rlist.remove(sock)
+
+    for sock in wl:
+        sock.send(wdata[sock])
+        wlist.remove(sock)
+        wdata.pop(sock)
+
 
 #客户端
 from socket import *
