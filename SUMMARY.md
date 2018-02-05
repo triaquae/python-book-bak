@@ -114,6 +114,6 @@
     * [7.5.3 非阻塞IO](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/753-fei-zu-sai-io.md)
     * [7.5.4 多路复用IO](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/754-duo-lu-fu-yong-io.md)
     * [7.5.5 异步IO](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/yi-bu-io.md)
-    * 7.5.6 IO模型比较分析
-    * 7.5.7 selectors模块
+    * [7.5.6 IO模型比较分析](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/756-iomo-xing-bi-jiao-fen-xi.md)
+    * [7.5.7 selectors模块](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/757-selectorsmo-kuai.md)
 

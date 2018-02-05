@@ -4,7 +4,7 @@
 
 > **本节时长需控制在15分钟内**
 
-### 一 多路复用IO\(IO multiplexing\)
+### 多路复用IO\(IO multiplexing\)
 
 IO multiplexing这个词可能有点陌生，但是如果我说select/epoll，大概就都能明白了。有些地方也称这种IO方式为**事件驱动IO**
 
@@ -12,14 +12,16 @@ IO multiplexing这个词可能有点陌生，但是如果我说select/epoll，�
 
 ![](/assets/chapter7/多路复用IO.png)
 
-    当用户进程调用了select，那么整个进程会被block，而同时，kernel会“监视”所有select负责的socket，当任何一个socket中的数据准备好了，select就会返回。这个时候用户进程再调用read操作，将数据从kernel拷贝到用户进程。  
-    这个图和blocking IO的图其实并没有太大的不同，事实上还更差一些。因为这里需要使用两个系统调用\(select和recvfrom\)，而blocking IO只调用了一个系统调用\(recvfrom\)。但是，用select的优势在于它可以同时处理多个connection。
+```
+当用户进程调用了select，那么整个进程会被block，而同时，kernel会“监视”所有select负责的socket，当任何一个socket中的数据准备好了，select就会返回。这个时候用户进程再调用read操作，将数据从kernel拷贝到用户进程。  
+这个图和blocking IO的图其实并没有太大的不同，事实上还更差一些。因为这里需要使用两个系统调用\(select和recvfrom\)，而blocking IO只调用了一个系统调用\(recvfrom\)。但是，用select的优势在于它可以同时处理多个connection。
+```
 
-**    强调：**
+**    强调：**
 
-**    1. 如果处理的连接数不是很高的话，使用select/epoll的web server不一定比使用multi-threading + blocking IO的web server性能更好，可能延迟还更大。select/epoll的优势并不是对于单个连接能处理得更快，而是在于能处理更多的连接。**
+**    1. 如果处理的连接数不是很高的话，使用select/epoll的web server不一定比使用multi-threading + blocking IO的web server性能更好，可能延迟还更大。select/epoll的优势并不是对于单个连接能处理得更快，而是在于能处理更多的连接。**
 
-**    2. 在多路复用模型中，对于每一个socket，一般都设置成为non-blocking，但是，如上图所示，整个用户的process其实是一直被block的。只不过process是被select这个函数block，而不是被socket IO给block。**
+**    2. 在多路复用模型中，对于每一个socket，一般都设置成为non-blocking，但是，如上图所示，整个用户的process其实是一直被block的。只不过process是被select这个函数block，而不是被socket IO给block。**
 
 **结论: select的优势在于可以处理多个连接，不适用于单个连接**
 
