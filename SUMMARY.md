@@ -143,11 +143,11 @@
     * 8.6.1
   * [8.7 mysql内置功能](di-8-zhang-mysql-shu-ju-ku/87-mysqlnei-zhi-gong-neng.md)
     * 8.7.1
-* 第9章 [前端基础之HTML](aboutFrontend.md)
+* [第9章 前端基础之HTML](aboutFrontend.md)
   * HTML介绍
-    * [HTML是什么](aboutFrontend/HTML_01.md)
-    * [HTML开发环境](aboutFrontend/HTML_02.md)
-    * [第一个HTML文件](aboutFrontend/HTML_03.md)
+    * [HTML是什么](/aboutFrontend/HTML_01.md)
+    * [HTML开发环境](/aboutFrontend/HTML_02.md)
+    * [第一个HTML文件](/aboutFrontend/HTML_03.md)
   * HTML标签介绍
     * 什么是HTML标签
     * HTML标签属性
