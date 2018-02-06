@@ -30,7 +30,7 @@
 ```
 将上面的文件另存为`demo.html`，然后用浏览器打开，就可以看到下面的内容。
 
-![title标签效果展示](assets/chapter9/html/HTML_03.png)
+![title标签效果展示](/assets/chapter9/html/HTML_03.png)
 
 上面我们介绍了`title`标签的用法，接下来我们继续看一下`head`标签中可以使用的其他标签：
 

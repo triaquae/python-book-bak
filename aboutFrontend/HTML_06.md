@@ -9,7 +9,7 @@
     <body>...</body>
 </html>
 ```
-![HTML结构](../../imgs/html/HTML_02.png)
+![HTML结构](/assets/chapter9/imgs/html/HTML_02.png)
 让我们来解释一下上面的代码：
 
 首先，`<!DOCTYPE HTML>`是文档声明，必须写在HTML文档的第一行，位于`<html>`标签之前，表明该文档是HTML5文档。
