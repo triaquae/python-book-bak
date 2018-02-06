@@ -22,4 +22,4 @@
 ```
 使用浏览器打开，看一下效果：
 
-![body标签效果展示](/assets/chapter9/imgs/html/HTML_04.png)
+![body标签效果展示](/assets/chapter9/html/HTML_04.png)
