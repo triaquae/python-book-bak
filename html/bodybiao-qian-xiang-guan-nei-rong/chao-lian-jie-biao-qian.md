@@ -19,7 +19,7 @@ HTML中使用a标签来做超链接。语法是：`<a href="目标网址" title=
 
 使用浏览器打开上面的页面，点击页面中的路飞学城文字，浏览器就会跳转到路飞学城的官网了。
 
-![a标签效果](../../imgs/html/HTML_15.png)
+![a标签效果](/assets/chapter9/html/HTML_15.png)
 
 注意：如果想让跳转的网页在浏览器的新标签页打开，只需要给a标签设置一个target参数即可：
 `<a href="http://www.luffycity.com" target="_blank">路飞学城</a>`
