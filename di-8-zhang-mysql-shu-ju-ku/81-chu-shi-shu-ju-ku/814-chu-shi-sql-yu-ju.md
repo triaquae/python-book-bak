@@ -38,20 +38,13 @@ SQL语言主要用于存取数据、查询数据、更新数据和管理关系�
         改：alter table t1 modify name char(3);
               alter table t1 change name name1 char(2);
         删：drop table t1;
-    
+
 
 #3. 操作文件中的内容/记录
         增：insert into t1 values(1,'egon1'),(2,'egon2'),(3,'egon3');
         查：select * from t1;
         改：update t1 set name='sb' where id=2;
         删：delete from t1 where id=1;
-
-        清空表：
-            delete from t1; #如果有自增id，新增的数据，仍然是以删除前的最后一样作为起始。
-            truncate table t1;数据量大，删除速度比上一条快，且直接从零开始，
-
-            auto_increment 表示：自增
-            primary key 表示：约束（不能重复且不能为空）；加速查找
 ```
 
 
