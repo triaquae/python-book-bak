@@ -163,7 +163,6 @@
       * [分割线标签](html/bodybiao-qian-xiang-guan-nei-rong/fen-ge-xian-biao-qian.md)
       * [换行标签](html/bodybiao-qian-xiang-guan-nei-rong/huan-xing-biao-qian.md)
       * [特殊符号](html/bodybiao-qian-xiang-guan-nei-rong/te-shu-fu-hao.md)
-      * 文本样式标签
       * [表示强调](html/bodybiao-qian-xiang-guan-nei-rong/biao-shi-qiang-diao.md)
       * [表示引用](html/bodybiao-qian-xiang-guan-nei-rong/biao-shi-yin-yong.md)
       * [表示代码](html/bodybiao-qian-xiang-guan-nei-rong/biao-shi-dai-ma.md)
