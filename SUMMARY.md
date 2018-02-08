@@ -157,11 +157,13 @@
     * [HTML文档结构](html/htmlwen-dang-jie-gou.md)
     * [head标签相关内容](html/headbiao-qian-xiang-guan-nei-rong.md)
     * [body标签相关内容](html/bodybiao-qian-xiang-guan-nei-rong.md)
+      * [文本样式标签](html/bodybiao-qian-xiang-guan-nei-rong/wen-ben-yang-shi-biao-qian.md)
       * [标题标签](html/bodybiao-qian-xiang-guan-nei-rong/biao-ti-biao-qian.md)
       * [段落标签](html/bodybiao-qian-xiang-guan-nei-rong/duan-luo-biao-qian.md)
       * [分割线标签](html/bodybiao-qian-xiang-guan-nei-rong/fen-ge-xian-biao-qian.md)
       * [换行标签](html/bodybiao-qian-xiang-guan-nei-rong/huan-xing-biao-qian.md)
       * [特殊符号](html/bodybiao-qian-xiang-guan-nei-rong/te-shu-fu-hao.md)
+      * 文本样式标签
       * [表示强调](html/bodybiao-qian-xiang-guan-nei-rong/biao-shi-qiang-diao.md)
       * [表示引用](html/bodybiao-qian-xiang-guan-nei-rong/biao-shi-yin-yong.md)
       * [表示代码](html/bodybiao-qian-xiang-guan-nei-rong/biao-shi-dai-ma.md)
@@ -176,7 +178,6 @@
       * [单选框和多选框](html/bodybiao-qian-xiang-guan-nei-rong/dan-xuan-kuang-he-duo-xuan-kuang.md)
       * [下拉框和多选下拉框](html/bodybiao-qian-xiang-guan-nei-rong/xia-la-kuang-he-duo-xuan-xia-la-kuang.md)
       * [按钮](html/bodybiao-qian-xiang-guan-nei-rong/ti-jiao-an-niu-he-zhong-zhi-an-niu.md)
-      * [label标签](html/bodybiao-qian-xiang-guan-nei-rong/labelbiao-qian.md)
   * CSS
   * JavaScript
   * jQuery

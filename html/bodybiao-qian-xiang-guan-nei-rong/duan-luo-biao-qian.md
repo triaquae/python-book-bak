@@ -4,6 +4,7 @@ HTML页面中通过`<p></p>`来定义段落，通常大段的文字我们都会�
 <!DOCTYPE HTML>
 <html>
     <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>路飞学城</title>
     </head>
     <body>
