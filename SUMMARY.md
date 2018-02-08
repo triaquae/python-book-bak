@@ -153,6 +153,7 @@
     * [HTML标签分类](html/htmlbiao-qian-fen-lei.md)
     * [HTML标签嵌套规则](html/htmlbiao-qian-qian-tao-gui-ze.md)
     * [HTML标签属性](html/htmlbiao-qian-shu-xing.md)
+    * [HTML注释](html/htmlzhu-shi.md)
   * CSS
   * JavaScript
   * jQuery
