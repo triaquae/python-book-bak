@@ -155,6 +155,7 @@
     * [HTML标签属性](html/htmlbiao-qian-shu-xing.md)
     * [HTML注释](html/htmlzhu-shi.md)
     * [HTML文档结构](html/htmlwen-dang-jie-gou.md)
+    * [head标签相关内容](html/headbiao-qian-xiang-guan-nei-rong.md)
   * CSS
   * JavaScript
   * jQuery
