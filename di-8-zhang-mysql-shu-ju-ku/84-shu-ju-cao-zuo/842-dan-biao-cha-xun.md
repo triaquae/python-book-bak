@@ -1,15 +1,39 @@
 ## 本节重点
 
-* 了解数据库的作用
-* 掌握概念库、表、记录
+* [单表查询的语法](http://www.cnblogs.com/linhaifeng/articles/7267592.html#_label1)
+
+* [关键字的执行优先级\(重点\)](http://www.cnblogs.com/linhaifeng/articles/7267592.html#_label2)
+
+* [简单查询](http://www.cnblogs.com/linhaifeng/articles/7267592.html#_label3)
+
+* [WHERE约束](http://www.cnblogs.com/linhaifeng/articles/7267592.html#_label4)
+
+* [分组查询:GROUP BY](http://www.cnblogs.com/linhaifeng/articles/7267592.html#_label5)
+
+* [HAVING过滤](http://www.cnblogs.com/linhaifeng/articles/7267592.html#_label6)
+
+* [查询排序:ORDER BY](http://www.cnblogs.com/linhaifeng/articles/7267592.html#_label7)
+
+* [限制查询的记录数:LIMIT](http://www.cnblogs.com/linhaifeng/articles/7267592.html#_label8)
+
+* [使用正则表达式查询](http://www.cnblogs.com/linhaifeng/articles/7267592.html#_label9)
 
 > **本节时长需控制在15分钟内**
 
-### 一、引子
+### 一 单表查询的语法
 
-顾名思义，进程即正在执行的一个过程。进程是对正在运行程序的一个抽象。
+```
+SELECT 字段1,字段2... FROM 表名
+                  WHERE 条件
+                  GROUP BY field
+                  HAVING 筛选
+                  ORDER BY field
+                  LIMIT 限制条数
+```
 
-进程的概念起源于操作系统，是操作系统最核心的概念，也是操作系统提供的最古老也是最重要的抽象概念之一。操作系统的其他所有内容都是围绕进程的概念展开的。
+### 二 关键字的执行优先级\(重点\)
 
-所以想要真正了解进程，必须事先了解操作系统
+
+
+
 
