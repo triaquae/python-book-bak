@@ -59,7 +59,7 @@
 
 查看一下效果：
 
-![强调标签效果](/assets/chapter9/html/HTML_09.png)
+![强调标签效果](/assets/chapter9/html/HTML_27.png)
 
 ### 表示引用的标签
 
