@@ -168,6 +168,7 @@
       * [表示地址](html/bodybiao-qian-xiang-guan-nei-rong/biao-shi-di-zhi.md)
       * [列表标签](html/bodybiao-qian-xiang-guan-nei-rong/lie-biao-biao-qian.md)
       * [超链接标签](html/bodybiao-qian-xiang-guan-nei-rong/chao-lian-jie-biao-qian.md)
+      * [图片标签](html/bodybiao-qian-xiang-guan-nei-rong/tu-pian-biao-qian.md)
   * CSS
   * JavaScript
   * jQuery
