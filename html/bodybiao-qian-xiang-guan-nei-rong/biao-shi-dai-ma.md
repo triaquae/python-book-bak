@@ -10,9 +10,11 @@
         <title>路飞学城</title>
     </head>
     <body>
+        单行代码：
         <code>
             print("Hello world!")
         </code>
+        代码块：
         <pre>
             while True:
             age = input("猜猜看啊:").strip()
