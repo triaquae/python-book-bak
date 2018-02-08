@@ -176,6 +176,7 @@
       * [单选框和多选框](html/bodybiao-qian-xiang-guan-nei-rong/dan-xuan-kuang-he-duo-xuan-kuang.md)
       * [下拉框和多选下拉框](html/bodybiao-qian-xiang-guan-nei-rong/xia-la-kuang-he-duo-xuan-xia-la-kuang.md)
       * [按钮](html/bodybiao-qian-xiang-guan-nei-rong/ti-jiao-an-niu-he-zhong-zhi-an-niu.md)
+      * [label标签](html/bodybiao-qian-xiang-guan-nei-rong/labelbiao-qian.md)
   * CSS
   * JavaScript
   * jQuery
