@@ -150,6 +150,8 @@
     * [HTML简介](html/htmljian-jie.md)
     * [开发环境与第一个HTML页面](html/kai-fa-huan-jing.md)
     * [HTML标签介绍](html/htmlbiao-qian-jie-shao.md)
+    * [HTML标签分类](html/htmlbiao-qian-fen-lei.md)
+    * [HTML标签嵌套规则](html/htmlbiao-qian-qian-tao-gui-ze.md)
   * CSS
   * JavaScript
   * jQuery
