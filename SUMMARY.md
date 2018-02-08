@@ -143,7 +143,7 @@
     * 8.6.1
   * [8.7 mysql内置功能](di-8-zhang-mysql-shu-ju-ku/87-mysqlnei-zhi-gong-neng.md)
     * 8.7.1
-* [第9章 前端基础之HTML](aboutFrontend.md)
+* 第9章 前端基础之HTML
   * HTML介绍
     * [HTML是什么](/aboutFrontend/HTML_01.md)
     * [HTML开发环境](/aboutFrontend/HTML_02.md)
