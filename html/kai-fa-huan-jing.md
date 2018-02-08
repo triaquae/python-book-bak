@@ -26,6 +26,7 @@ HTML文件的后缀名常见的是`.html`，当然一些老旧的网站可能还
 ```
 
 浏览器中打开效果：
+
 ![第一个HTML页面](/assets/chapter9/html/HTML_00.png)
 
 > 注意：对于中文网页需要使用`<meta charset="utf-8">`来声明网页的编码，否则会出现乱码。如果需要设置浏览器的编码为GBK，则需要设置为`<meta charset="gbk">`。
