@@ -203,16 +203,16 @@ where字句中可以使用：
 2. between 80 and 100 值在10到20之间  
 3. in\(80,90,100\) 值是10或20或30  
 4. like 'egon%'  
-    pattern可以是%或\_，  
-    %表示任意多字符  
-    \_表示一个字符  
+    pattern可以是%或\_，  
+    %表示任意多字符  
+    \_表示一个字符  
 5. 逻辑运算符：在多个条件直接可以使用逻辑运算符 and or not
 
 ```
 #1:单条件查询
     SELECT name FROM employee
         WHERE post='sale';
-        
+
 #2:多条件查询
     SELECT name,salary FROM employee
         WHERE post='teacher' AND salary>10000;
@@ -223,14 +223,14 @@ where字句中可以使用：
 
     SELECT name,salary FROM employee 
         WHERE salary NOT BETWEEN 10000 AND 20000;
-    
+
 #4:关键字IS NULL(判断某个字段是否为NULL不能用等号，需要用IS)
     SELECT name,post_comment FROM employee 
         WHERE post_comment IS NULL;
 
     SELECT name,post_comment FROM employee 
         WHERE post_comment IS NOT NULL;
-        
+
     SELECT name,post_comment FROM employee 
         WHERE post_comment=''; 注意''是空字符串，不是null
     ps：
@@ -241,7 +241,7 @@ where字句中可以使用：
 #5:关键字IN集合查询
     SELECT name,salary FROM employee 
         WHERE salary=3000 OR salary=3500 OR salary=4000 OR salary=9000 ;
-    
+
     SELECT name,salary FROM employee 
         WHERE salary IN (3000,3500,4000,9000) ;
 
@@ -618,7 +618,7 @@ mysql> select post,avg(salary) from employee group by post having avg(salary) > 
 示例：
     SELECT * FROM employee ORDER BY salary DESC 
         LIMIT 3;                    #默认初始位置为0 
-    
+
     SELECT * FROM employee ORDER BY salary DESC
         LIMIT 0,5; #从第0开始，即先查询出第一条，然后包含这一条在内往后查5条
 
@@ -671,6 +671,30 @@ rows in set (0.00 sec)
 ```
 
 ### 九 使用正则表达式查询
+
+```
+SELECT * FROM employee WHERE name REGEXP '^ale';
+
+SELECT * FROM employee WHERE name REGEXP 'on$';
+
+SELECT * FROM employee WHERE name REGEXP 'm{2}';
+
+
+小结：对字符串匹配的方式
+WHERE name = 'egon';
+WHERE name LIKE 'yua%';
+WHERE name REGEXP 'on$';
+```
+
+小练习：
+
+```
+查看所有员工中名字是jin开头，n或者g结果的员工信息
+```
+
+```
+select * from employee where name regexp '^jin.*[gn]$';
+```
 
 
 
