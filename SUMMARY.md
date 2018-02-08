@@ -148,6 +148,8 @@
     * [前端内容初识](aboutFrontend/qian-duan-kai-fa-chu-shi.md)
   * [HTML](html.md)
     * [HTML简介](html/htmljian-jie.md)
+    * [开发环境与第一个HTML页面](html/kai-fa-huan-jing.md)
+    * [HTML标签介绍](html/htmlbiao-qian-jie-shao.md)
   * CSS
   * JavaScript
   * jQuery
