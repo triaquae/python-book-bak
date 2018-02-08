@@ -169,6 +169,7 @@
       * [div标签和span标签](html/bodybiao-qian-xiang-guan-nei-rong/divbiao-qian-he-span-biao-qian.md)
       * [表格标签](html/bodybiao-qian-xiang-guan-nei-rong/biao-ge-biao-qian.md)
       * [表单标签](html/bodybiao-qian-xiang-guan-nei-rong/biao-dan-biao-qian.md)
+      * [input标签](html/bodybiao-qian-xiang-guan-nei-rong/inputbiao-qian.md)
       * [多行文本标签](html/bodybiao-qian-xiang-guan-nei-rong/duo-xing-wen-ben-biao-qian.md)
       * [单选框和多选框](html/bodybiao-qian-xiang-guan-nei-rong/dan-xuan-kuang-he-duo-xuan-kuang.md)
       * [下拉框和多选下拉框](html/bodybiao-qian-xiang-guan-nei-rong/xia-la-kuang-he-duo-xuan-xia-la-kuang.md)
