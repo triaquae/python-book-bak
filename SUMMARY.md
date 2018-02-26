@@ -138,9 +138,10 @@
     * [8.4.2 单表查询](di-8-zhang-mysql-shu-ju-ku/84-shu-ju-cao-zuo/842-dan-biao-cha-xun.md)
     * [8.4.3 多表查询](di-8-zhang-mysql-shu-ju-ku/84-shu-ju-cao-zuo/843-duo-biao-cha-xun.md)
   * [8.5 索引原理与慢查询优化](di-8-zhang-mysql-shu-ju-ku/85-suo-yin-yuan-li-yu-man-cha-xun-you-hua.md)
-    * 8.5.1
-  * [8.6 数据备份、pymysql模块](di-8-zhang-mysql-shu-ju-ku/86-shu-ju-bei-fen-3001-pymysql-mo-kuai.md)
-    * 8.6.1
+    * [8.5.1 索引原理与慢查询优化](di-8-zhang-mysql-shu-ju-ku/85-suo-yin-yuan-li-yu-man-cha-xun-you-hua/851.md)
+  * [8.6 可视化工具与pymysql模块](di-8-zhang-mysql-shu-ju-ku/86-shu-ju-bei-fen-3001-pymysql-mo-kuai.md)
+    * [8.6.1 可视化工具Navicat](di-8-zhang-mysql-shu-ju-ku/86-shu-ju-bei-fen-3001-pymysql-mo-kuai/862-ke-shi-hua-gong-ju-navicat.md)
+    * [8.6.2 pymysql模块](di-8-zhang-mysql-shu-ju-ku/86-shu-ju-bei-fen-3001-pymysql-mo-kuai/861.md)
   * [8.7 mysql内置功能](di-8-zhang-mysql-shu-ju-ku/87-mysqlnei-zhi-gong-neng.md)
     * 8.7.1
 * [第9章 前端开发](di-9-zhang-qian-duan-kai-fa.md)
