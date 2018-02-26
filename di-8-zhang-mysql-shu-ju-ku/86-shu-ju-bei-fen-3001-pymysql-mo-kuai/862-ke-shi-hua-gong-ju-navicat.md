@@ -6,7 +6,9 @@
 
 ## 一 Navicat
 
-    在生产环境中操作MySQL数据库还是推荐使用命令行工具mysql，但在我们自己开发测试时，可以使用可视化工具Navicat，以图形界面的形式操作MySQL数据库
+```
+在生产环境中操作MySQL数据库还是推荐使用命令行工具mysql，但在我们自己开发测试时，可以使用可视化工具Navicat，以图形界面的形式操作MySQL数据库
+```
 
 官网下载：[https://www.navicat.com/en/products/navicat-for-mysql](https://www.navicat.com/en/products/navicat-for-mysql)
 
