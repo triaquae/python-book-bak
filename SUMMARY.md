@@ -143,7 +143,12 @@
     * [8.6.1 可视化工具Navicat](di-8-zhang-mysql-shu-ju-ku/86-shu-ju-bei-fen-3001-pymysql-mo-kuai/862-ke-shi-hua-gong-ju-navicat.md)
     * [8.6.2 pymysql模块](di-8-zhang-mysql-shu-ju-ku/86-shu-ju-bei-fen-3001-pymysql-mo-kuai/861.md)
   * [8.7 mysql内置功能](di-8-zhang-mysql-shu-ju-ku/87-mysqlnei-zhi-gong-neng.md)
-    * 8.7.1
+    * [8.7.1 视图](di-8-zhang-mysql-shu-ju-ku/87-mysqlnei-zhi-gong-neng/871.md)
+    * 8.7.2 触发器
+    * [8.7.3 事务](di-8-zhang-mysql-shu-ju-ku/87-mysqlnei-zhi-gong-neng/shi-wu.md)
+    * 8.7.4 存储过程
+    * 8.7.5 函数
+    * 8.7.6 流程控制
 * [第9章 前端开发](di-9-zhang-qian-duan-kai-fa.md)
   * [前端内容介绍](aboutFrontend.md)
     * [前端内容初识](aboutFrontend/qian-duan-kai-fa-chu-shi.md)
