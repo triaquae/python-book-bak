@@ -188,7 +188,7 @@
     * [9.2.5 组合选择器](925-ceng-ji-xuan-ze-qi.md)
     * [9.2.6 属性选择器](926-shu-xing-xuan-ze-qi.md)
     * [9.2.7 分组和嵌套](927-fen-zu-he-qian-tao-xuan-ze-qi.md)
-    * 9.2.8 伪类选择器
+    * [9.2.8 伪类选择器](928-wei-lei-xuan-ze-qi.md)
     * 9.2.9 伪元素选择器
     * 9.2.10 选择器的优先级
     * 9.2.11 字体属性
