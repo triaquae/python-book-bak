@@ -66,10 +66,11 @@ p {
 </html>
 ```
 
-## @import url()方式 不常用
+## @import url()方式
+
+了解即可。
 
 index.css
-
 ```css
 @import url(other.css)
 ```
