@@ -20,7 +20,7 @@ p {
 
 index.css
 
-```CSS
+```css
 p {
   color: green;
 }
