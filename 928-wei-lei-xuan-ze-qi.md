@@ -33,7 +33,7 @@ a:active {
 }
 ```
 
-input输入框获取光标时样式：
+input输入框获取焦点时样式：
 
 ```css
 input:focus {
