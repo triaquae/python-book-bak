@@ -190,7 +190,7 @@
     * [9.2.7 分组和嵌套](927-fen-zu-he-qian-tao-xuan-ze-qi.md)
     * [9.2.8 伪类选择器](928-wei-lei-xuan-ze-qi.md)
     * [9.2.9 伪元素选择器](929-wei-yuan-su-xuan-ze-qi.md)
-    * 9.2.10 选择器的优先级
+    * [9.2.10 选择器的优先级](9210-xuan-ze-qi-de-you-xian-ji.md)
     * 9.2.11 字体属性
     * 9.2.12 文字属性
     * 9.2.13 display属性
