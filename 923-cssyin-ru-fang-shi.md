@@ -73,3 +73,5 @@ index.css
 ```css
 @import url(other.css)
 ```
+注意：
+`@import url()`必须写在文件最开始的位置。
