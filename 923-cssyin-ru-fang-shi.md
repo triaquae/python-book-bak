@@ -5,7 +5,7 @@
 
 `style`标签
 
-```html
+```HTML
 
 p {
   color: red;
@@ -18,6 +18,7 @@ p {
 `link`标签
 
 index.css
+
 ```CSS
 p {
   color: green;
