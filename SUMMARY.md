@@ -185,8 +185,8 @@
     * [9.2.2 CSS语法](922-cssyu-fa.md)
     * [9.2.3 CSS引入方式](923-cssyin-ru-fang-shi.md)
     * [9.2.4 基本选择器](924-cssji-ben-xuan-ze-qi.md)
-    * [9.2.5 层级选择器](925-ceng-ji-xuan-ze-qi.md)
-    * 9.2.6 属性选择器
+    * [9.2.5 组合选择器](925-ceng-ji-xuan-ze-qi.md)
+    * [9.2.6 属性选择器](926-shu-xing-xuan-ze-qi.md)
     * 9.2.7 分组和嵌套选择器
     * 9.2.8 伪类选择器
     * 9.2.9 伪元素选择器
