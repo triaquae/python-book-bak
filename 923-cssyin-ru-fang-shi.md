@@ -30,7 +30,6 @@
 index.css
 
 ```css
-
 p {
   color: green;
 }
