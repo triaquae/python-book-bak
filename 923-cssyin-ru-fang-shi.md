@@ -5,12 +5,21 @@
 
 `style`标签
 
-```css
-
-p {
-  color: red;
-}
-
+```html
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <style>
+            p {
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <p>这是一个p标签！</p>
+    </body>
+</html>
 ```
 
 
@@ -31,8 +40,16 @@ p {
 然后在HTML文件中通过link标签引入：
 
 ```html
-
-<link rel="stylesheet" href="index.css">
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <p>这是一个p标签！</p>
+    </body>
+</html>
 ```
 
 
