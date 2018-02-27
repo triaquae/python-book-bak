@@ -5,7 +5,7 @@
 
 `style`标签
 
-```HTML
+```CSS
 
 p {
   color: red;
