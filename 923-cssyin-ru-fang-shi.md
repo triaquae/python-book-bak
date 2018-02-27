@@ -52,4 +52,24 @@ p {
 ```
 
 
-## 
+## 行内样式
+
+```html
+<!doctype html>
+<html>
+<head>
+<meta charset="utf8">
+</head>
+<body>
+<p style="color: blue;">这是一个p标签！</p>
+</body>
+</html>
+```
+
+## @import url()方式 不常用
+
+index.css
+
+```css
+@import url(index2.css)
+```
