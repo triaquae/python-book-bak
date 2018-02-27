@@ -182,7 +182,7 @@
       * [按钮](html/bodybiao-qian-xiang-guan-nei-rong/ti-jiao-an-niu-he-zhong-zhi-an-niu.md)
   * [9.2 CSS](92-css.md)
     * [9.2.1 CSS介绍](cssjie-shao.md)
-    * 9.2.2 CSS语法
+    * [9.2.2 CSS语法](922-cssyu-fa.md)
     * 9.2.3 CSS引入方式
     * [9.2.4 基本选择器](924-cssji-ben-xuan-ze-qi.md)
     * 9.2.5 层级选择器
