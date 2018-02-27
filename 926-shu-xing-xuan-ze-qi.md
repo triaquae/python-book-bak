@@ -41,6 +41,7 @@
   color: red;
 }
 ```
+
 找到所有title属性(有多个值或值以空格分割)中有一个值为hello的标签：
 
 ```css
@@ -50,5 +51,10 @@
 ```
 
 
+## 表单常用
 
-## 
+```css
+input[type="text"] {
+  backgroundcolor: red;
+}
+```
