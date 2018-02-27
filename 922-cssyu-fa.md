@@ -9,3 +9,12 @@ CSS语法可以分为两部分：
 
 
 ![CSS语法](/assets/chapter9/CSS/CSS_01.png)
+
+
+## CSS注释
+
+注释是代码之母。
+
+```css
+/*这是注释*/
+```

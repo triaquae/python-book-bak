@@ -71,5 +71,5 @@ p {
 index.css
 
 ```css
-@import url(index2.css)
+@import url(other.css)
 ```
