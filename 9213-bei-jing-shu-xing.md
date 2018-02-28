@@ -12,6 +12,17 @@
 |background-position	|规定背景图像的位置。|
 |inherit	|规定应该从父元素继承 background 属性的设置。|
 
+示例：
+
+```css
+body {
+  background-color: red;
+  backgraound-image: url(xx.png);
+  background-size: 300px 300px;
+  background-repeat: no-repeat;
+  background-position: center 
+}
+```
 
 简写：
 
@@ -20,5 +31,3 @@ body {
   background: red url(xx.png) no-repeat fixed center/300px 300px; 
 }
 ```
-
-cong
