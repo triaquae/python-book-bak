@@ -15,7 +15,7 @@ body {
 }
 ```
 
-如果设置成`inherit`，则表示继承父标签的字体。
+如果设置成`inherit`，则表示继承父元素的字体。
 
 ## font-weight
 
@@ -30,7 +30,7 @@ body {
 | border  | 更粗  |
 | lighter | 更细  |
 | 100~900 | 设置具体粗细，400等同于normal，而700等同于bold  |
-| inherit |从父标签继承字体的粗细|
+| inherit |继承父元素字体的粗细值|
 
 
 ## font-size
@@ -43,7 +43,7 @@ p {
 }
 ```
 
-如果设置成`inherit`表示继承父标签的字体大小。
+如果设置成`inherit`表示继承父元素的字体大小值。
 
 ## color
 
