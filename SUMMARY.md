@@ -149,6 +149,8 @@
     * [8.7.6 流程控制](di-8-zhang-mysql-shu-ju-ku/87-mysqlnei-zhi-gong-neng/876-liu-cheng-kong-zhi.md)
   * [8.7 索引原理与慢查询优化](di-8-zhang-mysql-shu-ju-ku/85-suo-yin-yuan-li-yu-man-cha-xun-you-hua.md)
     * [8.5.1 索引原理与慢查询优化](di-8-zhang-mysql-shu-ju-ku/85-suo-yin-yuan-li-yu-man-cha-xun-you-hua/851.md)
+  * [8.8 本章小结](di-8-zhang-mysql-shu-ju-ku/88-ben-zhang-xiao-jie.md)
+    * [8.8.1 章节作业](di-8-zhang-mysql-shu-ju-ku/88-ben-zhang-xiao-jie/881-zhang-jie-zuo-ye.md)
 * [第9章 前端开发](di-9-zhang-qian-duan-kai-fa.md)
   * [9.0 前端内容介绍](aboutFrontend.md)
     * [前端内容初识](aboutFrontend/qian-duan-kai-fa-chu-shi.md)
