@@ -194,8 +194,8 @@
     * [9.2.9 伪元素选择器](929-wei-yuan-su-xuan-ze-qi.md)
     * [9.2.10 选择器的优先级](9210-xuan-ze-qi-de-you-xian-ji.md)
     * [9.2.11 字体属性](9211-zi-ti-shu-xing.md)
-    * 9.2.12 文字属性
-    * 9.2.13 display属性
+    * [9.2.12 文字属性](9212-wen-zi-shu-xing.md)
+    * [9.2.13 display属性](9213-displayshu-xing.md)
     * 9.2.14 盒子模型
   * 9.3 JavaScript
     * 9.3.1 JavaScript介绍
