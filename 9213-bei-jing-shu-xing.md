@@ -35,7 +35,7 @@
 
 | 值      | 描述     |
 |:--------:|:---------:|
-|top left <br> top center <br> top right <br> center left <br> center center <br> center right <br> bottom left <br> bottom center <br> bottom right|如果只设置了一个关键词，那么第二个值将是"center"。<br> 默认值：0% 0%。|
+|top left <br> top center <br> top right <br> center left <br> center center <br> center right <br> bottom left <br> bottom center <br> bottom right|如果只设置了一个关键词，那么第二个值就是"center"。<br> 默认值：0% 0%。|
 |x% y% |第一个值是水平位置，第二个值是垂直位置。<br> 左上角是 0% 0%。右下角是 100% 100%。<br> 如果只设置了一个值，另一个值就是50%。
 |xpos ypos|第一个值是水平位置，第二个值是垂直位置。<br> 左上角是 0 0。单位是像素 (0px 0px) 或任何其他的 CSS 单位。<br> 如果只设置了一个值，另一个值就是50%。<br> 可以混合使用`%`和`position`值。
 
