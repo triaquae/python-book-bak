@@ -4,7 +4,7 @@
 
 是先来后到呢还是后来居上呢？统统不是，它是按照下面的选择器的权重规则来决定的。
 
-![CSS选择器权重](/assets/chapter9/CSS/CSS-02.png)
+![CSS选择器权重](/assets/chapter9/CSS/CSS_02.png)
 
 注意：
 
