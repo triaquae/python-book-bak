@@ -196,7 +196,7 @@
     * [9.2.11 字体属性](9211-zi-ti-shu-xing.md)
     * [9.2.12 文字属性](9212-wen-zi-shu-xing.md)
     * [9.2.13 display属性](9213-displayshu-xing.md)
-    * 9.2.14 盒子模型
+    * [9.2.14 盒子模型](9214-he-zi-mo-xing.md)
   * 9.3 JavaScript
     * 9.3.1 JavaScript介绍
     * 9.3.2 开发工具与第一个JavaScript示例
