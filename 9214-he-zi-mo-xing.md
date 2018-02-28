@@ -20,3 +20,16 @@ HTML文档中的每个元素都被描绘成矩形盒子，这些矩形盒子通�
 |solid	|实线边框。|
 
 
+示例：
+
+```css
+div.box {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    padding: 5px 10px 15px 20px;
+    border: 5px solid blue;
+    margin: 5px 10px;
+}
+```
