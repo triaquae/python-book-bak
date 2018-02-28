@@ -23,6 +23,7 @@
 |inherit	|规定应该从父元素继承background-repeat属性的设置。|
 
 `background-attachment`取值范围：
+
 | 值      | 描述     |
 |:--------:|:---------:|
 |scroll	|默认值。背景图像会随着页面其余部分的滚动而移动。|
