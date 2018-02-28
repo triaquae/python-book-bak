@@ -10,9 +10,7 @@
 |background-repeat	|规定如何重复背景图像。|
 |background-attachment	|规定背景图像是否固定或者随着页面的其余部分滚动。|
 |background-position	|规定背景图像的位置。|
-
-
-inherit	规定应该从父元素继承 background 属性的设置。
+|inherit	|规定应该从父元素继承 background 属性的设置。|
 
 
 简写：
