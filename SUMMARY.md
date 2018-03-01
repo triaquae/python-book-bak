@@ -198,7 +198,9 @@
     * [9.2.13 背景属性](9213-bei-jing-shu-xing.md)
     * [9.2.14 display属性](9213-displayshu-xing.md)
     * [9.2.15 盒子模型](9214-he-zi-mo-xing.md)
-  * 9.3 JavaScript
+    * [9.2.16 浮动与清除浮动](9216-fu-dong-yu-qing-chu-fu-dong.md)
+    * 9.2.17 位置属性
+  * [9.3 JavaScript](93-javascript.md)
     * 9.3.1 JavaScript介绍
     * 9.3.2 开发工具与第一个JavaScript示例
     * 9.3.3 基本语法
