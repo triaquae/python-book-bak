@@ -1,4 +1,14 @@
-# CSS引入方式
+# 网页中引用CSS样式
++ 内联样式
++ 行内样式表
++ 外部样式表
+  - 链接式
+  - 导入式
+  
+![CSS语法](/assets/chapter9/CSS/图片 1.png)
+
+
+
 
 
 ## 内嵌方式
@@ -22,8 +32,24 @@
 </html>
 ```
 
+## 行内样式
 
-## 链接式
+```html
+<!doctype html>
+<html>
+<head>
+<meta charset="utf8">
+</head>
+<body>
+<p style="color: blue;">这是一个p标签！</p>
+</body>
+</html>
+```
+
+
+
+
+## 外联样式表-链接式
 
 `link`标签
 
@@ -52,19 +78,7 @@ p {
 ```
 
 
-## 行内样式
 
-```html
-<!doctype html>
-<html>
-<head>
-<meta charset="utf8">
-</head>
-<body>
-<p style="color: blue;">这是一个p标签！</p>
-</body>
-</html>
-```
 
 ## @import url()方式
 

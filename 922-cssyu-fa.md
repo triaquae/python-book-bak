@@ -10,7 +10,7 @@ CSS语法可以分为两部分：
 声明由属性和值组成，多个声明之间用分号分隔。
 
 
-![CSS语法](/assets/chapter9/CSS/CSS_01.png)
+![CSS语法](/assets/chapter9/CSS/图片 1.png)
 
 
 ## CSS注释
