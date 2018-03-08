@@ -209,6 +209,6 @@
     * 9.3.6 运算符
     * 9.3.7 流程控制
     * 9.3.8 函数
-  * jQuery
-  * Bootstrap
+  * [jQuery](jquery.md)
+  * [Bootstrap](bootstrap.md)
 

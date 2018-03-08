@@ -3,6 +3,7 @@
 有时候像性别这样的数据并不需要用户自己来填写具体的值，只需要我们事先定义好选项让用户来选择就可以了。类似这样的数据我们都可以在我们的页面上用单选框或多选框来展示：
 
 单选框语法：
+name设置相同的属性值，以实现互斥选区
 `<input type="radio" value="值" name="名称" checked="checked"/>`
 多选框语法：
 `<input type="checkbox" value="值" name="名称" checked="checked"/>`
@@ -24,6 +25,7 @@
 <body>
 <form action="" method="post">
     <p>我的性别：</p>
+    
     <p>
         <input type="radio" value="1" name="gender" checked="checked"/>男
         <input type="radio" value="2" name="gender" />女
