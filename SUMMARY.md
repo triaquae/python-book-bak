@@ -116,7 +116,7 @@
     * [7.5.5 异步IO](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/yi-bu-io.md)
     * [7.5.6 IO模型比较分析](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/756-iomo-xing-bi-jiao-fen-xi.md)
     * [7.5.7 selectors模块](di-7-zhang-bing-fa-bian-cheng/75-iomo-xing/757-selectorsmo-kuai.md)
-  * [7.6 本章小结](di-7-zhang-bing-fa-bian-cheng/76-ben-zhang-xiao-jie.md)
+  * [7.6 本章小结](di-7-zhang-bing-fa-bian-cheng/7xiaojie.md)
 * [第8章 MySQL数据库](di-8-zhang-mysql-shu-ju-ku.md)
   * [8.1 初识数据库](di-8-zhang-mysql-shu-ju-ku/81-chu-shi-shu-ju-ku.md)
     * [8.1.1 数据库管理软件的由来](di-8-zhang-mysql-shu-ju-ku/81-chu-shi-shu-ju-ku/811-shu-ju-ku-guan-li-ruan-jian-de-you-lai.md)
