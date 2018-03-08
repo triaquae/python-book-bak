@@ -5,7 +5,7 @@
   - 链接式
   - 导入式
   
-![CSS语法](/assets/chapter9/CSS/图片 1.png)
+![CSS语法](/assets/chapter9/CSS/图片 2.png)
 
 
 
