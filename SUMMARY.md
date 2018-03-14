@@ -201,9 +201,9 @@
     * [9.2.14 display属性](9213-displayshu-xing.md)
     * [9.2.15 盒子模型](9214-he-zi-mo-xing.md)
     * [9.2.16 浮动与清除浮动](9216-fu-dong-yu-qing-chu-fu-dong.md)
-    * 9.2.17 位置属性
+    * [9.2.17 位置属性](9217-wei-zhi-shu-xing.md)
   * [9.3 JavaScript](93-javascript.md)
-    * 9.3.1 JavaScript介绍
+    * [9.3.1 JavaScript介绍](931-javascriptjie-shao.md)
     * [9.3.2 开发工具与第一个JavaScript示例](932-kai-fa-gong-ju-yu-di-yi-ge-javascript-shi-li.md)
     * [9.3.3 基本语法](933-ji-ben-yu-fa.md)
     * [9.3.4 数据类型](934-shu-ju-lei-xing.md)
