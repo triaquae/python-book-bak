@@ -39,9 +39,8 @@
 #### 解决办法
 ```
  1.给父元素固定高度。不灵活
-	 2.
-	 在浮动元素最后加一个空的块元素，且块元素不浮动，设置其属性为clear：both   结构冗余
-	 3.常用方法：.wrap:after{
+ 2.在浮动元素最后加一个空的块元素，且块元素不浮动，设置其属性为clear：both    结构冗余
+ 3.常用方法：.wrap:after{
 			clear: both;
 			content: "";
 			height: 0;
@@ -49,5 +48,5 @@
 			display: block;
 		}
 
-	4.给父盒子 添加overflow:hidden属性
+4.给父盒子 添加overflow:hidden属性
 ```
