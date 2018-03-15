@@ -48,3 +48,12 @@ padding:内边距 控制内容到边框的距离
 注意：padding不支持负值
 
 
+margin： 外边距  控制元素与元素之间的距离
+1）margin 的4个方向
+2）margin会改变实际大小，背景色不会渲染到margin区域
+这个区域会以空白显示，但是也属于盒子的一部分
+3)margin是添自身的,如果哪个想要改变自己的位置，就给谁添加margin
+html的部分标签自带margin padding
+p body ul
+
+
