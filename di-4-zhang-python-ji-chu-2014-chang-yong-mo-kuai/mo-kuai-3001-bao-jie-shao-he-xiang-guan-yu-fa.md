@@ -82,7 +82,7 @@ python解释器会按照列表顺序去依次到每个目录下去匹配你要�
 1. 直接通过pip安装
 
 ```
-pip3 install paramiko #parmiko 是模块名
+pip3 install paramiko #paramiko 是模块名
 ```
 
 pip命令会自动下载模块包并完成安装。
