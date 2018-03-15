@@ -29,6 +29,7 @@
   * [2.10 基本数据类型——集合](di-2-zhang-python-ji-chu-2/29-ji-ben-shu-ju-lei-xing-2014-2014-ji-he.md)
   * [2.11 collections模块](di-2-zhang-python-ji-chu-2/210-collectionsmo-kuai.md)
   * [2.12 本章小结](di-2-zhang-python-ji-chu-2/211-ben-zhang-xiao-jie.md)
+    * [习题答案](di-2-zhang-python-ji-chu-2/211-ben-zhang-xiao-jie/xi-ti-da-an.md)
 * [第3章  Python基础—文件操作&函数](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu.md)
   * [3.1 上节拾遗](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/31-shang-jie-shi-yi.md)
   * [3.2 三元运算](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/32-san-yuan-yun-suan.md)
