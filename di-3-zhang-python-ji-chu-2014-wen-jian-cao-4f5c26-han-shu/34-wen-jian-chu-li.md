@@ -379,7 +379,7 @@ for line in f:
 f.close()
 f_new.close()
 
-os.rename(f_new_name,f_name) #把新文件名字改成原文件 的名字，就把之前的覆盖掉了
+os.rename(f_new_name,f_name) #把新文件名字改成原文件 的名字，就把之前的覆盖掉了,windows使用os.replace # 帮助文档说明replace会覆盖原文件
 ```
 
 ## 练习题
