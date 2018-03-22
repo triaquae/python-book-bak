@@ -6,15 +6,19 @@
 **1 范围问题，或者说条件不明确，条件中出现这些符号或关键字：>、>=、<、<=、!= 、between...and...、like、**
 
 _大于号、小于号_
+
 ![](/assets/MySQL-7-1.png)
 
 _不等于！=_
+
 ![](/assets/MySQL-7-2.png)
 
 _between ...and..._
+
 ![](/assets/MySQL-7-3.png)
 
 like
+
 ![](/assets/MySQL-7-4.png)
 ![](/assets/MySQL-7-5.png)
 
