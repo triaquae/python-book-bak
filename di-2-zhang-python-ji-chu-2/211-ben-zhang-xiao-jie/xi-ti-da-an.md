@@ -321,6 +321,28 @@ while not exit_flag:
 
 15、利用for循环和range输出9 \* 9乘法表
 
+```python
+print('\n'.join([ ' '.join([ "%d*%d=%2s" %(y,x,x*y) for y in range(1,x+1)]) for x in range(1,10)]))
+```
+
 16、求100以内的素数和。（编程题）
+
+```python
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+# 素数又称为质数，它指的是只能被1和它本身整除的整数。其中，1不是素数，任何时候都不用考虑1。
+
+L = [] # 定义一个初始的素数列表
+for n in range(2,101): # 循环100以内的素数n,从2开始,0、1不是素数
+    flag = True # 设置一个标志位,flag = True代表是素数，flag = Flase代表不是素数
+    for i in range(2,n): # 除以比它小的所有数（不包括1和它本身）,看它是否还有其他因数
+        if n % i == 0:
+            flag = False # 出现一次余数为0就代表可以除尽，即代表这个数为素数，就可以设置flag = False
+            break # 只要第一次出现flag = False，就不用继续往下循环，直接退出整个循环（第二层）
+    if flag == True:
+        L.append(n) # 当flag = True时代表n为素数,追加到素数列表中
+print("100以内的所有素数:",L)
+print(sum(L))
+```
 
 17、将\[1,3,2,7,6,23,41,24,33,85,56\]从小到大排序（冒泡法）（编程）
