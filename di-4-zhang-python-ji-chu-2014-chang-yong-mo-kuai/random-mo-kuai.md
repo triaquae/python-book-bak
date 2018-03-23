@@ -10,7 +10,7 @@
 
 ```py
 >>> random.randomrange(1,10) #返回1-10之间的一个随机数，不包括10
->>> random.randomint(1,10) #返回1-10之间的一个随机数，包括10
+>>> random.randint(1,10) #返回1-10之间的一个随机数，包括10
 
 >>> random.randrange(0, 100, 2) #随机选取0到100间的偶数
 
