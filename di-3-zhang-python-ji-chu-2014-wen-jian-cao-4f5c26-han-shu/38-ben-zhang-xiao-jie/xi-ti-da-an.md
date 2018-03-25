@@ -121,11 +121,7 @@
 
   ```python
   # 答案
-  def file_dic(file):
-      for i in file:
-          if len(file[i])>2:
-              file[i].pop()
-      print(file)
+
   ```
 
 5. 解释闭包的概念
@@ -193,13 +189,13 @@
 ```python
 def area():
 def 计算长方形面积():
-pass
+    pass
 
 def 计算正方形面积():
-pass
+    pass
 
 def 计算圆形面积():
-pass
+    pass
 ```
 
   ```python
