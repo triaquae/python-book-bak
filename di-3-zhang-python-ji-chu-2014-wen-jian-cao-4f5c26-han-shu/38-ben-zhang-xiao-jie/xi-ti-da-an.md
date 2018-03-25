@@ -121,7 +121,19 @@
 
   ```python
   # 答案
-
+    def func(i):  # i为所传字典
+    
+        for k, v in i.items():
+            if len(v) > 2:
+                dic[k]= v[:2]
+            else:
+                continue
+        return i
+    
+    
+    print(func(dic))
+    
+    {'k1': 'v1', 'k2': [11, 22]}
   ```
 
 5. 解释闭包的概念
