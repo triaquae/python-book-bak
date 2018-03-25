@@ -18,6 +18,7 @@
     * [习题答案](di-1-zhang-python-ji-chu/112-ben-zhang-xiao-jie/xi-ti-da-an.md)
   * [1.14 Python开发规范指南](di-1-zhang-python-ji-chu/114-pythonkai-fa-gui-fan-zhi-nan.md)
     * [1.14.1 Python风格规范](di-1-zhang-python-ji-chu/114-pythonkai-fa-gui-fan-zhi-nan/1141-pythonfeng-ge-gui-fan.md)
+    * [1.14.2 Python语言规范](di-1-zhang-python-ji-chu/114-pythonkai-fa-gui-fan-zhi-nan/pythonyu-yan-gui-fan.md)
 * [第2章  Python基础](di-2-zhang-python-ji-chu-2.md)
   * [2.1 上节拾遗](di-2-zhang-python-ji-chu-2/21-shang-jie-shi-yi.md)
   * [2.2 二进制](di-2-zhang-python-ji-chu-2/22-er-jin-zhi.md)
