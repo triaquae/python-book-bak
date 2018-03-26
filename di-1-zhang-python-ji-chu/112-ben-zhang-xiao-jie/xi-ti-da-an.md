@@ -17,8 +17,8 @@
 	 执行方式:
 	   源代码 ———> 解释器(每次执行都需要解释)———>输出    
 	 
-	 编译行: C java 
-	 解释型: python PHP ruby
+	 编译型: C c++, c#
+	 解释型: python PHP ruby, java
 	```  
  2. 执行 Python 脚本的两种方式是什么  
 
