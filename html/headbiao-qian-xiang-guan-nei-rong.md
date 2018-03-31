@@ -8,14 +8,14 @@
     <title>标题信息</title>
     <meta charset='utf-8'>
     <link>
-    <style>...</style>
-    <script>...</script>
+    <style type='text/css'></style>
+    <script type='text/javascript'></script>
 </head>
 ```
 
 ### title标签
 
-<title>标签：在<title>和</title>标签之间的文字内容是网页的标题信息，它会显示在浏览器标签页的标题栏中。可以把它看成是一个网页的标题。主要用来告诉用户和搜索引擎这个网页的主要内容是什么，搜索引擎可以通过网页标题，迅速的判断出当前网页的主题。
+`<title>`标签：在`<title>`和`</title`>标签之间的文字内容是网页的标题信息，它会显示在浏览器标签页的标题栏中。可以把它看成是一个网页的标题。主要用来告诉用户和搜索引擎这个网页的主要内容是什么，搜索引擎可以通过网页标题，迅速的判断出当前网页的主题。
 
 我们接下来做一个小练习，创建一个带有我们自定义标题内容的网页：
 
@@ -50,7 +50,7 @@ meta标签的组成：meta标签共有两个属性，它们分别是http-equiv�
 它用来向浏览器传达一些有用的信息，帮助浏览器正确地显示网页内容，与之对应的属性值为content，content中的内容其实就是各个参数的变量值。
 
 ```html
-<!--2秒后跳转到对应的网址，注意引号-->
+<!--重定向 2秒后跳转到对应的网址，注意分号-->
 <meta http-equiv="refresh" content="2;URL=http://www.luffycity.com">
 <!--指定文档的内容类型和编码类型 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
@@ -60,7 +60,7 @@ meta标签的组成：meta标签共有两个属性，它们分别是http-equiv�
 
 2. name属性
 
-主要用于描述网页，与之对应的属性值为content，content中的内容主要是便于搜索引擎机器人查找信息和分类信息用的。
+主要用于页面的关键字和描述，是写给搜索引擎看的，关键字可以有多个用 ‘,’号隔开，与之对应的属性值为content，content中的内容主要是便于搜索引擎机器人查找信息和分类信息用的。
 
 ```html
 <meta name="keywords" content="meta总结,html meta,meta属性,meta跳转">
@@ -73,7 +73,7 @@ meta标签的组成：meta标签共有两个属性，它们分别是http-equiv�
 <!--标题-->
 <title>路飞学城</title>
 <!--icon图标（网站的图标）-->
-<link rel="icon" href="favicon.ico">
+<link rel="icon" href="fav.ico">
 <!--定义内部样式表-->
 <style></style>
 <!--引入外部样式表文件-->
