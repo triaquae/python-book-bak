@@ -199,9 +199,14 @@ type：列表标识的类型
 由上面代码可以看出
 ```
 <div id='wrap'>
-	<div></>
+	<div class='para'></div>
+	<div class='anchor'></div>
+	<div class='para'></div>
+	<div class='lists'></div>	
 </div>	
 ```
+
+我们将文档放在一个父级的区（div）中，它里面包含四块区（div）域，浏览器查看效果,你会发现每小块区域都是独占一行的，所以div是块级元素。另外，每块区域表示独立的一块，另外，id属性和class属性其实很简单，可以相当于给这个区域起个名字。id是唯一的，一个页面中不能有两个重复的id，跟身份证号码一样，class可以设置同样的属性值，并且可以设置多个，class=’para n1‘
 
 
 
