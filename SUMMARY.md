@@ -161,7 +161,7 @@
     * [8.8.1 章节作业](di-8-zhang-mysql-shu-ju-ku/88-ben-zhang-xiao-jie/881-zhang-jie-zuo-ye.md)
 * [第9章 前端开发](di-9-zhang-qian-duan-kai-fa.md)
   * [9.0 前端内容介绍](aboutFrontend.md)
-    * [前端内容初识](aboutFrontend/qian-duan-kai-fa-chu-shi.md)
+    * [前端究竟是个什么鬼？](aboutFrontend/qian-duan-kai-fa-chu-shi.md)
   * [9.1 HTML](html.md)
     * [9.1.1 HTML简介](html/htmljian-jie.md)
     * [9.1.2 开发环境与第一个HTML页面](html/kai-fa-huan-jing.md)
