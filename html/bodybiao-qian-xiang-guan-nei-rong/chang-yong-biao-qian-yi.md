@@ -45,11 +45,23 @@ h1~h6标签的默认样式：
 ```html
 <body>
     <h1>
+        <!--链接网址资源-->
         <a href="http://www.baidu.com" target="_blank" title="路飞学城">路飞学城</a>
     </h1>
 
 </body>
 ```
+
+链接其他表现形式：
+1.目标文档为下载资源
+  例如：href属性值，指定的文件名称，就是下载操作(rar、zip等)
+2. 电子邮件链接
+  前提：计算机中必须安装邮件客户端，并且配置好了邮件相关信息。
+  例如：`<a href="mailto:zhaoxu@tedu.cn">联系我们</a>`
+3. 返回页面顶部的空链接或具体id值的标签
+  例如：`<a href="#">内容</a>`或`<a href="#id值">内容</a>`
+4. 链接到Javascript
+  例如：`<a href="javascript:;">内容</a>`
 
 
 
