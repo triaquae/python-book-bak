@@ -30,7 +30,6 @@ HTML，全称是超文本标记语言（HyperText Markup Language），它是一
 <header>
     <h1>Alex老师是不是很帅？</h1>
     <p>这是你说的啊，我可没说</p>
-</p>
 </header>
 <div>
    
