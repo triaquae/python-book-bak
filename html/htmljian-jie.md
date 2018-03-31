@@ -32,7 +32,7 @@ HTML，全称是超文本标记语言（HyperText Markup Language），它是一
     <p>这是你说的啊，我可没说</p>
 </p>
 </header>
-<section>
+<div>
    
         <div>
           二狗子<span>,我就叫二狗子</span>
@@ -49,7 +49,7 @@ HTML，全称是超文本标记语言（HyperText Markup Language），它是一
            我反对，我觉得武sir更帅。
         </p>
 
-</section>
+</div>
 
 ```
 很显然，HTML作为一种标记语言它并没有什么逻辑，简单来说就是一些符号，一些有特殊意义的符号，一些浏览器认识的有特殊意义的符号。
