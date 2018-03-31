@@ -219,6 +219,10 @@ type：列表标识的类型
 2. 图片的格式可以是png、jpg和gif。
 3. alt属性的值会在图片加载失败时显示在网页上。
 4. 还可以为图片设置宽度(width)和高度(height)，不设置就显示图片默认的宽度和高度
+```html
+	<img src="./machine-right.png" alt="金融量化分析" style="width:200px;height:200px">
+	<img src="./finance-right.png" alt="人工智能实战"  style="width: 200px;height: 200px">
+```
 
 ## 其他标签
 ### 换行标签 `<br>`
