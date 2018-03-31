@@ -164,7 +164,7 @@
     * [前端究竟是个什么鬼？](aboutFrontend/qian-duan-kai-fa-chu-shi.md)
   * [9.1 HTML](html.md)
     * [9.1.1 HTML简介](html/htmljian-jie.md)
-    * [9.1.2 开发环境与第一个HTML页面](html/kai-fa-huan-jing.md)
+    * [9.1.2 开发环境](html/kai-fa-huan-jing.md)
     * [9.1.3 HTML标签介绍](html/htmlbiao-qian-jie-shao.md)
     * [9.1.4 HTML标签分类](html/htmlbiao-qian-fen-lei.md)
     * [9.1.5 HTML标签嵌套规则](html/htmlbiao-qian-qian-tao-gui-ze.md)

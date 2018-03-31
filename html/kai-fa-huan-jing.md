@@ -1,34 +1,18 @@
 ## 开发环境
 
-市面上有很多的HTML编辑器可以选择，常见的Notepad++和Sublime Text都可以用来开发HTML。
+市面上有很多的HTML编辑器可以选择，常见的Hbuild、Sublime Text、Dreamweare都可以用来开发HTML。
 当然PyCharm也支持HTML开发。
 
 
-HTML文件的后缀名常见的是`.html`，当然一些老旧的网站可能还使用`.htm`。
-我们以后都使用`.html`作为HTML文件的后缀名。
+## 文件后缀名规范
+文件后缀一般使用.html或.htm
+.html与.htm均是静态网页后缀名，网页文件没有区别与区分，html与htm后缀网页后缀可以互换，对网页完全没有影响同时也没有区别。可以认为html与htm没有本质区别，唯一区别即多与少一个“l”。
 
-一个简单的例子：
 
-打开你的编辑器新建一个文件，把下面的文本内容，复制粘贴到你新建的文件中，然后另存为名为`helloworld.html`的文件。再使用浏览器打开刚才保存的文件就可以看到效果了。
 
-```html
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8">
-<title>路飞学城(luffycity.com)</title>
-</head>
-<body>
-    <h1>Hello world.</h1>
-    <p>我的第一个HTML文件。</p>
-</body>
-</html>
-```
+对于开发环境我们不做多余的介绍啊，那么我们正式进入HTML标签的学习吧。
+ps：同学们！同学们 如果你想知道整个前端所有的标签有哪一些，那么你可以打开一个百度首页，F12或者右击检查，你就会发现，如图：
+<br>
+![](/assets/chapter9/html/HTML-bd.png)
 
-浏览器中打开效果：
 
-![第一个HTML页面](/assets/chapter9/html/HTML_00.png)
-
-> 注意：对于中文网页需要使用`<meta charset="utf-8">`来声明网页的编码，否则会出现乱码。如果需要设置浏览器的编码为GBK，则需要设置为`<meta charset="gbk">`。
-
-怎么样，你现在已经完成了一个属于自己的第一个HTML页面了。
