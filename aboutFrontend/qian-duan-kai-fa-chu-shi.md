@@ -56,10 +56,14 @@ JavaScript是一门脚本语言。
 
 那么这些效果是如何做出来的呢？
 很简单，思路呢其实就跟上面”建房子一样“，我们先用HTML搭建网页结构，这时候默认情况下，字体、字体颜色、字体大小和背景颜色如下图，仅仅使用HTML的文字
+<br>
 ![](/assets/chapter9/html/p.jpg)
 然后我们通过CSS修饰一下，改变其字体、字体大小、字体颜色和背景颜色，得到如下的效果图：在HTML基础上加入CSS的文字
+<br>
 ![](/assets/chapter9/html/p1.jpg)
 最后，我们通过JavaScript定义鼠标一个行为，就是鼠标移动到上面的时候，背景颜色会变为深绿色，效果如下：
+<br>
+
 ![](/assets/chapter9/html/p2.jpg)
 
 
