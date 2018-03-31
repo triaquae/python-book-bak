@@ -220,12 +220,22 @@ type：列表标识的类型
 3. alt属性的值会在图片加载失败时显示在网页上。
 4. 还可以为图片设置宽度(width)和高度(height)，不设置就显示图片默认的宽度和高度
 ```html
-	<img src="./machine-right.png" alt="金融量化分析" style="width:200px;height:200px">
-	<img src="./finance-right.png" alt="人工智能实战"  style="width: 200px;height: 200px">
+	<div>
+		<span>与行内元素展示的标签<span>
+		<span>与行内元素展示的标签<span>
+		<img src="./machine-right.png" alt="金融量化分析" style="width:200px;height:200px">
+		<img src="./finance-right.png" alt="人工智能实战"  style="width: 200px;height: 200px">
+	</div>
 ```
-浏览器查看效果：
-1. 与行内元素在一行内展示
+浏览器查看效果：行内块元素
+1. 与行内元素在一行内显示
 2. 可以设置宽度和高度
+3. span标签可以单独摘出某块内容，结合css设置相应的样式
+
+```
+<p>路飞学城立志帮助有志向的年轻人通过努力学习获得体面的工作和生活!路飞学员通过学习Python ,<span>金融分析</span>,人工智能等互联网最前沿技术,开启职业生涯新可能</p>
+
+```
 
 ## 其他标签
 ### 换行标签 `<br>`
