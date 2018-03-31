@@ -118,8 +118,84 @@ colspan 合并列(横着合并)
 
 ### 表单的作用
 表单用于显示、手机信息，并将信息提交给服务器
-语法：
+1. 语法：
 ```
 <form>允许出现表单控件</form>
 ```
+2. 属性 见下图：
+![](/assets/chapter9/html/form.png)
+
+3. 表单控件分类 见下图
+![](/assets/chapter9/html/form_sort.png)
+
+```html
+  <form action="http://www.baidu.com" method="get">
+            <!-- input -->
+            <!--文本框-->
+            <p>
+                用户名称：
+                <input type="text" name="txtUsename" value="请输入用户名称" readonly>
+            </p>
+            <p>
+                用户密码：
+                <input type="password" name="txtUsepwd">
+            </p>
+            <p>
+                确认密码：
+                <input type="password" name="txtcfmpwd" disabled>
+            </p>
+            <!--单选框-->
+            <p>
+                用户性别：
+                <input type="radio" name="sexrdo" value="男">男
+                <input type="radio" name="sexrdo" value="女" checked=''>女
+            </p>
+            <!--复选框-->
+            <p>
+                用户爱好：吃
+                <input type="checkbox" name="chkhobby" value="吃" checked> 喝
+                <input type="checkbox" name="chkhobby" value="喝"> 玩
+                <input type="checkbox" name="chkhobox" value="玩"> 乐
+                <input type="checkbox" name="chkhobox" value="乐" checked>
+            </p>
+            <!-- 按钮 -->
+            <p>
+                <input type="submit" name="btnsbt" value="提交">
+                <input type="reset" name="btnrst" value="重置">
+                <input type="button" name="btnbtn" value="普通按钮">
+            </p>
+            <!--文件选择框-->
+            <p>
+                请上传文件：
+                <input type="file" name="txtfile">
+            </p>
+            <!--textarea-->
+            <p>
+                自我介绍：
+                <textarea name="txt" cols="20" rows="5"></textarea>
+            </p>
+            <!--选择框-->
+            <!--滚动列表-->
+            <p>籍贯：
+                <select name="sel" size="3" multiple>
+                    <option value="深圳">深圳</option>
+                    <option value="北京">北京</option>
+                    <option value="上海">上海</option>
+                    <option value="广州" selected>广州</option>
+                </select>
+            </p>
+            <!--下拉列表-->
+            <p>意向工作城市：
+                <select name="sel">
+                    <option value="深圳">深圳</option>
+                    <option value="北京">北京</option>
+                    <option value="上海">上海</option>
+                    <option value="广州" selected>广州</option>
+                </select>
+            </p>        
+        </form>
+
+```
+
+
 
