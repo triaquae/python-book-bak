@@ -45,12 +45,31 @@ h1~h6标签的默认样式：
 ```html
 <body>
     <h1>
-        <!--链接网址资源-->
-        <a href="http://www.baidu.com" target="_blank" title="路飞学城">路飞学城</a>
-    </h1>
+     
+		<!-- a链接 超链接  
+		target:_blank 在新的网站打开链接的资源地址
+				_self 在当前网站打开链接的资源地址
+		title: 鼠标悬停时显示的标题
+		-->
+		<a href="http://www.baidu.com" target="_blank" title="路飞学城">路飞学城</a>
+		<a href="a.zip">下载包</a>
+		<a href="mailto:zhaoxu@tedu.cn">联系我们</a>
+		<!-- 返回页面顶部的内容 -->
+		<a href="#">跳转到顶部</a>
 
+		<!-- 返回某个id -->
+		<a href="#p1">跳转到p1</a>
+		<!-- javascript:是表示在触发<a>默认动作时，执行一段JavaScript代码，而 javascript:; 表示什么都不执行，这样点击<a>时就没有任何反应。 -->
+		<a href="javascript:alert(1)">内容</a>
+		<a href="javascript:;">内容</a>
+
+
+	</h1>
 </body>
 ```
+target:_blank 在新的网站打开链接的资源地址
+target：_self 在当前网站打开链接的资源地址
+title: 表示鼠标悬停时显示的标题
 
 链接其他表现形式：
 1.目标文档为下载资源
@@ -60,8 +79,10 @@ h1~h6标签的默认样式：
   例如：`<a href="mailto:zhaoxu@tedu.cn">联系我们</a>`
 3. 返回页面顶部的空链接或具体id值的标签
   例如：`<a href="#">内容</a>`或`<a href="#id值">内容</a>`
-4. 链接到Javascript
-  例如：`<a href="javascript:;">内容</a>`
+4. javascript:是表示在触发`<a>`默认动作时，执行一段JavaScript代码。
+  例如：`<a href="javascript:alert()">内容</a>`
+5.javascript:;表示什么都不执行，这样点击<a>时就没有任何反应
+   例如：`<a href="javascrip:;">内容</a
 
 
 
