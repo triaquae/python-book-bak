@@ -81,11 +81,15 @@ title: 表示鼠标悬停时显示的标题
   例如：`<a href="#">内容</a>`或`<a href="#id值">内容</a>`
 4. javascript:是表示在触发`<a>`默认动作时，执行一段JavaScript代码。
   例如：`<a href="javascript:alert()">内容</a>`
-5. javascript:;表示什么都不执行，这样点击<a>时就没有任何反应
-   例如：`<a href="javascrip:;">内容</a
+5. javascript:;表示什么都不执行，这样点击`<a>`时就没有任何反应
+   例如：`<a href="javascrip:;">`内容</a
 
 
 
 ## 列表标签 ul，ol
+网站页面上一些列表相关的内容比如说物品列表、人名列表等等都可以使用列表标签来展示。
+
+对于无序的列表，可以使用`<ul><li></li></ul>`标签，对于有序的列表，可以使用`<ol><li></li></ol>`标签
+
 
 ## 其他标签
