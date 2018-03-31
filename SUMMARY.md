@@ -214,7 +214,7 @@
 * [第10章 Django](di-10-zhang-django.md)
   * [10.1 web应用与http协议](101-webying-yong-yu-http-xie-yi.md)
     * [10.1.1 web应用与web框架](101-webying-yong-yu-http-xie-yi/1011.md)
-    * 10.1.2 http协议简介
+    * [10.1.2 http协议简介](101-webying-yong-yu-http-xie-yi/1012-httpxie-yi-jian-jie.md)
   * 10.2 Django的下载与简介
     * 10.2.1 MTV模型 
     * 10.2.2 Django的下与常用命令
@@ -246,10 +246,10 @@
     * 10.7.2 cookie的使用
     * 10.7.3 django的session组件
     * 10.7.4 session的配置文件
-  * 10.8 Django的用户认证系统 
-    * 10.8.1 auth模块的方法
-    * 10.8.2 user对象的方法
-  * 10.9 基于jquery的Ajax
+  * [10.8 Django的用户认证系统 ](108-djangode-yong-hu-ren-zheng-xi-tong.md)
+    * [10.8.1 auth模块的方法](108-djangode-yong-hu-ren-zheng-xi-tong/1081-authmo-kuai-de-fang-fa.md)
+    * [10.8.2 user对象的方法](108-djangode-yong-hu-ren-zheng-xi-tong/1082-userdui-xiang-de-fang-fa.md)
+  * [10.9 基于jquery的Ajax](109-ji-yujquery-de-ajax.md)
     * 10.9.1 ajax方法的简单使用
     * 10.9.2 ajax方法的参数
   * 10.10  Django的forms组件

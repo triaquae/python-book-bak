@@ -2,5 +2,111 @@
 ![](/assets/chapter9/html/table.png)
 
 ```
-
+<div class="table">
+        <table>
+            <!--表格头-->
+            <thead>
+                <!--表格行-->
+                <tr>
+                    <!--表格列，【注意】这里使用的是th-->
+                    <th></th>
+                </tr>
+            </thead>
+            <!--表格主体-->
+            <tbody>
+                <!--表格行-->
+                <tr>
+                    <!--表格列，【注意】这里使用的是td-->
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+            </tbody>
+            <!--表格底部-->
+            <tfoot>
+                <tr>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+</div>
 ```
+表格行和列的合并
+```
+rowspan 合并行(竖着合并)
+colspan 合并列(横着合并)
+```
+```html
+<body>
+    <div class="table">
+        <table border="1" cellspacing="0">
+            <!--表格头-->
+            <thead>
+                <!--表格行-->
+                <tr>
+                    <!--表格列，【注意】这里使用的是th-->
+                    <th></th>
+                    <th>星期一</th>
+                    <th>星期二</th>
+                    <th>星期三</th>
+                    <th>星期四</th>
+                    <th>星期五</th>
+                </tr>
+            </thead>
+            <!--表格主体-->
+            <tbody>
+                <!--表格行-->
+                <tr>
+                	<td rowspan="3">上午</td>
+                    <!--表格列，【注意】这里使用的是td-->
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>英文</td>
+                    <td>生物</td>
+                    <td>化学</td>
+                </tr>
+                <tr>
+                    <!--表格列，【注意】这里使用的是td-->
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>英文</td>
+                    <td>生物</td>
+                    <td>化学</td>
+                </tr>
+                <tr>
+                    <!--表格列，【注意】这里使用的是td-->
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>英文</td>
+                    <td>生物</td>
+                    <td>化学</td>
+                </tr>
+                <tr>
+                	<td rowspan ="2">下午</td>
+                    <!--表格列，【注意】这里使用的是td-->
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>英文</td>
+                    <td>生物</td>
+                    <td>化学</td>
+                </tr>
+                <tr>
+                    <!--表格列，【注意】这里使用的是td-->
+                    <td>语文</td>
+                    <td>数学</td>
+                    <td>英文</td>
+                    <td>生物</td>
+                    <td>化学</td>
+                </tr>
+            </tbody>
+            <!--表格底部-->
+            <tfoot>
+                <tr>
+                    <td colspan="6">课程表</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+```html
