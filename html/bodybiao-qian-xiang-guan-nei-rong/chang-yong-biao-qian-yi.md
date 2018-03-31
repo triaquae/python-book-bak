@@ -223,6 +223,9 @@ type：列表标识的类型
 	<img src="./machine-right.png" alt="金融量化分析" style="width:200px;height:200px">
 	<img src="./finance-right.png" alt="人工智能实战"  style="width: 200px;height: 200px">
 ```
+浏览器查看效果：
+1. 与行内元素在一行内展示
+2. 可以设置宽度和高度
 
 ## 其他标签
 ### 换行标签 `<br>`
