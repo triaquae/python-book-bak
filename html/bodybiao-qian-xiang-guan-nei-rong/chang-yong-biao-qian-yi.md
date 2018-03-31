@@ -192,11 +192,15 @@ type：列表标识的类型
 			</ol>
 		</div>
 	</div>
-
-
-
 </body>
 </html>
+```
+
+由上面代码可以看出
+```html
+<div id='wrap'>
+	<div></>
+</div>	
 ```
 
 
