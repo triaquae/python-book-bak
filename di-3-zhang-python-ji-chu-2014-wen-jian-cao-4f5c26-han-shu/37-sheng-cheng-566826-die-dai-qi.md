@@ -232,11 +232,15 @@ print(data.__next__())
 print(data.__next__())
 
 #输出
-<generator object fib at 0x101be02b0>
+<generator object fib at 0x000002E33EEFFCA8>
+1
 1
 干点别的事
+2
 3
+5
 8
+13
 ```
 
 `在上面fib`的例子，我们在循环过程中不断调用`yield`，就会不断中断。当然要给循环设置一个条件来退出循环，不然就会产生一个无限数列出来。同样的，把函数改成generator后，我们基本上从来不会用`next()`来获取下一个返回值，而是直接使用`for`循环来迭代：
