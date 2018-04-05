@@ -1,5 +1,6 @@
 ### 表格标签 table
-表格由` <table>` 标签来定义。每个表格均有若干行（由 `<tr>` 标签定义），每行被分割为若干单元格（由` <td> `标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等 
+
+表格由`<table>` 标签来定义。每个表格均有若干行（由 `<tr>` 标签定义），每行被分割为若干单元格（由`<td>`标签定义）。字母 td 指表格数据（table data），即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等  
 ![](/assets/chapter9/html/table.png)
 
 ```
@@ -33,11 +34,14 @@
         </table>
 </div>
 ```
+
 表格行和列的合并
+
 ```
 rowspan 合并行(竖着合并)
 colspan 合并列(横着合并)
 ```
+
 ```html
 <body>
     <div class="table">
@@ -59,7 +63,7 @@ colspan 合并列(横着合并)
             <tbody>
                 <!--表格行-->
                 <tr>
-                	<td rowspan="3">上午</td>
+                    <td rowspan="3">上午</td>
                     <!--表格列，【注意】这里使用的是td-->
                     <td>语文</td>
                     <td>数学</td>
@@ -84,7 +88,7 @@ colspan 合并列(横着合并)
                     <td>化学</td>
                 </tr>
                 <tr>
-                	<td rowspan ="2">下午</td>
+                    <td rowspan ="2">下午</td>
                     <!--表格列，【注意】这里使用的是td-->
                     <td>语文</td>
                     <td>数学</td>
@@ -113,20 +117,24 @@ colspan 合并列(横着合并)
 ```
 
 ### 表单标签 form
-表单是一个包含表单元素的区域
-表单元素是允许用户在表单中输入内容，比如：文本域(textarea)、输入框(input)、单选框（）
+
+表单是一个包含表单元素的区域  
+表单元素是允许用户在表单中输入内容，比如：文本域\(textarea\)、输入框\(input\)、单选框（）
 
 ### 表单的作用
-表单用于显示、手机信息，并将信息提交给服务器
+
+表单用于显示、手机信息，并将信息提交给服务器  
 1. 语法：
+
 ```
 <form>允许出现表单控件</form>
 ```
-2. 属性 见下图：
-![](/assets/chapter9/html/form.png)
 
-3. 表单控件分类 见下图
-![](/assets/chapter9/html/form_sort.png)
+1. 属性 见下图：  
+   ![](/assets/chapter9/html/form.png)
+
+2. 表单控件分类 见下图  
+   ![](/assets/chapter9/html/form_sort.png)
 
 ```html
   <form action="http://www.baidu.com" method="get">
@@ -175,7 +183,7 @@ colspan 合并列(横着合并)
                 <textarea name="txt" cols="20" rows="5"></textarea>
             </p>
             <!--选择框-->
-            <!--滚动列表-->
+            <!--滚动列表 multiple设置以后实现多选效果，ctrl+鼠标左键进行多选-->
             <p>籍贯：
                 <select name="sel" size="3" multiple>
                     <option value="深圳">深圳</option>
@@ -194,7 +202,6 @@ colspan 合并列(横着合并)
                 </select>
             </p>        
         </form>
-
 ```
 
 
