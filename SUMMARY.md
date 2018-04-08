@@ -202,7 +202,12 @@
     * [9.3.6 运算符](936-yun-suan-fu.md)
     * [9.3.7 流程控制](937-liu-cheng-kong-zhi.md)
     * [9.3.8 函数](938-han-shu.md)
-  * [jQuery](jquery.md)
+  * [9.4jQuery](jquery.md)
+    * 9.4.1使用js的一些疼处
+    * [9.4.2 js和jquery的区别](jquery/942-jshe-jquery-de-qu-bie.md)
+    * 9.4.3 jquery文件的引入
+    * 9.4.4 jquery选择器用法
+    * 9.4.5 jquery对象和DOM对象的转换
   * [Bootstrap](bootstrap.md)
 * [第10章 Django](di-10-zhang-django.md)
   * [10.1 web应用与http协议](101-webying-yong-yu-http-xie-yi.md)
