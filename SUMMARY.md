@@ -203,7 +203,7 @@
     * [9.3.7 流程控制](937-liu-cheng-kong-zhi.md)
     * [9.3.8 函数](938-han-shu.md)
   * [9.4jQuery](jquery.md)
-    * 9.4.1使用js的一些疼处
+    * [9.4.1使用js的一些疼处](jquery/941shi-yong-js-de-yi-xie-teng-chu.md)
     * [9.4.2 js和jquery的区别](jquery/942-jshe-jquery-de-qu-bie.md)
     * [9.4.3 jquery文件的引入](jquery/943-jquerywen-jian-de-yin-ru.md)
     * [9.4.4 jquery选择器用法](jquery/944-jqueryxuan-ze-qi-yong-fa.md)
@@ -211,6 +211,7 @@
     * [9.4.6 jquery的效果](jquery/946-jqueryde-xiao-guo.md)
     * [9.4.7 jquery的属性操作](jquery/946-jqueryde-shu-xing-cao-zuo.md)
     * 9.4.8 操作input的value值
+    * [9.4.9 jquery文档操作](jquery/949-jquerywen-dang-cao-zuo.md)
   * [Bootstrap](bootstrap.md)
 * [第10章 Django](di-10-zhang-django.md)
   * [10.1 web应用与http协议](101-webying-yong-yu-http-xie-yi.md)
