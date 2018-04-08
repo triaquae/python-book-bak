@@ -51,9 +51,9 @@ html() 是获取选中标签元素中所有的内容
 ```javascript
 $('ul').html('<a href="#">百度一下</a>')
 	//可以使用函数来设置所有匹配元素的内容
-	$('ul').html(function(){
-			return '哈哈哈'
-		})
+$('ul').html(function(){
+	return '哈哈哈'
+})
 ```
 ### text
 text() 获取匹配元素包含的文本内容
