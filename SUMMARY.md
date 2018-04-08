@@ -205,7 +205,7 @@
   * [9.4jQuery](jquery.md)
     * 9.4.1使用js的一些疼处
     * [9.4.2 js和jquery的区别](jquery/942-jshe-jquery-de-qu-bie.md)
-    * 9.4.3 jquery文件的引入
+    * [9.4.3 jquery文件的引入](jquery/943-jquerywen-jian-de-yin-ru.md)
     * 9.4.4 jquery选择器用法
     * 9.4.5 jquery对象和DOM对象的转换
   * [Bootstrap](bootstrap.md)
