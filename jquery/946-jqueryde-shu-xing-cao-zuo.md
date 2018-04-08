@@ -38,6 +38,24 @@ $('div').removeClass('box')移除指定的类
 
 $('div').removeClass()移除全部的类
 ### toggleClass
+
+如果存在（不存在）就删除（添加）一个类。
+
+语法：toggleClass('box')
 ### html
+获取值：
+
+html() 是获取选中标签元素中所有的内容
+
+设置值：设置该元素的所有内容 会替换掉 标签中原来的内容
+```javascript
+$('ul').html('<a href="#">百度一下</a>')
+	//可以使用函数来设置所有匹配元素的内容
+	$('ul').html(function(){
+			return '哈哈哈'
+		})
+```
 ### text
+text() 获取匹配元素包含的文本内容
 ### val
+val()用于表单控件中获取值，比如input textarea select等等
