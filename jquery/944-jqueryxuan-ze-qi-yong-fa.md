@@ -137,7 +137,7 @@
 		
 		//匹配给定的属性是以某些值结尾的元素
 		$('input[name$=222]').css('background','yellow')
-		
+		//匹配给定的属性是以包含某些值的元素
 		$("button[class*='btn']").css('background','#0000FF')
 ```
 
