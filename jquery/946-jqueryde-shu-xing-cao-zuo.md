@@ -19,10 +19,24 @@
 		
 ```
 ### removeAttr
+从每一个匹配的元素中删除一个属性
 ### prop
+prop()获取在匹配的元素集中的第一个元素的属性值，但是不可以设置多个属性，可以设置一个属性。
+
 ### removeProp
-### addClass
+用来删除由.prop()方法设置的属性集
+### addClass（添加多个类名）
+为每个匹配的元素添加指定的类名。
+$('div').addClass("box"):添加一个类名
+
+$('div').addClass("box box2"):**添加多个类名**
+
 ### removeClass
+从所有匹配的元素中删除全部或者指定的类。
+
+$('div').removeClass('box')移除指定的类
+
+$('div').removeClass()移除全部的类
 ### toggleClass
 ### html
 ### text
