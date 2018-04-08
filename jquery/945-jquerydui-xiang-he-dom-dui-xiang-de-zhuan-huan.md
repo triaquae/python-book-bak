@@ -9,6 +9,7 @@ console.log($(box));
 ```
 
 ### jquery对象转化成DOM对象
+
 第一种方式：
 
 $('button')[0]
