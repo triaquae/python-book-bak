@@ -208,6 +208,7 @@
     * [9.4.3 jquery文件的引入](jquery/943-jquerywen-jian-de-yin-ru.md)
     * [9.4.4 jquery选择器用法](jquery/944-jqueryxuan-ze-qi-yong-fa.md)
     * [9.4.5 jquery对象和DOM对象的转换](jquery/945-jquerydui-xiang-he-dom-dui-xiang-de-zhuan-huan.md)
+    * [9.4.6 jquery的效果](jquery/946-jqueryde-xiao-guo.md)
   * [Bootstrap](bootstrap.md)
 * [第10章 Django](di-10-zhang-django.md)
   * [10.1 web应用与http协议](101-webying-yong-yu-http-xie-yi.md)
