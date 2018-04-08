@@ -36,26 +36,32 @@
 		// console.log($('*').html())
 		console.log($('a').val())
 		
-		// 5.后代选择器
+```
+## 层级选择器
+```javascript
+	// 后代选择器
 		console.log($('div p'))
 		$('div p').css('color','red')
 
-		// 6.子代选择器
+		// 子代选择器
 		$('div >p').css('background','green')
 
-		// 7.毗邻选择器 匹配 所有紧接在#brother元素后的下一个元素
+		// 毗邻选择器 匹配 所有紧接在#brother元素后的下一个元素
 		$('#brother+ li').css('color','yellow')
 
-		// 8.兄弟选择器
+		// 兄弟选择器
 		// 匹配所有#brother之后的所有兄弟姐妹元素
-        $('#brother~li').css('background','#996633')
-
-		// 9.:first  获取第一个元素
+		$('#brother~li').css('background','#996633')
+		
+		// :first  获取第一个元素
 		$('li:first').text('真的吗？')
-		// 10.:last 获取最后一个元素
+		// :last 获取最后一个元素
 		$('li:last').html('真的吗？')
 
 
-
+		
+		//一个给定索引值的元素
 		console.log($('p:eq(3)').text())
+```
+```javascript
 ```
