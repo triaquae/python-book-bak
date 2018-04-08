@@ -41,6 +41,13 @@ document.getElementById('btn').onclick = function(){
 
 		}
 		}
+		
+如果使用jQuery操作上面的案例，很简单，三句代码搞定
+	$('#btn').click(function(){
+			$('div').css('display','block');
+			$('div').html('我出来了')
+			
+		})
 ```
 
 
