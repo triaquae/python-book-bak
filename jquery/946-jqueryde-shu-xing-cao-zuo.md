@@ -37,11 +37,31 @@ $('div').addClass("box box2"):**添加多个类名**
 $('div').removeClass('box')移除指定的类
 
 $('div').removeClass()移除全部的类
+
+```javascript
+	var tag  = false;
+		$('span').click(function(){
+			if(tag){
+				$('span').removeClass('active')
+				tag=false;
+			}else{
+				$('span').addClass('active')
+				tag=true;
+			}	
+		})
+```
 ### toggleClass
 
 如果存在（不存在）就删除（添加）一个类。
 
 语法：toggleClass('box')
+
+```javascript
+$('span').click(function(){
+	//动态的切换class类名为active
+	$(this).toggleClass('active')
+})
+```
 ### html
 获取值：
 
@@ -56,6 +76,19 @@ $('ul').html(function(){
 })
 ```
 ### text
+获取值：
+
 text() 获取匹配元素包含的文本内容
+
+设置值：
+设置该所有的文本内容 
+**注意**：值为标签的时候 不会被渲染为标签元素 只会被当做值渲染到浏览器中
 ### val
+获取值：
+
 val()用于表单控件中获取值，比如input textarea select等等
+
+设置值：
+```javascript
+$('input').val('设置了表单控件中的值')
+```
