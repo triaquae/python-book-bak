@@ -48,4 +48,10 @@ speed:三种预定速度之一的字符串("slow","normal", or "fast")或表示�
 fn:在动画完成时执行的函数，每个元素执行一次。
 
 ### stop
+概念：停止所有在指定元素上正在运行的动画
+语法：stop([clearQueue],[jumpToEnd])
+参数：
+clearQueue:如果设置成true，则清空队列。可以立即结束动画。
+
+gotoEnd:让当前正在执行的动画立即完成，并且重设show和hide的原始样式，调用回调函数等
 ### delay
