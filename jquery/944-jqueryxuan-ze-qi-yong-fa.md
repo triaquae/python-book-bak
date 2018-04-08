@@ -20,3 +20,19 @@
 		<p>蘑菇放辣椒</p>
 	</div>
 ```
+
+```javascript
+
+	// 基本选择器
+		// 1.id选择器
+		$('#brother').css('color','black');
+		// 标签选择器
+		$('a').css('color','yellow')
+
+		// 类选择器
+		$('.item').css('background','#FC4708')
+
+		// 通配符选择器
+		// console.log($('*').html())
+		console.log($('a').val())
+```
