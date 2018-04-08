@@ -65,6 +65,15 @@
 
 ```
 ## 基本过滤选择器
+```html
+		<ul>
+			<li>哈哈哈</li>
+			<li>嘿嘿嘿</li>
+			<li>天王盖地虎</li>
+			<li>小鸡炖蘑菇</li>
+			
+		</ul>
+```
 ```javascript
 
 	//:first  获取第一个元素
@@ -143,3 +152,42 @@
 
 
 ## 筛选选择器
+```html
+		<div id="box">
+			<p class="p1">
+				<span>我是第一个span标签</span>
+				<span>我是第二个span标签</span>
+				<span>我是第三个span标签</span>
+			</p>
+			<button>按钮</button>
+		</div>
+		<ul>
+			<li class="list">2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+		
+```
+
+```javascript
+	//获取第n个元素 数值从0开始
+		$('span').eq(0).css('font-size','30px')
+
+		//first()获取第一个元素
+		$('span').first().css('background','red')
+		
+		//last()获取最后一个元素
+		
+		//.parent() 选择父亲元素
+		$('span').parent('.p1').css({width:'300px',height:'300px',background:'yellow'})
+		
+		
+		//.siblings()选择所有的兄弟元素
+		$('.list').siblings('li').css('color','red')
+		
+		//.find()
+		//查找所有的后代元素
+		$('div').find('button').css('background','#313131')
+```
+
