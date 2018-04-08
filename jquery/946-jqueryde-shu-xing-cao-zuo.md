@@ -1,5 +1,20 @@
 ## jquery的属性操作
-对象：有它自己的属性和方法，我们先研究一下jquery的属性操作
+有它自己的属性和方法，我们先研究一下jquery的属性操作。
+jquery的属性操作模块分为四个部分：html属性操作，dom属性操作，类样式操作和值操作
+
+```
+html属性操作：是对html文档中的属性进行读取，设置和移除操作。比如attr()、removeAttr()
+
+DOM属性操作：对DOM元素的属性进行读取，设置和移除操作。比如prop()、removeProp()
+
+类样式操作：是指对DOM属性className进行添加，移除操作。比如addClass()、removeClass()、toggleClass()
+
+值操作：是对DOM属性value进行读取和设置操作。比如html()、text()、val()
+
+
+
+
+```
 
 ### attr
 概念：设置属性值或者 返回被选元素的属性值
