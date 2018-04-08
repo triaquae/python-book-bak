@@ -41,6 +41,11 @@ hide(speed,callback)跟show使用方法类似，表示隐藏显示的元素。
 概念：用于创建自定义动画的函数
 语法：animate(params,[speed],[fn])
 参数：
+params:一组包含作为动画属性和终值的样式属性和及其值的集合
+
+speed:三种预定速度之一的字符串("slow","normal", or "fast")或表示动画时长的毫秒数值(如：1000)
+
+fn:在动画完成时执行的函数，每个元素执行一次。
 
 ### stop
 ### delay
