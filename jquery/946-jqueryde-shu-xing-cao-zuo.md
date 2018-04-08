@@ -39,7 +39,7 @@ $('div').removeClass('box')移除指定的类
 $('div').removeClass()移除全部的类
 
 ```javascript
-	var tag  = false;
+var tag  = false;
 		$('span').click(function(){
 			if(tag){
 				$('span').removeClass('active')
