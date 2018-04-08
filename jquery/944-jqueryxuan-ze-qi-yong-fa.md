@@ -62,6 +62,84 @@
 		
 		//一个给定索引值的元素
 		console.log($('p:eq(3)').text())
+
+```
+## 基本过滤选择器
+```javascript
+
+	//:first  获取第一个元素
+		$('li:first').text('真的吗？')
+		//:last 获取最后一个元素
+		$('li:last').html('我是最后一个元素？')
+
+		//:odd 匹配所有索引值为奇数的元素，从0开始计数
+		$('li:odd').css('color','green');
+		
+		//:even 匹配所有索引值为奇数的元素，从0开始计数
+		$('li:even').css('color','red')
+		
+		//:eq(index) 获取给定索引值的元素 从0开始计数
+		$('li:eq(1)').css('font-size','30px')
+		
+		//:gt(index)匹配所有大于给定索引值的元素
+		$('li:gt(1)').css('font-size','40px')
+		
+		//:lt(index) 匹配所有小于给定索引值的元素
+		$('li:lt(1)').css('font-size','40px')
+	
+		//一个给定索引值的元素
+		console.log($('p:eq(3)').text())
+
+```
+
+## 属性选择器
+```html
+	<div id="box">
+			<h2 class="title">属性元素器</h2>
+			<p class="p1">我是一个段落</p>
+			<ul>
+				<li id="li1">分手应该体面</li>
+				<li class="what">分手应该体面</li>
+				<li class="what">分手应该体面</li>
+				<li class="heihei">分手应该体面</li>
+				
+			</ul>
+			
+			<form action="" method="post">
+				
+				<input name="username" type='text' value="1" checked="checked"></input>
+				<input name="username1111" type='text' value="1"></input>
+				<input name="username2222" type='text' value="1"></input>
+				<input name="username3333" type='text' value="1"></input>
+				<button class="btn-default">按钮1</button>
+				<button class="btn-info">按钮1</button>
+				<button class="btn-success">按钮1</button>
+				<button class="btn-danger">按钮1</button>
+				
+				
+			</form>
+		</div>
 ```
 ```javascript
+	//属性选择器
+		
+		//标签名[属性名] 查找所有含有id属性的该标签名的元素
+		$("li[id]").css('color','red')
+		
+		//[attr=value] 匹配给定的属性是某个特定值的元素
+		$('li[class=what]').css('font-size','30px')
+		
+		//[attr!=value] 匹配所有不含有指定的属性，或者属性不等于特定值的元素
+		$('li[class!=what]').css('color','darkgreen')
+		
+		//匹配给定的属性是以某些值开始的元素
+		$('input[name^=username]').css('background','red')
+		
+		//匹配给定的属性是以某些值结尾的元素
+		$('input[name$=222]').css('background','yellow')
+		
+		$("button[class*='btn']").css('background','#0000FF')
 ```
+
+
+## 筛选选择器
