@@ -58,7 +58,10 @@ clone() 克隆匹配的DOM元素并且选中这些克隆的副本
 ```javascript
 
 $('button').click(function() {
-  $(this).clone().insertAfter(this);
+  
+  // 1.clone()：克隆匹配的DOM元素并且选中这些克隆的副本。
+ // 2.clone()：元素以及其所有的事件处理并且选中这些克隆的副本(简言之，副本具有与真身一样的事件处理能力)
+  $(this).clone(true).insertAfter(this);
 })
 ```
 
