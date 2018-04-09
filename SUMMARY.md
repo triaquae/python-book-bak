@@ -214,6 +214,8 @@
     * [9.4.9 jquery文档操作](jquery/949-jquerywen-dang-cao-zuo.md)
     * [9.4.10 jquery的CSS](jquery/9410-jqueryde-css.md)
     * [9.4.11 jquery的筛选方法](jquery/9411-jqueryde-shi-jian-chu-li.md)
+    * [9.4.12 jquery的事件](jquery/9412-jqueryde-shi-jian-chu-li.md)
+    * [9.4.13 jquery的Ajax](jquery/9413-jqueryde-ajax.md)
   * [Bootstrap](bootstrap.md)
 * [第10章 Django](di-10-zhang-django.md)
   * [10.1 web应用与http协议](101-webying-yong-yu-http-xie-yi.md)
