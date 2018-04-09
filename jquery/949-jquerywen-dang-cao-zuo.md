@@ -6,17 +6,14 @@
 
 
 ```javascript
-			var oli = document.createElement('li');
-			oli.innerHTML = '哈哈哈'
-			
-			
-			//jquery中的dom操作
-			
-			//1.append(content)追加  往父元素中添加新的元素
-			//content:string | element | jquery元素
-			$('ul').append('<li>1233</li>')
-			$('ul').append(oli)
-			$('ul').append($('#app'))
+var oli = document.createElement('li');
+oli.innerHTML = '哈哈哈'
+//jquery中的dom操作
+//1.append(content)追加  往父元素中添加新的元素
+//content:string | element | jquery元素
+$('ul').append('<li>1233</li>')
+$('ul').append(oli)
+$('ul').append($('#app'))
 			
 ```
 
@@ -56,8 +53,32 @@ $('<h2>我是一个h2标题</h2>').insertBefore('ul')
 
 
 ### 2、复制操作
+clone() 克隆匹配的DOM元素并且选中这些克隆的副本
+
+```javascript
+
+$('button').click(function() {
+  $(this).clone().insertAfter(this);
+})
+```
 
 ### 3、替换操作
+replaceWith()：将所有匹配的元素替换成指定的HTML或DOM元素。
+
+```javascript
+//将所有的h5标题替换为a标签
+$('h5').replaceWith('<a href="#">hello world</a>')
+//将所有h5标题标签替换成id为app的dom元素
+$('h5').replaceWith($('#app'));
+
+
+```
+replaceAll():用匹配的元素替换掉所有 selector匹配到的元素
+
+```javascript
+$('<br/><hr/><button>按钮</button>').replaceAll('h4')
+
+```
 
 ### 4、删除操作
 
