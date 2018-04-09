@@ -40,13 +40,19 @@ $('ul').prepend('<li>我是第一个</li>')
  $('<a href="#">路飞学诚</a>').prependTo('ul')
 ```
 
-五、after() 在匹配的元素之后插入内容 === insertAfter()
+五、父.after(子) 在匹配的元素之后插入内容 与 子.insertAfter(父)
 
 ```javascript
-
+$('ul').after('<h4>我是一个h3标题</h4>')
+			$('<h5>我是一个h2标题</h5>').insertAfter('ul')
 ```
 
-六、before() 在匹配的元素之前插入内容 === insertBefor()
+六、父.before(子) 在匹配的元素之前插入内容 与 子.insertBefor(父)
+
+```javascript
+$('ul').before('<h3>我是一个h3标题</h3>')
+			$('<h2>我是一个h2标题</h2>').insertBefore('ul')
+```
 
 
 ### 2、复制操作
