@@ -60,13 +60,13 @@ clone() 克隆匹配的DOM元素并且选中这些克隆的副本
 $('button').click(function() {
   
   // 1.clone()：克隆匹配的DOM元素并且选中这些克隆的副本。
- // 2.clone()：元素以及其所有的事件处理并且选中这些克隆的副本(简言之，副本具有与真身一样的事件处理能力)
+ // 2.clone(true)：元素以及其所有的事件处理并且选中这些克隆的副本(简言之，副本具有与真身一样的事件处理能力)
   $(this).clone(true).insertAfter(this);
 })
 ```
 
 ### 3、替换操作
-replaceWith()：将所有匹配的元素替换成指定的HTML或DOM元素。
+一、replaceWith()：将所有匹配的元素替换成指定的HTML或DOM元素。
 
 ```javascript
 //将所有的h5标题替换为a标签
@@ -76,7 +76,7 @@ $('h5').replaceWith($('#app'));
 
 
 ```
-replaceAll():用匹配的元素替换掉所有 selector匹配到的元素
+二、replaceAll():用匹配的元素替换掉所有 selector匹配到的元素
 
 ```javascript
 $('<br/><hr/><button>按钮</button>').replaceAll('h4')
@@ -84,6 +84,26 @@ $('<br/><hr/><button>按钮</button>').replaceAll('h4')
 ```
 
 ### 4、删除操作
+一、remove() 删除节点后，事件也会删除（简言之，删除了整个标签）
+
+```javascript
+$('ul').remove();
+```
+
+二、detach() 删除节点后，事件会保留
+
+```javascript
+ var $btn = $('button').detach()
+ //此时按钮能追加到ul中
+ $('ul').append($btn)
+```
+
+三、empty(): 清空元素中的所有后代节点
+
+```javascript
+//清空掉ul中的子元素，保留ul
+$('ul').empty()
+```
 
 ### 5、删除相关操作的区别
 
