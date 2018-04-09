@@ -19,13 +19,14 @@
 			$('ul').append($('#app'))
 			
 ```
-二、子元素.appendTo(父元素) 追加到某元素 子元素添加到父元素
-```
 
-```
+
+二、子元素.appendTo(父元素) 追加到某元素 子元素添加到父元素
+
 ```javascript
 
-			$('<li>天王盖地虎</li>').appendTo($('ul')).addClass('hu')
+$('<li>天王盖地虎</li>').appendTo($('ul')).addClass('hu')
+			
 ```
 
 
