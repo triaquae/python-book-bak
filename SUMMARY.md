@@ -210,7 +210,7 @@
     * [9.4.5 jquery对象和DOM对象的转换](jquery/945-jquerydui-xiang-he-dom-dui-xiang-de-zhuan-huan.md)
     * [9.4.6 jquery的效果](jquery/946-jqueryde-xiao-guo.md)
     * [9.4.7 jquery的属性操作](jquery/946-jqueryde-shu-xing-cao-zuo.md)
-    * 9.4.8 操作input的value值
+    * [9.4.8 操作input的value值](jquery/948-cao-zuo-input-de-value-zhi.md)
     * [9.4.9 jquery文档操作](jquery/949-jquerywen-dang-cao-zuo.md)
   * [Bootstrap](bootstrap.md)
 * [第10章 Django](di-10-zhang-django.md)
