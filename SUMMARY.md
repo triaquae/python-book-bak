@@ -202,7 +202,7 @@
     * [9.3.6 运算符](936-yun-suan-fu.md)
     * [9.3.7 流程控制](937-liu-cheng-kong-zhi.md)
     * [9.3.8 函数](938-han-shu.md)
-  * [9.4jQuery](jquery.md)
+  * [9.4 jQuery](jquery.md)
     * [9.4.1使用js的一些疼处](jquery/941shi-yong-js-de-yi-xie-teng-chu.md)
     * [9.4.2 js和jquery的区别](jquery/942-jshe-jquery-de-qu-bie.md)
     * [9.4.3 jquery文件的引入](jquery/943-jquerywen-jian-de-yin-ru.md)
