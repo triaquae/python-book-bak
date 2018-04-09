@@ -93,5 +93,61 @@ $('p').Height(200）
 ```
 
 
+## 防淘宝固定导航案例
+### HTML
+```html
+<div class="top">
+	<img src="images/top.jpg" alt="" />
+			
+</div>
+<div class="nav">
+	<img src="images/nav.jpg"/>
+</div>
+
+<div class = "taobao">
+	<img src="images/taobao1.png"/>
+</div>
+```
+### CSS
+```css
+<style type="text/css">
+	*{padding: 0;margin: 0;}
+	div{width: 100%;}
+	div img{width: 100%;}
+	.nav{display: none;}
+</style>
+```
+
+
+
+
+
+### JS
+```javascript
+
+	$(document).scroll(function(){
+				
+				var h = $('.top').height()
+				console.log(h)
+				var a = $(document).scrollTop()
+				console.log(a)
+				
+				if(h<a){
+					$('.nav').css({display:'block',position:'fixed',top:0})
+
+				}else{
+					$('.nav').css({display:'none',position:'static',top:0})
+				}
+})
+```
+
+
+
+
+
+
+
+
+
 
 
