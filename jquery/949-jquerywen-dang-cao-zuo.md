@@ -40,16 +40,13 @@ $('ul').prepend('<li>我是第一个</li>')
  $('<a href="#">路飞学诚</a>').prependTo('ul')
 ```
 
-五、after() 在匹配的元素之后插入内容
-
-```javascript
-```
-
-六、before() 在匹配的元素之前插入内容
+五、after() 在匹配的元素之后插入内容 === insertAfter()
 
 ```javascript
 
 ```
+
+六、before() 在匹配的元素之前插入内容 === insertBefor()
 
 
 ### 2、复制操作
