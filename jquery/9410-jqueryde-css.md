@@ -15,6 +15,11 @@ $("p").offset().left
 ### scrollTop
 获取匹配元素相对滚动条顶部的偏移  文档被卷起的像素值
 
+
+### scrollLeft
+获取匹配元素相对滚动条左侧的偏移  文档被卷起的像素值
+
+
 ```javascript
  //获取匹配元素相对滚动条顶部的偏移  文档被卷起的像素值
 $(document).scrollTop()
@@ -28,8 +33,6 @@ $(document).scroll(function(){
  })
 ```
 
-### scrollLeft
-获取匹配元素相对滚动条左侧的偏移  文档被卷起的像素值
 
 
 ### innerHeight
