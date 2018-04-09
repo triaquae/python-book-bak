@@ -212,6 +212,7 @@
     * [9.4.7 jquery的属性操作](jquery/946-jqueryde-shu-xing-cao-zuo.md)
     * [9.4.8 操作input的value值](jquery/948-cao-zuo-input-de-value-zhi.md)
     * [9.4.9 jquery文档操作](jquery/949-jquerywen-dang-cao-zuo.md)
+    * [9.4.10 jquery的CSS](jquery/9410-jqueryde-css.md)
   * [Bootstrap](bootstrap.md)
 * [第10章 Django](di-10-zhang-django.md)
   * [10.1 web应用与http协议](101-webying-yong-yu-http-xie-yi.md)
