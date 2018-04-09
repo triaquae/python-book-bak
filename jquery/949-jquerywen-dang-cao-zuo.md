@@ -44,14 +44,14 @@ $('ul').prepend('<li>我是第一个</li>')
 
 ```javascript
 $('ul').after('<h4>我是一个h3标题</h4>')
-			$('<h5>我是一个h2标题</h5>').insertAfter('ul')
+$('<h5>我是一个h2标题</h5>').insertAfter('ul')
 ```
 
 六、父.before(子) 在匹配的元素之前插入内容 与 子.insertBefor(父)
 
 ```javascript
 $('ul').before('<h3>我是一个h3标题</h3>')
-			$('<h2>我是一个h2标题</h2>').insertBefore('ul')
+$('<h2>我是一个h2标题</h2>').insertBefore('ul')
 ```
 
 
