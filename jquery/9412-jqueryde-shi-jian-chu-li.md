@@ -18,6 +18,56 @@ HTML中与javascript交互是通过事件驱动来实现的，例如鼠标点击
 
 　　③ 事件冒泡阶段
 
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件流</title>
+    <script>
+         
+    window.onload = function(){
+ 
+        var oBtn = document.getElementById('btn');
+         
+        oBtn.addEventListener('click',function(){
+            console.log('btn处于事件捕获阶段');
+        }, true);
+        oBtn.addEventListener('click',function(){
+            console.log('btn处于事件冒泡阶段');
+        }, false);
+ 
+        document.addEventListener('click',function(){
+            console.log('document处于事件捕获阶段');
+        }, true);
+        document.addEventListener('click',function(){
+            console.log('document处于事件冒泡阶段');
+        }, false);
+ 
+        document.documentElement.addEventListener('click',function(){
+            console.log('html处于事件捕获阶段');
+        }, true);
+        document.documentElement.addEventListener('click',function(){
+            console.log('html处于事件冒泡阶段');
+        }, false);
+ 
+        document.body.addEventListener('click',function(){
+            console.log('body处于事件捕获阶段');
+        }, true);
+        document.body.addEventListener('click',function(){
+            console.log('body处于事件冒泡阶段');
+        }, false);
+ 
+    };
+ 
+    </script>
+</head>
+<body>
+    <a href="javascript:;" id="btn">按钮</a>
+</body>
+</html>
+```
+
 
 ### 1.ready
 
