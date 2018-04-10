@@ -13,6 +13,7 @@ oli.innerHTML = '哈哈哈'
 //content:string | element | jquery元素
 $('ul').append('<li>1233</li>')
 $('ul').append(oli)
+//如果直接的内容是当前页面中的某些元素，那么这些元素将从原位置上消失。简言之，就是一个移动操作
 $('ul').append($('#app'))
 			
 ```
