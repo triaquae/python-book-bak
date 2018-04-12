@@ -76,3 +76,10 @@ url参数为请求加载json格式文件的服务器地址，可选项data参数
 
 
 ```
+
+**3.jquery的$.get()方法**
+
+
+$.get() 方法通过 HTTP GET 请求从服务器上请求数据
+
+语法:$.get(URL,callback);
