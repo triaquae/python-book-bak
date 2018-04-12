@@ -56,3 +56,16 @@ $('#btn').click(function(){
 **2. jquery的getJSON方法**
 
 jQuery的AJAX中使用getJSON()方法异步加载JSON格式数据。获取服务器中的数据，并对数据进行解析，显示到页面中
+
+
+语法: $.getJSON(url,[data],[callback])
+
+```
+url参数为请求加载json格式文件的服务器地址，可选项data参数为请求时发送的数据，callback参数为数据请求成功后执行的函数
+```
+
+
+```javascript
+
+
+```
