@@ -1,4 +1,4 @@
-d## 什么是AJAX
+## 什么是AJAX
 
 AJAX = 异步的javascript和XML（Asynchronous Javascript and XML）
 
@@ -244,4 +244,10 @@ $.ajax({
    error:function(error){
       console.log(error)
 }
+```
+
+```
+注意：以上所有操作,请在服务器上运行此代码，如果没有服务器，可以在本地搭建本地服务器。
+好吧！！咱们还没学，我们可以使用PCCharm,WebStrom,HBuilder上运行此代码。但是post请求的方法 我们暂时没法演示，
+后面在django部分讲到服务器的老师，会给大家详细演示get请求和post请求的处理。
 ```
