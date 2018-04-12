@@ -35,8 +35,8 @@ $('#btn').click(function(){
 ```javascript
 $('#btn').click(function(){
     //只传一个url，表示在id为#new-projects的元素里加载index.html
-    $('#new-projects').load('./index.html');
+    $('#new-projects').load('./index.html',{"name":'张三'});
 })
 
-
+```
 ```
