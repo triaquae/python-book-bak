@@ -26,7 +26,8 @@ $("selector").load(url,data,callback);
 ```javascript
 
 $('#btn').click(function(){
-    //只传一个url，表示加载当前文件
+
+    //只传一个url，表示在id为#new-projects的元素里加载index.html
     $('#new-projects').load('./index.html');
 })
 
@@ -34,7 +35,7 @@ $('#btn').click(function(){
 
 ```javascript
 $('#btn').click(function(){
-    //只传一个url，表示在id为#new-projects的元素里加载index.html
+    //只传一个url，导入的index.html文件含有一个传递参数，类似于：index/html?name='张三'
     $('#new-projects').load('./index.html',{"name":'张三'});
 })
 
