@@ -22,3 +22,7 @@ $("selector").load(url,data,callback);
 可选的data参数规定与请求一同发送的查询字符串键/值对的集合
 可选的callback参数是load()方法完成后所执行的函数名称
 ```
+
+```javascript
+
+```
