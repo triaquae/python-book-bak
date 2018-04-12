@@ -24,6 +24,11 @@ $("selector").load(url,data,callback);
 ```
 
 ```javascript
+
+$('#btn').click(function(){
+    
+    $('#new-projects').load('./index.html');
+})
     
 
 ```
