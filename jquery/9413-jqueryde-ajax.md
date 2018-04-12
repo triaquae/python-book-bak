@@ -24,5 +24,6 @@ $("selector").load(url,data,callback);
 ```
 
 ```javascript
+    
 
 ```
