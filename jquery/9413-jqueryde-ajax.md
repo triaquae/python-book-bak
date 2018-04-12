@@ -69,10 +69,10 @@ url参数为请求加载json格式文件的服务器地址，可选项data参数
   $.getJSON("./data/getJSON.json", function (data) {
        var str = "";//初始化保存内容变量
        $.each(data, function(index,ele) {
-                    		$('ul').append("<li>"+ele.name+"</li>")
+          $('ul').append("<li>"+ele.name+"</li>")
                     	
-                    });
-                })
+          });
+       })
 
 
 ```
