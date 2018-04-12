@@ -216,6 +216,8 @@ text：返回纯文本字符串。
 
 
 ```javascript
+
+ //get()方式
   $.ajax({
      url:'./data/index.txt',
      type:'get',
@@ -227,4 +229,19 @@ text：返回纯文本字符串。
      error:function(error){
         console.log(error)
      }
+```
+
+```javascript
+
+//post()方式
+$.ajax({
+   url:'/index',
+   type:'post',
+   data:{name:'张三',age:12},
+   success:function(data){
+      $('p').html(data);
+   },
+   error:function(error){
+      console.log(error)
+}
 ```
