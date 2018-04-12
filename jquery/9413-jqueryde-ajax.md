@@ -1,4 +1,4 @@
-## 什么是AJAX
+d## 什么是AJAX
 
 AJAX = 异步的javascript和XML（Asynchronous Javascript and XML）
 
