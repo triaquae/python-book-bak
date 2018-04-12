@@ -35,9 +35,13 @@ $('#btn').click(function(){
 
 ```javascript
 $('#btn').click(function(){
-    //只传一个url，导入的index.html文件含有一个传递参数，类似于：index/html?name='张三'
-    $('#new-projects').load('./index.html',{"name":'张三'});
+    //只传一个url，导入的index.html文件含有多个传递参数，类似于：index/html?name='张三'
+    $('#new-projects').load('./index.html',{"name":'张三',"age":12});
 })
 
 ```
+```javascript
+    $('#new-projects').load('./index.html',{"name":'张        三',"age":12},function(){
+    
+});
 ```
