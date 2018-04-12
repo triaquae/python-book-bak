@@ -41,7 +41,7 @@ $('#btn').click(function(){
 
 ```
 ```javascript
-    $('#new-projects').load('./index.html',{"name":'张        三',"age":12},function(){
+    $('#new-projects').load('./index.html',{"name":'张三',"age":12},function(){
     
 });
 ```
