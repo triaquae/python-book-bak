@@ -94,3 +94,20 @@ url参数规定你请求的路径，是必需参数，callback参数为数据请
     console.log(status);   //success    200状态码 ok的意思          	
 })
 ```
+
+**4.jquery的post()方法**
+
+与get()方法相比，post()方法多用于以POST方式向服务器发送数据，服务器接收到数据之后，进行处理，并将处理结果返回页面
+
+语法：$.post(URL,data,callback);
+
+```
+url参数规定你请求的路径，是必需参数，可选的data参数是连同请求发送的数据。可选的callback参数为数据请求成功后执行的函数
+```
+
+```javascript
+ $.post('/index',{name:'张三'},function(data,status){
+      console.log(status);
+                	
+ })
+```
