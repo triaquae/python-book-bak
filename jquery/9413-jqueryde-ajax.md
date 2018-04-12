@@ -87,3 +87,10 @@ $.get() 方法通过 HTTP GET 请求从服务器上请求数据
 ```
 url参数规定你请求的路径，是必需参数，callback参数为数据请求成功后执行的函数
 ```
+
+```javascript
+ 
+                $.get('./data/getJSON.json',function(data,status){
+    console.log(status);               	
+})
+```
