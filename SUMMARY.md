@@ -219,9 +219,6 @@
   * [9.5 Bootstrap](95-bootstrap.md)
     * [9.5.1 Bootstrap的介绍](95-bootstrap/951-bootstrapde-jie-shao.md)
     * [9.5.2 Bootstrap的引入和使用](95-bootstrap/952-bootstrapde-yin-ru-he-shi-yong.md)
-    * 9.5.3 Bootstrap 全局css样式
-    * 9.5.4 Bootstrap组件
-    * 9.5.5 Bootstrap插件
 * [第10章 Django](di-10-zhang-django.md)
   * [10.1 web应用与http协议](101-webying-yong-yu-http-xie-yi.md)
     * [10.1.1 web应用与web框架](101-webying-yong-yu-http-xie-yi/1011.md)
