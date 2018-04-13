@@ -218,7 +218,7 @@
     * [9.4.13 jquery的Ajax](jquery/9413-jqueryde-ajax.md)
   * [9.5 Bootstrap](95-bootstrap.md)
     * [9.5.1 Bootstrap的介绍](95-bootstrap/951-bootstrapde-jie-shao.md)
-    * 9.5.2 Bootstrap的引入和使用
+    * [9.5.2 Bootstrap的引入和使用](95-bootstrap/952-bootstrapde-yin-ru-he-shi-yong.md)
     * 9.5.3 Bootstrap 全局css样式
     * 9.5.4 Bootstrap组件
     * 9.5.5 Bootstrap插件
