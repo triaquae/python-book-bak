@@ -26,7 +26,7 @@ HTTP协议规定,请求从客户端发出,最后服务器端响应该请求并 �
 
 HTTP是一种不保存状态,即无状态\(stateless\)协议。HTTP协议 自身不对请求和响应之间的通信状态进行保存。也就是说在HTTP这个 级别,协议对于发送过的请求或响应都不做持久化处理。
 
-<img src="/assets/a.png" width = "300" height = "200" alt="图片名称" align=center />
+<img src="/assets/a.png" width = "100" height = "100" alt="图片名称" align=center />
 
 
 
