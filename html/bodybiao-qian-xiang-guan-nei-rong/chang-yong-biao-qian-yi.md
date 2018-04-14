@@ -299,13 +299,13 @@ type：列表标识的类型
 
 | 内容       | 代码   |
 | :-------: | :--------:|
-| 空格       | &nbsp;    |
-| >         | &gt;      |
-| <         | &lt;      |
-| &         | &amp;     |
-| ¥         | &yen;     |
-| 版权       | &copy;    |
-| 注册        | &reg;     |
+| 空格       | `&nbsp;`    |
+| >         | `&gt; `     |
+| <         | `&lt;  `    |
+| &         | `&amp;`     |
+| ¥         | `&yen;`     |
+| 版权       | `&copy;`    |
+| 注册        | `&reg;`     |
 
 [HTML特殊符号对照表](http://tool.chinaz.com/Tools/HtmlChar.aspx)
 
