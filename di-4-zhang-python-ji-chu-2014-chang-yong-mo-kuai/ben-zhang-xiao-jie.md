@@ -47,7 +47,7 @@
    socket = /data/mysql_3306/mysql.sock
 
    [mysqld]
-   explicit_defaults_for_timestamp
+   explicit_defaults_for_timestamp = true
    port = 3306
    socket = /data/mysql_3306/mysql.sock
    back_log = 80
@@ -58,7 +58,7 @@
    ```
 
    1. 修改时区 default-time-zone = '+8:00' 为 校准的全球时间 +00:00
-   2. 删除 explicit\_defaults\_for\_timestamp
+   2. 删除 explicit\_defaults\_for\_timestamp = true
    3. 为DEFAULT增加一条 character-set-server = utf8
 
 10. 写一个6位随机验证码程序（使用random模块\),要求验证码中至少包含一个数字、一个小写字母、一个大写字母.
