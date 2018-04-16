@@ -217,7 +217,7 @@
     * [9.4.12 jquery的事件](jquery/9412-jqueryde-shi-jian-chu-li.md)
     * [9.4.13 jquery的Ajax](jquery/9413-jqueryde-ajax.md)
   * [9.5 Bootstrap](95-bootstrap.md)
-    * [9.5.1 Bootstrap的介绍](95-bootstrap/951-bootstrapde-jie-shao.md)
+    * [9.5.1 Bootstrap的介绍和响应式@metia媒体查询](95-bootstrap/951-bootstrapde-jie-shao.md)
     * [9.5.2 Bootstrap的引入和使用](95-bootstrap/952-bootstrapde-yin-ru-he-shi-yong.md)
   * [9.6 前端内容流程导图](96-qian-duan-nei-rong-liu-cheng-dao-tu.md)
 * [第10章 Django](di-10-zhang-django.md)
