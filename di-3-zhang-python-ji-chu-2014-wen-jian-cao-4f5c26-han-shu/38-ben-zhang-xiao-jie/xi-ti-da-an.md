@@ -117,23 +117,22 @@
   ```python
   dic = {"k1": "v1v1", "k2": [11,22,33,44]}
   PS:字典中的value只能是字符串或列表
-  ```
+  ```   
 
   ```python
-  # 答案
-    def func(i):  # i为所传字典
-    
-        for k, v in i.items():
-            if len(v) > 2:
-                dic[k]= v[:2]
-            else:
-                continue
-        return i
-    
-    
-    print(func(dic))
-    
-    {'k1': 'v1', 'k2': [11, 22]}
+      #答案
+        def func(i):  # i为所传字典
+        
+            for k, v in i.items():
+                if len(v) > 2:
+                    dic[k]= v[:2]
+                else:
+                    continue
+            return i
+        
+        print(func(dic))
+        
+        {'k1': 'v1', 'k2': [11, 22]}
   ```
 
 5. 解释闭包的概念
@@ -175,18 +174,17 @@
   ```
   ```python
   # 答案
-  def max_min(*args):
-      the_max = args[0]
-      the_min = args[0]
-      for i in args:
-          if i>the_max:
-              the_max = i
-          else:
-              the_min = i
-      return {'max':the_max,'min':the_min}
-
-  res = max_min(2,4,6,48,-16,486)
-  print(res)
+    def max_min(*args):
+        the_max = args[0]
+        the_min = args[0]
+        for i in args:
+            if i > the_max:
+                the_max = i
+            if i < the_min:
+                the_min = i
+        return {'max': the_max, 'min': the_min}
+    
+    print(max_min(2, 4, 6, 48, -16, 999, 486, ))
   ```
 
 
