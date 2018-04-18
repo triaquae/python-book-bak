@@ -69,7 +69,7 @@
 * **class="modal-footer"**，是 Bootstrap CSS 的一个 CSS class，用于为模态窗口的底部设置样式。
 * **data-toggle="modal"**，HTML5 自定义的 data 属性 data-toggle 用于打开模态窗口。
 
-```
+```html
 
 	<body>
 		<div class="container">
