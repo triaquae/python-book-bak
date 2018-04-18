@@ -204,6 +204,8 @@
 
 4. 轮播
 
+上面是常用Bootstrap插件，相关代码都在Bootstrap的官网上
+
 
 
 
