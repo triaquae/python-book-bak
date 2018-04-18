@@ -20,13 +20,19 @@ javaScript的用途是解决页面交互和数据交互，最终目的是丰富�
 
 # 三、javaScript和ECMAScript的关系是什么？
 
-　　我们会有这个问题，我们先了解下什么是ECMAScript吧！
+我们会有这个问题，我们先了解下什么是ECMAScript吧！
 
-　　ECMAScript是脚本程序设计语言的web标准。
+ECMAScript是脚本程序设计语言的web标准。
 
-　　javaScript和ECMAScript的关系：
+javaScript和ECMAScript的关系：
 
-　　ECMAScript是欧洲计算机制造商协会，基于美国网景通讯公司的Netscape发明的javaScript和Microsoft公司随后模仿javaScript推出JScript脚本语言制定了ECMAScript标
+ECMAScript是欧洲计算机制造商协会，基于美国网景通讯公司的Netscape发明的javaScript和Microsoft公司随后模仿javaScript推出JScript脚本语言制定了ECMAScript标
+
+
+
+# 四、javaScript由哪几部分组成？
+
+ECMAScript、DOM、BOM
 
 
 
