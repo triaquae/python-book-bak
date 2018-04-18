@@ -226,7 +226,7 @@
     * [10.1.2 http协议简介](101-webying-yong-yu-http-xie-yi/1012-httpxie-yi-jian-jie.md)
   * [10.2 Django的下载与简介](102-djangode-xia-zai-yu-jian-jie.md)
     * 10.2.2 Django的下与常用命令
-    * 10.2.3 基于Django实现的一个简单示例
+    * [10.2.3 基于Django实现的一个简单示例](102-djangode-xia-zai-yu-jian-jie/1023-ji-yu-django-shi-xian-de-yi-ge-jian-dan-shi-li.md)
     * [10.2.1 MTV模型 ](102-djangode-xia-zai-yu-jian-jie/1021-mtvmo-xing.md)
   * 10.3 Django的路由层
     * 10.3.1 url的简单配置
