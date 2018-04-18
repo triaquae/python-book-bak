@@ -69,64 +69,67 @@
 * **class="modal-footer"**，是 Bootstrap CSS 的一个 CSS class，用于为模态窗口的底部设置样式。
 * **data-toggle="modal"**，HTML5 自定义的 data 属性 data-toggle 用于打开模态窗口。
 
+
+
+#### 通过js控制模态框弹出
+
 ```html
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <div class="panel-title">
 
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-4">
-					<div class="panel panel-success">
-						<div class="panel-heading">
-							<div class="panel-title">
+                            </div>
 
-							</div>
+                        </div>
+                        <div class="panel-body">
+                            <h2>创建模态框</h2>
+                            <!-- 按钮触发模态框 -->
+                            <button class="btn btn-primary btn-lg" data-toggle="modal" id="delete">删除</button>
+                            <!-- 模态框（Modal） -->
+                            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                            <h4 class="modal-title" id="myModalLabel">是否删除</h4>
+                                        </div>
+                                        <div class="modal-body">你确定要删除吗？</div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                            <button type="button" class="btn btn-danger">确定</button>
+                                        </div>
+                                    </div>
+                                    <!-- /.modal-content -->
+                                </div>
+                                <!-- /.modal -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-						</div>
-						<div class="panel-body">
-							<h2>创建模态框</h2>
-							<!-- 按钮触发模态框 -->
-							<button class="btn btn-primary btn-lg" data-toggle="modal" id="delete">删除</button>
-							<!-- 模态框（Modal） -->
-							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-								<div class="modal-dialog">
-									<div class="modal-content">
-										<div class="modal-header">
-											<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-											<h4 class="modal-title" id="myModalLabel">是否删除</h4>
-										</div>
-										<div class="modal-body">你确定要删除吗？</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
-											<button type="button" class="btn btn-danger">确定</button>
-										</div>
-									</div>
-									<!-- /.modal-content -->
-								</div>
-								<!-- /.modal -->
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+        </div>
 
-		</div>
+        <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+        <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+        <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+        <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+            $(function(){
+                //通过jquery控制模态框弹出
+                $('#delete').click(function(){
+                    $('#myModal').modal({
+                        keyboard:false
+                    })
+                })
 
-		<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
-		<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
-		<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
-		<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script type="text/javascript">
-			$(function(){
-				//通过jquery控制模态框弹出
-				$('#delete').click(function(){
-					$('#myModal').modal({
-						keyboard:false
-					})
-				})
-				
-			})
-		</script>
-	</body>
+            })
+        </script>
+    </body>
 ```
 
 
