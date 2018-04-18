@@ -196,12 +196,15 @@
   * [9.3 JavaScript](93-javascript.md)
     * [9.3.1 JavaScript介绍](931-javascriptjie-shao.md)
     * [9.3.2 开发工具与第一个JavaScript示例](932-kai-fa-gong-ju-yu-di-yi-ge-javascript-shi-li.md)
-    * [9.3.3 基本语法](933-ji-ben-yu-fa.md)
-    * [9.3.4 数据类型](934-shu-ju-lei-xing.md)
-    * [9.3.5 变量](935-bian-liang.md)
-    * [9.3.6 运算符](936-yun-suan-fu.md)
-    * [9.3.7 流程控制](937-liu-cheng-kong-zhi.md)
-    * [9.3.8 函数](938-han-shu.md)
+    * [9.3.3 数据类型](934-shu-ju-lei-xing.md)
+    * [9.3.4 变量](935-bian-liang.md)
+    * [9.3.5 运算符](936-yun-suan-fu.md)
+    * [9.3.6 流程控制](937-liu-cheng-kong-zhi.md)
+    * [9.3.7 函数](938-han-shu.md)
+    * 9.3.8 常用内置对象
+    * 9.3.9 正则表达式
+    * 9.3.10 Javascript常用DOM
+    * 9.3.11 Javascript常用BOM
   * [9.4 jQuery](jquery.md)
     * [9.4.1使用js的一些疼处](jquery/941shi-yong-js-de-yi-xie-teng-chu.md)
     * [9.4.2 js和jquery的区别](jquery/942-jshe-jquery-de-qu-bie.md)
