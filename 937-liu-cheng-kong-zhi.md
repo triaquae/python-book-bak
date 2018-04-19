@@ -33,7 +33,7 @@ console.log(parseInt(stringNum))
 console.log(parseFloat(stringNum));
 ```
 
-### 3.任何基本数据类型都可以转换为boolean类型
+### 3.任何数据类型都可以转换为boolean类型
 
 ```js
 var b1 = '123';
