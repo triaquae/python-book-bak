@@ -33,12 +33,21 @@ console.log(parseInt(stringNum))
 console.log(parseFloat(stringNum));
 ```
 
-```
+### 3.任何数据类型都可以转换为boolean类型
 
 ```
+var b1 = '123';
+var b2 = 0;
+var b3 = -123
 
-```
+var b4 = Infinity; 
+var b5 = NaN;
 
+var b6; //undefined
+var b7 = null;
+
+// 非0既真
+console.log(Boolean(b7))
 ```
 
 
