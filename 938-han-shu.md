@@ -108,23 +108,24 @@ while(i<=9){ //判断循环条件
 
 ### 5.do\_while
 
-```
+```js
 //不管有没有满足while中的条件do里面的代码都会走一次
-var i = 3;
+var i = 3;//初始化循环变量
 do{
 
     console.log(i)
-    i++;
+    i++;//更新循环条件
 
-}while (i<10)
+}while (i<10) //判断循环条件
+
 ```
 
 ### 6.for循环
 
-```
+```js
 for(var i = 1;i<=10;i++){
-		console.log(i)
-		}
+     console.log(i)
+ }
 ```
 
 
