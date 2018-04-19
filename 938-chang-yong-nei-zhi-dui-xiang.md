@@ -6,8 +6,6 @@
 
 1.数组的创建方式
 
-
-
 * 字面量方式创建（推荐大家使用这种方式，简单粗暴）
 
 ```js
@@ -45,8 +43,6 @@ arr[2] = '嘿嘿嘿'
 | reverse\(\) | 对数组进行反转 |
 | length | 它是一个属性，唯一的一个，获取数组的长度，可以结合for循环遍历操作 |
 
-
-
 ### 字符串String
 
 字符串方法
@@ -59,7 +55,7 @@ arr[2] = '嘿嘿嘿'
 | replace\(a,b\) | 字符串b替换了a |
 | search\(stringObject\) | 知名是否存在相应匹配。如果找到一个匹配，search方法将返回一个整数值，指明这个匹配距离字符串开始的偏移位置。如果没有找到匹配，返回-1 |
 | slice\(start，end\) | 返回start到end-1之间的字符串，索引从0开始 |
-| split\(\) |  |
+| split\(\) | 字符串拆分 |
 | substr\(start,length\) |  |
 | substr\(start,end\) |  |
 | toUpperCase\(\) |  |
