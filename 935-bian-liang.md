@@ -42,13 +42,9 @@ console.log(dog_2); //小红
 
 关键字：
 
+![](/jquery/关键字.png)
 
-   
+保留字：
 
-
-
-
-
-
-
+![](/jquery/保留字.png)
 
