@@ -89,15 +89,15 @@ switch(gameScore){
 
 循环三步走：
 
-1.初始化循环变量 
+1.初始化循环变量
 
-2.判断循环条件 
+2.判断循环条件
 
 3.更新循环变量
 
 ```js
 var i = 1; //初始化循环变量
-		
+
 while(i<=9){ //判断循环条件
     console.log(i);
     i = i+1; //更新循环条件
@@ -112,11 +112,19 @@ while(i<=9){ //判断循环条件
 //不管有没有满足while中的条件do里面的代码都会走一次
 var i = 3;
 do{
-	
-	console.log(i)
-	i++;
-	
+
+    console.log(i)
+    i++;
+
 }while (i<10)
+```
+
+### 6.for循环
+
+```
+for(var i = 1;i<=10;i++){
+		console.log(i)
+		}
 ```
 
 
