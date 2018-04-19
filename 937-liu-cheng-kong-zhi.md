@@ -23,7 +23,7 @@ console.log(num.toString())
 
 ### 2.将字符串类型转换成数值类型
 
-```
+```js
 var  stringNum = '789.123wadjhkd';
 var num2 =  Number(stringNum);
 console.log(num2)
@@ -33,9 +33,9 @@ console.log(parseInt(stringNum))
 console.log(parseFloat(stringNum));
 ```
 
-### 3.任何数据类型都可以转换为boolean类型
+### 3.任何基本数据类型都可以转换为boolean类型
 
-```
+```js
 var b1 = '123';
 var b2 = 0;
 var b3 = -123
