@@ -158,5 +158,9 @@ console.log(sum)
 
 * 有兴趣的同学在这里我们结合前面的html+css+部分js就可以做个计算器了
 
+![](/jquery/计算器.png)
+
+
+
 
 
