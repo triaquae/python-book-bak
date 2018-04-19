@@ -202,12 +202,12 @@ $('.navbar-header').scrollspy('.bs-js-navbar-scrollspy')
 ```
 
 像后面还介绍了：  
-1. 手风琴效果  
+   0. 手风琴效果  
  data-toggle="collapse" 添加到您想要展开或折叠的组件的链接上。
 
 href 或 data-target 属性添加到父组件，它的值是子组件的 id。
 
-data-parent 属性把折叠面板（accordion）的 id 添加到要展开或折叠的组件的链接上
+data-parent 属性把折叠面板（accordion）的 id 添加到要展开或折叠的组件的链接2
 
 1. 弹出框
 
@@ -215,13 +215,11 @@ data-parent 属性把折叠面板（accordion）的 id 添加到要展开或折�
 
 3. 轮播
 
-**通过 data 属性**
+      **通过 data 属性**：使用 data 属性可以很容易控制轮播（Carousel）的位置。
 
-：使用 data 属性可以很容易控制轮播（Carousel）的位置。
-
-* 属性**data-slide**接受关键字prev或next，用来改变幻灯片相对于当前位置的位置。
-* * 使用**data-slide-to**来向轮播传递一个原始滑动索引，**data-slide-to="2" **将把滑块移动到一个特定的索引，索引从 0 开始计数。
-* * **data-ride="carousel"**属性用于标记轮播在页面加载时就开始动画播放
+* 属性**data-slide**接受关键字prev或next，用来改变幻灯片相对于当前位置的位置
+* 使用**data-slide-to**来向轮播传递一个原始滑动索引，**data-slide-to="2" **将把滑块移动到一个特定的索引，索引从 0 开始计数。
+* **data-ride="carousel"**属性用于标记轮播在页面加载时就开始动画播放
 
 上面是常用Bootstrap插件，相关代码都在Bootstrap的官网上。大家自行copy一定要演示
 
