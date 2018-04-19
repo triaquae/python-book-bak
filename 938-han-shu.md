@@ -129,21 +129,25 @@ for(var i = 1;i<=10;i++){
 
 课堂练习：
 
- 1-100之间所有的偶数
+1-100之间所有的偶数
 
 ```
 for(var i = 1;i<=100;i++){
-	if(i%2==0){
-		//是偶数
-		console.log(i)
-	}
+    if(i%2==0){
+        //是偶数
+        console.log(i)
+    }
 }
 ```
 
 1-100之间所有数之和
 
 ```
-
+var sum = 0;
+		for(var j = 1;j<=100;j++){
+			sum = sum+j
+		}
+		console.log(sum)
 ```
 
 
