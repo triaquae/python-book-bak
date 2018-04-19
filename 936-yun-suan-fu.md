@@ -2,8 +2,6 @@
 
 js中的运算符跟python中的运算符有点类似，但也有不同。所谓运算,在数学上，是一种行为，通过已知量的可能的组合，获得新的量。
 
-
-
 ### 1.赋值运算符
 
 以var x = 12,y=5来演示示例
@@ -16,8 +14,6 @@ js中的运算符跟python中的运算符有点类似，但也有不同。所谓
 | \*= | x\*=y | x=x\*y | x=60 |
 | /= | x/=y | x=x/y | x=2 |
 | %= | x%=y | x=x%y | x=2 |
-
-
 
 ### 2.算数运算符
 
@@ -33,9 +29,7 @@ var a = 5,b=2
 | ++ | 自增 | var x= a++ | x = 6,a = 6 |
 |  |  | var x  = ++a | x = 5,a = 6 |
 | -- | 自减 | var x = a-- | x = 4,y = 4 |
-|  |  | var x = --a | x = 5,y= 4  |
-
-
+|  |  | var x = --a | x = 5,y= 4 |
 
 ### 3.比较运算符
 
@@ -52,13 +46,9 @@ var x = 5;
 | &gt;= | 大于等于 | x&gt;=8 | false |
 | &lt;= | 小于等于 | x&lt;=8 | true |
 
-
-
-
-
 ### 4.特殊情况
 
-字符串拼接
+ 字符串拼接+字符串运算 特殊情况。python中有拼接字符串中更简便的办法，其实在js中也有，大家可以百度引擎搜索es6模板字符串。（扩展）
 
 ```js
 var  firstName  = '星';
@@ -72,6 +62,21 @@ console.log(fullStr)
 
 var fullName = firstName +" "+ lastName;
 console.log(fullName)
+```
+
+```js
+// 不能对字符串进行+运算 只能拼接
+var a1 = '1';
+var a2 = '2';
+console.log(a1-a2) //12
+```
+
+```js
+var b1 = 'one';
+var b2  = 'two';
+
+// NaN. ==== not a number 是number类型
+console.log(typeof(b1*b2))
 ```
 
 
