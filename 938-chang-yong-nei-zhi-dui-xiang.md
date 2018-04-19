@@ -55,11 +55,23 @@ arr[2] = '嘿嘿嘿'
 | replace\(a,b\) | 字符串b替换了a |
 | search\(stringObject\) | 知名是否存在相应匹配。如果找到一个匹配，search方法将返回一个整数值，指明这个匹配距离字符串开始的偏移位置。如果没有找到匹配，返回-1 |
 | slice\(start，end\) | 返回start到end-1之间的字符串，索引从0开始 |
-| split\(\) | 字符串拆分 |
-| substr\(start,length\) |  |
-| substr\(start,end\) |  |
-| toUpperCase\(\) |  |
-| toLowerCase\(\) |  |
+| split\(’a‘,1\) | 字符串拆分,以a拆分，第一个参数返回数组的最大长度 |
+| substr\(start,end\) | 字符串截取，左闭右开 |
+| toUpperCase\(\) | 返回一个新的字符串，该字符串字母都变成了大写 |
+| toLowerCase\(\) | 返回一个新的字符串，该字符串字母都变成了小写 |
+
+```js
+//1.将number类型转换成字符串类型
+var num = 132.32522;
+var numStr = num.toString()
+console.log(typeof numStr)
+```
+
+```js
+//四舍五入
+var newNum = num.toFixed(2)
+console.log(newNum)
+```
 
 
 
