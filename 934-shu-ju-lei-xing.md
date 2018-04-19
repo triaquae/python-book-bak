@@ -1,5 +1,11 @@
 # javascript中的数据类型
 
+数据类型包括：基本数据类型和引用数据类型
+
+基本数据类型指的是简单的数据段，引用数据类型指的是有多个值构成的对象。
+
+当我们把变量赋值给一个变量时，解析器首先要确认的就是这个值是基本类型值还是引用类型值
+
 ## 1.基本数据类型
 
 * number
@@ -39,11 +45,18 @@ console.log(c1)
 ```
 var d1;
 //表示变量未定义
-console.log(typeof d1) 
-
+console.log(typeof d1)
 ```
 
 ## 2.引用数据类型
+
+* Function
+* Object
+* Arrray
+* String
+* Date
+
+后面课程会讲解。
 
 
 
