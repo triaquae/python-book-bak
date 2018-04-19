@@ -200,7 +200,7 @@
     * [9.3.4 数据类型](934-shu-ju-lei-xing.md)
     * [9.3.5 运算符](936-yun-suan-fu.md)
     * [9.3.6 数据类型转换](937-liu-cheng-kong-zhi.md)
-    * [9.3.7 函数](938-han-shu.md)
+    * [9.3.7 流程控制](938-han-shu.md)
     * 9.3.8 常用内置对象
     * 9.3.9 正则表达式
     * 9.3.10 Javascript常用DOM
