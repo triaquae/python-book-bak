@@ -191,23 +191,31 @@
     </p>
     <p>Spring 框架最初是由 Rod Johnson 编写的，在 2003 年 6 月首次发布于 Apache 2.0 许可证下。
     </p>
+
 </div>
 ```
 
+通过javascript 调用滚动监听，选取要监听的元素，然后调用.scrollspy\(\)函数
 
-像后面还介绍了：
-1. 手风琴效果
+```javascript
+$('.navbar-header').scrollspy('.bs-js-navbar-scrollspy')
+```
 
-2. 弹出框
+像后面还介绍了：  
+1. 手风琴效果  
+ data-toggle="collapse" 添加到您想要展开或折叠的组件的链接上。
 
-3. 警告框
+  
+href 或 data-target 属性添加到父组件，它的值是子组件的 id。
 
-4. 轮播
+  
+data-parent 属性把折叠面板（accordion）的 id 添加到要展开或折叠的组件的链接上
+
+1. 弹出框
+
+2. 警告框
+
+3. 轮播
 
 上面是常用Bootstrap插件，相关代码都在Bootstrap的官网上。大家自行copy一定要演示
-
-
-
-
-
 
