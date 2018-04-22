@@ -82,8 +82,6 @@ console.log(newNum)
 var myDate = new Date();
 ```
 
-
-
 **常用的方法**
 
 | 语法 | 含义 |
@@ -96,6 +94,24 @@ var myDate = new Date();
 | getHours\(\) | 根据本地时间返回指定日期对象的小时（0-23） |
 | getMinutes\(\) | 根据本地时间返回指定日期对象的分钟（0-59） |
 | getSeconds\(\) | 根据本地时间返回指定日期对象的秒数（0-59） |
+
+
+
+### **Math 内置对象**
+
+
+
+**常用内置对象**
+
+| 方法 | 含义 |
+| :--- | :--- |
+| Math.floor\(\) | 向下取整,称为"地板函数" |
+| Math.ceil\(\) | 向上取整,称为'地板函数' |
+| Math.max\(a,b\) | 求a和b中的最大值 |
+| Math.min\(a,b\) | 求a和b中的最小值 |
+| Math.random\(\) | 随机数,默认0-1之间的随机数,公式\(max-min\)+Math.random\(\)\*max,求min~max之间的数 |
+
+
 
 
 
