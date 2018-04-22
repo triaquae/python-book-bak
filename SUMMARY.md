@@ -202,9 +202,9 @@
     * [9.3.6 数据类型转换](937-liu-cheng-kong-zhi.md)
     * [9.3.7 流程控制](938-han-shu.md)
     * [9.3.8 常用内置对象](938-chang-yong-nei-zhi-dui-xiang.md)
-    * 9.3.9 正则表达式
+    * [9.3.9 函数](939-zheng-ze-biao-da-shi.md)
     * 9.3.10 Javascript常用DOM
-    * 9.3.11 Javascript常用BOM
+    * [9.3.9 正则表达式](939-zheng-ze-biao-da-shi.md)
   * [9.4 jQuery](jquery.md)
     * [9.4.1使用js的一些疼处](jquery/941shi-yong-js-de-yi-xie-teng-chu.md)
     * [9.4.2 js和jquery的区别](jquery/942-jshe-jquery-de-qu-bie.md)
