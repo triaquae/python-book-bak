@@ -75,3 +75,14 @@ console.log(newNum)
 
 
 
+### Date日期对象
+
+创建日期对象只有构造函数一种方式,使用new关键字
+
+```js
+//创建了一个date对象
+var myDate = new Date();
+```
+
+
+
