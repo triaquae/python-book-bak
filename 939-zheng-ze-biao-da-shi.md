@@ -71,8 +71,6 @@ var sutdent = {
 
 这样看起来似乎就完美了。但是马上我们就会发现一个十分尖锐的问题：当我们要创建同类的student1，student2，…，studentn时，我们不得不将以上的代码重复n次....
 
-
-
 ```
 var sutdent1 = {
   name : "easy1",
@@ -94,13 +92,11 @@ var sutdentn = {
 
 能不能像**工厂车间**那样，有一个**车床就不断生产出对象**呢？我们看”**工厂模式**”。
 
-
-
 ### 2.工厂模式创建对象
 
 JS中没有类的概念，那么我们不妨就使用一种函数将以上对象创建过程封装起来以便于重复调用，同时可以给出特定接口来初始化对象
 
-```
+```js
 function createStudent(name, age) {
   var obj = new Object();
   obj.name = name;
@@ -116,13 +112,21 @@ var studentn = createStudent("easyn", 20);
 
 这样一来我们就可以通过createStudent函数源源不断地”生产”对象了。看起来已经高枕无忧了，但贪婪的人类总有不满足于现状的天性：我们不仅希望”产品”的生产可以像工厂车间一般源源不断，我们还想知道生产的产品究竟是哪一种类型的。
 
-
-
 比如说，我们同时又定义了”生产”水果对象的createFruit\(\)函数：
 
+```js
+function createFruit(name, color) {
+  var obj = new Object();
+  obj.name = name;
+  obj.color = color;
+  return obj;
+}
 
+var v1 = createStudent("easy1", 20);
+var v2 = createFruit("apple", "green");
+```
 
-
+对于以上代码创建的对象v1、v2，我们用typeof操作符去检测，他们统统都是Object类型。我们的当然不满足于此，我们希望v1是Student类型的，而v2是Fruit类型的。为了实现这个目标，我们可以用自定义构造函数的方法来创建对象
 
 
 
