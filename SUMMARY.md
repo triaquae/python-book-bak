@@ -202,7 +202,7 @@
     * [9.3.6 数据类型转换](937-liu-cheng-kong-zhi.md)
     * [9.3.7 流程控制](938-han-shu.md)
     * [9.3.8 常用内置对象](938-chang-yong-nei-zhi-dui-xiang.md)
-    * [9.3.9 函数](939-zheng-ze-biao-da-shi.md)
+    * [9.3.9 函数和Object](939-zheng-ze-biao-da-shi.md)
     * 9.3.10 定时器
     * 9.3.11 正则表达式
     * 9.3.12 DOM
