@@ -126,44 +126,126 @@ var v1 = createStudent("easy1", 20);
 var v2 = createFruit("apple", "green");
 ```
 
-对于以上代码创建的对象v1、v2，我们用typeof操作符去检测，他们统统都是Object类型。我们的当然不满足于此，我们希望v1是Student类型的，而v2是Fruit类型的。为了实现这个目标，我们可以用自定义构造函数的方法来创建对象
+对于以上代码创建的对象v1、v2，我们用instanceof操作符去检测，他们统统都是Object类型。我们的当然不满足于此，我们希望v1是Student类型的，而v2是Fruit类型的。为了实现这个目标，我们可以用自定义构造函数的方法来创建对象
 
 
 
-使用构造器函数通常在js中我们来创建对象。
+### 3.构造函数模式创建对象
 
-特点：
+在上面创建Object这样的原生对象的时候，我们就使用过其构造函数：
 
-* 函数名首字母要大写
-* 构造函数不需要returen
-* 为对象添加成员变量：this.name = ‘alex’
+```
+var obj = new Object();
+```
+
+在创建原生数组Array类型对象时也使用过其构造函数：
+
+```
+var arr = new Array(10);  //构造一个初始长度为10的数组对象
+```
+
+在进行自定义构造函数创建对象之前，我们首先了解一下`构造函数`和`普通函数`有什么区别。
+
+1、实际上并不存在创建构造函数的特殊语法，其与普通函数唯一的区别在于调用方法。对于任意函数，使用new操作符调用，那么它就是构造函数；不使用new操作符调用，那么它就是普通函数。
+
+2、按照惯例，我们约定构造函数名以大写字母开头，普通函数以小写字母开头，这样有利于显性区分二者。例如上面的new Array\(\)，new Object\(\)。
+
+3、使用new操作符调用构造函数时，会经历\(1\)创建一个新对象；\(2\)将构造函数作用域赋给新对象（使this指向该新对象）；\(3\)执行构造函数代码；\(4\)返回新对象；4个阶段。
+
+  
+了解了`构造函数`和`普通函数`的区别之后，我们使用构造函数将`工厂模式`的函数重写，并添加一个方法属性：
+
+```
+function Student(name, age) {
+  this.name = name;
+  this.age = age;
+  this.alertName = function(){
+    alert(this.name)
+  };
+}
+
+function Fruit(name, color) {
+  this.name = name;
+  this.color = color;
+  this.alertName = function(){
+    alert(this.name)
+  };
+}
+```
+
+这样我们再分别创建Student和Fruit的对象：
+
+```
+var v1 = new Student("easy", 20);
+var v2 = new Fruit("apple", "green");
+```
+
+这时我们再来用instanceof操作符来检测以上对象类型就可以区分出Student以及Fruit了：
+
+```
+alert(v1 instanceof Student);  //true
+alert(v2 instanceof Student);  //false
+alert(v1 instanceof Fruit);  //false
+alert(v2 instanceof Fruit);  //true
+
+alert(v1 instanceof Object);  //true 任何对象均继承自Object
+alert(v2 instanceof Object);  //true 任何对象均继承自Object
+```
+
+这样我们就解决了`工厂模式`无法区分对象类型的尴尬。那么使用构造方法来创建对象是否已经完美了呢？使用构造器函数通常在js中我们来创建对象。
+
+我们会发现Student和Fruit对象中共有同样的方法，当我们进行调用的时候这无疑是内存的消耗。
+
+我们完全可以在执行该函数的时候再这样做，办法是将对象方法移到构造函数外部：
 
 ```js
-var Stu = function(){
-    this.name = '武sir';
-    this.age = 18;
-    this.fav = function(){
-       console.log('泡妹子')
-    }
+function Student(name, age) {
+  this.name = name;
+  this.age = age;
+  this.alertName = alertName;
 }
-//创建这个对象
-var s = new Stu();
-console.log(s);
 
-var s1 = new Stu();
-console.log(s1);
+function alertName() {
+  alert(this.name);
+}
+
+var stu1 = new Student("easy1", 20);
+var stu2 = new Student("easy2", 20);
+
+
 ```
 
-分析上面代码：
+在调用stu1.alert\(\)时，this对象才被绑定到stu1上。
+
+我们通过将alertName\(\)函数定义为全局函数，这样对象中的alertName属性则被设置为指向该全局函数的指针。由此stu1和stu2共享了该全局函数，解决了内存浪费的问题。
+
+但是，通过全局函数的方式解决对象内部共享的问题，终究不像一个好的解决方法。如果这样定义的全局函数多了，我们想要将自定义对象封装的初衷便几乎无法实现了。更好的方案是通过原型对象模式来解决。
+
+
+
+### 4.原型的模式创建对象
 
 ```
-1、程序在执行到这一句的时候，不会执行函数体，因此 JavaScript 的解释器并不知道这个函数的内容
-2、接下来执行 new 关键字，创建对象，解释器开辟内存，得到对象的引用，将新对象的引用交给函数
-3、紧接着执行函数，将传过来的对象引用交给 this。也就是说，在构造方法中，this 就是刚刚被 new 创建出来的对象
-4、然后为 this 添加成员，也就是为对象添加成员
-5、最后函数结束，返回 this，将 this 交给左边的变量。
-分析过构造函数的执行以后，可以得到，构造函数中的 this 就是当前对象。
+function Student() {
+    this.name = 'easy';
+    this.age = 20;
+}
+
+
+Student.prototype.alertName = function(){
+                                alert(this.name);
+                              };
+
+var stu1 = new Student();
+var stu2 = new Student();
+
+stu1.alertName();  //easy
+stu2.alertName();  //easy
+
+alert(stu1.alertName == stu2.alertName);  //true 二者共享同一函数
 ```
+
+
 
 
 
