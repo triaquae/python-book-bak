@@ -203,7 +203,7 @@
     * [9.3.7 流程控制](938-han-shu.md)
     * [9.3.8 常用内置对象](938-chang-yong-nei-zhi-dui-xiang.md)
     * [9.3.9 函数和Object](939-zheng-ze-biao-da-shi.md)
-    * 9.3.10 定时器
+    * [9.3.10 定时器](9310-ding-shi-qi.md)
     * 9.3.11 正则表达式
     * 9.3.12 DOM
     * 9.3.13 BOM
