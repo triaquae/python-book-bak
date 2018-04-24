@@ -128,16 +128,19 @@ window.onload = function(){
 </body>
 ```
 
+```css
+*{
+padding: 0;
+margin: 0;
+}
 ```
 
-```
-
-```
+```js
 window.onload = function(){
 
             //实施监听滚动事件
             window.onscroll = function(){
-                        
+
 //                console.log('上'+document.documentElement.scrollTop)
 //                console.log('左'+document.documentElement.scrollLeft)
 //                console.log('宽'+document.documentElement.scrollWidth)
