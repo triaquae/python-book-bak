@@ -60,16 +60,16 @@ ul li{
 
 ```js
 window.onload  = function(){
-			var left = document.getElementById('left');
-			var right = document.getElementById('right');
-			
-			setTimeout(function(){
-				left.style.display = 'none';
-				right.style.display = 'none';
-				
-				
-			},5000)
-		}
+            var left = document.getElementById('left');
+            var right = document.getElementById('right');
+
+            setTimeout(function(){
+                left.style.display = 'none';
+                right.style.display = 'none';
+
+
+            },5000)
+}
 ```
 
 
