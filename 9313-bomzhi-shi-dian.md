@@ -62,39 +62,49 @@ setTimeout(function(){
 
 ```
 style：
-	 top
-	 left
-	 right
-	 bottom
-		 
+     top
+     left
+     right
+     bottom
+
 client：
-	 clientTop 内容区域到边框顶部的距离
-	 clientLeft 内容区域到边框左部的距离
-	 clientWidth 内容区域+左右padding   可视宽度
-	 clientHeight 内容区域+ 上下padding   可视高度
+     clientTop 内容区域到边框顶部的距离
+     clientLeft 内容区域到边框左部的距离
+     clientWidth 内容区域+左右padding   可视宽度
+     clientHeight 内容区域+ 上下padding   可视高度
 ```
 
 # 5.屏幕的可视区域
 
-```
+```js
 window.onload = function(){
-	
-	console.log(document.documentElement.clientWidth);
-	console.log(document.documentElement.clientHeight);
-	
-	
-	window.onresize = function(){
-		
-		console.log(document.documentElement.clientWidth);
-		console.log(document.documentElement.clientHeight);
-	}
-	
-	
-	
+
+    console.log(document.documentElement.clientWidth);
+    console.log(document.documentElement.clientHeight);
+
+
+    window.onresize = function(){
+
+        console.log(document.documentElement.clientWidth);
+        console.log(document.documentElement.clientHeight);
+    }
+
+
+
 }
 ```
 
 # 6.offset系列
+
+```
+//占位宽 高 Top Left  
+
+/*
+* offsetTop: 如果盒子没有设置定位 到浏览器的顶部的距离,如果盒子设置定位，那么是以父盒子为基准的top值
+* offsetLeft： 如果盒子没有设置定位 到浏览器的左部的距离，如果盒子设置定位，那么是以父盒子为基准的left值
+  offsetWidth 内容+padding+border
+* */
+```
 
 # 7.scroll系列
 
