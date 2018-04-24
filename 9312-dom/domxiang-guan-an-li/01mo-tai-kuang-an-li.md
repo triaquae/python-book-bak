@@ -32,51 +32,49 @@ html,body{height: 100%;}
 }
 ```
 
-```
-		//dom  document object model
-		
-		//树状结构
-		/*
-		 html
-		head  body  节点
-		     span div button img ....
-		 * 
-		 * 
-		 * */
-		console.log(document)
-		//获取dom元素
-		var btn = document.getElementById('btn')
-		
-		//创建divdom元素
-		var oDiv = document.createElement('div')
-		var oP = document.createElement('p')
-		var oSpan = document.createElement('span')
-		
-		
-		oDiv.id = 'box';
-		oP.id = 'content'
-		oP.innerHTML = '模态框成功弹出'
-		oSpan.innerHTML = 'X';
-		oSpan.id = 'span1'
-		
-		
-		oDiv.appendChild(oP)
-		oP.appendChild(oSpan)
-	
-		console.log(btn)
-		btn.onclick = function(){
-//			alert(111)
-			//动态的添加到body中一个div
-			console.log(this)
-			this.parentNode.insertBefore(oDiv,btn)
-			
-		}
-		oSpan.onclick = function(){
-//			removeChild
+```js
+//dom  Document Object Model
 
-			oDiv.parentNode.removeChild(oDiv)
-		}
-		
+//树状结构
+/*
+    html
+head    body  节点
+    span div button img ....
+
+  */
+
+//获取dom元素
+var btn = document.getElementById('btn')
+
+//创建divdom元素
+var oDiv = document.createElement('div')
+var oP = document.createElement('p')
+var oSpan = document.createElement('span')
+
+
+oDiv.id = 'box';
+oP.id = 'content'
+oP.innerHTML = '模态框成功弹出'
+oSpan.innerHTML = 'X';
+oSpan.id = 'span1'
+
+
+oDiv.appendChild(oP)
+oP.appendChild(oSpan)
+
+
+//给按钮添加点击事件
+btn.onclick = function(){
+  //动态的添加到body中一个div
+    console.log(this);//当前this指向的是当前按钮元素
+    this.parentNode.insertBefore(oDiv,btn)
+
+}
+oSpan.onclick = function(){
+// removeChild()
+
+    oDiv.parentNode.removeChild(oDiv)
+}
 ```
 
 
