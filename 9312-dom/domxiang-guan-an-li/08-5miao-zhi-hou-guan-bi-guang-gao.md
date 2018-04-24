@@ -1,40 +1,39 @@
 ```
 <img src="images/1.gif"/ id="left">
-		<img src="images/1.gif"/ id="right">
-		<ul>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			<li>屠龙宝刀，点击就送</li>
-			
+        <img src="images/1.gif"/ id="right">
+        <ul>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+            <li>屠龙宝刀，点击就送</li>
+
 </ul>
-		
 ```
 
 ```css
@@ -59,8 +58,18 @@ ul li{
 }
 ```
 
-```
-
+```js
+window.onload  = function(){
+			var left = document.getElementById('left');
+			var right = document.getElementById('right');
+			
+			setTimeout(function(){
+				left.style.display = 'none';
+				right.style.display = 'none';
+				
+				
+			},5000)
+		}
 ```
 
 
