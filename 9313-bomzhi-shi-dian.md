@@ -24,7 +24,7 @@ confirm() //如果点击确定 返回true 如果点击取消 返回false
 
 # 2.open\_close方法
 
-```
+```js
 open('https://www.baidu.com');//打开百度网页，winodow对象可以省略
 //行间的js中的window不能省略
 <button onclick="window.open('https://www.luffycity.com/')">路飞学城</button>
@@ -34,6 +34,8 @@ open('about:blank',"_self")
 
 //关闭当前页面
 close();
+//行间js中的window还是不能省略
+<button onclick="window.close()">关闭</button>
 ```
 
 # 3.其他的BOM对象和方法
