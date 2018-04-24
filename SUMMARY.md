@@ -216,7 +216,7 @@
         * [07-匀速运动](9312-dom/domxiang-guan-an-li/07yun-su-yun-dong.md)
         * [08-5秒之后关闭广告](9312-dom/domxiang-guan-an-li/08-5miao-zhi-hou-guan-bi-guang-gao.md)
         * [09-小米滚动](9312-dom/domxiang-guan-an-li/09xiao-mi-gun-dong.md)
-        * 10-无缝轮播
+        * [10-无缝轮播](9312-dom/domxiang-guan-an-li/10wu-feng-lun-bo.md)
     * 9.3.13 BOM知识点
   * [9.4 jQuery](jquery.md)
     * [9.4.1使用js的一些疼处](jquery/941shi-yong-js-de-yi-xie-teng-chu.md)
