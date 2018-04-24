@@ -212,8 +212,8 @@
         * [03-简易留言板](9312-dom/domxiang-guan-an-li/03jian-yi-liu-yan-ban.md)
         * [04-选项卡](9312-dom/domxiang-guan-an-li/04xuan-xiang-qia.md)
         * [05-防淘宝搜索框](9312-dom/domxiang-guan-an-li/05fang-tao-bao-sou-suo-kuang.md)
-        * 06-获取当前的时间
-        * 07-匀速运动
+        * [06-获取当前的时间](9312-dom/domxiang-guan-an-li/06huo-qu-dang-qian-de-shi-jian.md)
+        * [07-匀速运动](9312-dom/domxiang-guan-an-li/07yun-su-yun-dong.md)
         * 08-5秒之后关闭广告
         * 09-小米滚动
         * 10-无缝轮播
