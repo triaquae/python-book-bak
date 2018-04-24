@@ -205,8 +205,19 @@
     * [9.3.9 函数和Object](939-zheng-ze-biao-da-shi.md)
     * [9.3.10 定时器](9310-ding-shi-qi.md)
     * [9.3.11 正则表达式](9311-zheng-ze-biao-da-shi.md)
-    * [9.3.12 DOM](9312-dom.md)
-    * 9.3.13 BOM
+    * [9.3.12 DOM知识点](9312-dom.md)
+      * [DOM相关案例](9312-dom/domxiang-guan-an-li.md)
+        * [01-模态框案例](9312-dom/domxiang-guan-an-li/01mo-tai-kuang-an-li.md)
+        * 02-点击有惊喜
+        * 03-简易留言板
+        * 04-选项卡
+        * 05-防淘宝搜索框
+        * 06-获取当前的时间
+        * 07-匀速运动
+        * 08-5秒之后关闭广告
+        * 09-小米滚动
+        * 10-无缝轮播
+    * 9.3.13 BOM知识点
   * [9.4 jQuery](jquery.md)
     * [9.4.1使用js的一些疼处](jquery/941shi-yong-js-de-yi-xie-teng-chu.md)
     * [9.4.2 js和jquery的区别](jquery/942-jshe-jquery-de-qu-bie.md)
