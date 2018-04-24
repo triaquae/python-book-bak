@@ -40,6 +40,15 @@ close();
 
 # 3.其他的BOM对象和方法
 
+```
+//返回浏览器的用户设备信息
+console.log(window.navigator.userAgent)
+
+
+		//获取用户本地信息
+		console.log(window.location)
+```
+
 # 4.client系列
 
 # 5.屏幕的可视区域
