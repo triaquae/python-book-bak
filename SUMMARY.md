@@ -210,7 +210,7 @@
         * [01-模态框案例](9312-dom/domxiang-guan-an-li/01mo-tai-kuang-an-li.md)
         * [02-点击有惊喜](9312-dom/domxiang-guan-an-li/02dian-ji-you-liang-xi.md)
         * [03-简易留言板](9312-dom/domxiang-guan-an-li/03jian-yi-liu-yan-ban.md)
-        * 04-选项卡
+        * [04-选项卡](9312-dom/domxiang-guan-an-li/04xuan-xiang-qia.md)
         * 05-防淘宝搜索框
         * 06-获取当前的时间
         * 07-匀速运动
