@@ -43,12 +43,13 @@ var msg = document.getElementById('msg');
 
 //检测用户表单输入的时候
 txt.oninput = function(){
-	
-	if (this.value == '') {
-				msg.style.display = 'block'
-			}else{
-		msg.style.display = 'none'
-	}
+    
+    //控制元素显示隐藏
+    if (this.value == '') {
+                msg.style.display = 'block'
+            }else{
+        msg.style.display = 'none'
+    }
 }
 ```
 
