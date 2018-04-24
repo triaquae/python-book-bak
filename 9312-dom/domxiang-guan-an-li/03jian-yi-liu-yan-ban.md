@@ -8,9 +8,7 @@
 <button onclick="sum()">统计</button>
 ```
 
-```css
 
-```
 
 ```js
 //创建ul标签元素
