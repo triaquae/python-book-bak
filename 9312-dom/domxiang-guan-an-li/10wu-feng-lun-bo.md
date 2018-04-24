@@ -12,7 +12,7 @@
         </div>
 ```
 
-```
+```css
     *{
                 padding: 0;
                 margin: 0;
@@ -38,7 +38,28 @@
             }
 ```
 
-```
+```js
+	var box = document.getElementsByClassName('box')[0];
+		var ul = box.children[0];
+		var num = 0;
+		var timer = null;
+
+		timer = setInterval(autoPlay,30)
+		//函数的声明
+		function autoPlay(){
+			num--;
+
+			num <=-600 ? num=0 : num ;
+			ul.style.left = num + 'px'
+
+		}
+		//鼠标移动上去
+		box.onmouseover = function(){
+			clearInterval(timer)
+		}
+		box.onmouseout = function(){
+			timer  = setInterval(autoPlay,30);
+		}
 
 ```
 
