@@ -40,7 +40,7 @@ close();
 
 # 3.其他的BOM对象和方法
 
-```
+```js
 //返回浏览器的用户设备信息
 console.log(window.navigator.userAgent)
 
@@ -49,7 +49,7 @@ console.log(window.navigator.userAgent)
 console.log(window.location)
 
 //经常使用的一个方法，跳转一个网址
-//window.location.href = 'https://www.luffycity.com';
+window.location.href = 'https://www.luffycity.com';
 
 //全局刷新 后面会学习ajax来实现局部刷新操作，这才是我们要学习的重点。记住：尽量少用这个方法
 
