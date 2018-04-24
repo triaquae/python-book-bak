@@ -60,7 +60,39 @@ setTimeout(function(){
 
 # 4.client系列
 
+```
+style：
+	 top
+	 left
+	 right
+	 bottom
+		 
+client：
+	 clientTop 内容区域到边框顶部的距离
+	 clientLeft 内容区域到边框左部的距离
+	 clientWidth 内容区域+左右padding   可视宽度
+	 clientHeight 内容区域+ 上下padding   可视高度
+```
+
 # 5.屏幕的可视区域
+
+```
+window.onload = function(){
+	
+	console.log(document.documentElement.clientWidth);
+	console.log(document.documentElement.clientHeight);
+	
+	
+	window.onresize = function(){
+		
+		console.log(document.documentElement.clientWidth);
+		console.log(document.documentElement.clientHeight);
+	}
+	
+	
+	
+}
+```
 
 # 6.offset系列
 
