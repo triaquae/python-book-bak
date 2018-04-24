@@ -108,5 +108,31 @@ window.onload = function(){
 
 # 7.scroll系列
 
+```
+<body style="width: 2000px;height: 2000px;">
+<div style="height: 200px;background-color: red;"></div>
+<div style="height: 200px;background-color: green;"></div>
+<div style="height: 200px;background-color: yellow;"></div>
+<div style="height: 200px;background-color: blue;"></div>
+<div style="height: 200px;background-color: gray;"></div>
+<div id = 'scroll' style="width: 200px;height: 200px;border: 1px solid red;overflow: auto;padding: 10px;margin: 5px 0px 0px 0px;">
+	<p>路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城
+		路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城
+		路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城
+		路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城路飞学城
+	</p>
+			
+		</div>
+
+
+</body>
+```
+
+
+
+```
+
+```
+
 
 
