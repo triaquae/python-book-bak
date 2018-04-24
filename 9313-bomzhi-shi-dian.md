@@ -132,5 +132,31 @@ window.onload = function(){
 
 ```
 
+```
+window.onload = function(){
+			
+			//实施监听滚动事件
+			window.onscroll = function(){
+//				console.log(1111)
+//				console.log('上'+document.documentElement.scrollTop)
+//				console.log('左'+document.documentElement.scrollLeft)
+//				console.log('宽'+document.documentElement.scrollWidth)
+//				console.log('高'+document.documentElement.scrollHeight)
+				
+				
+			}
+			
+			var s = document.getElementById('scroll');
+			
+			s.onscroll = function(){
+//			scrollHeight : 内容的高度+padding  不包含边框
+				console.log('上'+s.scrollTop)
+				console.log('左'+s.scrollLeft)
+				console.log('宽'+s.scrollWidth)
+				console.log('高'+s.scrollHeight)
+			}
+		}
+```
+
 
 
