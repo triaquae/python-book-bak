@@ -28,8 +28,8 @@ ForwardX11 = no
 解析配置文件
 
 ```py
->>> import configparser
->>> config = configparser.ConfigParser()
+>>> import configparser  # 导入模块
+>>> config = configparser.ConfigParser() 
 >>> config.sections()
 []
 >>> config.read('example.ini')
