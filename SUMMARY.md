@@ -60,6 +60,7 @@
   * [4.14 re 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/re-mo-kuai.md)
   * [4.15 软件开发目录规范](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/ruan-jian-kai-fa-mu-lu-gui-fan.md)
   * [4.16 本章小结](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/ben-zhang-xiao-jie.md)
+    * [习题答案](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/ben-zhang-xiao-jie/xi-ti-da-an.md)
 * [第5章 面向对象编程设计与开发](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa.md)
   * [面向对象介绍](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/mian-xiang-dui-xiang-bian-cheng-jie-shao.md)
   * [类、实例、属性、方法详解](di-5-zhang-mian-xiang-dui-xiang-bian-cheng-she-ji-yu-kai-fa/lei-3001-shi-li-3001-shu-xing-3001-fang-fa-xiang-jie.md)
