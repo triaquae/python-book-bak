@@ -97,25 +97,25 @@
 
 9. 通过configparser模块完成以下功能
 
-文件名my.cnf
-
-  ```conf
-  [DEFAULT]
-
-  [client]
-  port = 3306
-  socket = /data/mysql_3306/mysql.sock
-
-  [mysqld]
-  explicit_defaults_for_timestamp = true
-  port = 3306
-  socket = /data/mysql_3306/mysql.sock
-  back_log = 80
-  basedir = /usr/local/mysql
-  tmpdir = /tmp
-  datadir = /data/mysql_3306
-  default-time-zone = '+8:00'
-  ```
+  文件名my.cnf
+  
+    ```conf
+    [DEFAULT]
+  
+    [client]
+    port = 3306
+    socket = /data/mysql_3306/mysql.sock
+  
+    [mysqld]
+    explicit_defaults_for_timestamp = true
+    port = 3306
+    socket = /data/mysql_3306/mysql.sock
+    back_log = 80
+    basedir = /usr/local/mysql
+    tmpdir = /tmp
+    datadir = /data/mysql_3306
+    default-time-zone = '+8:00'
+    ```
 
 1. 修改时区 default-time-zone = '+8:00' 为 校准的全球时间 +00:00
 
