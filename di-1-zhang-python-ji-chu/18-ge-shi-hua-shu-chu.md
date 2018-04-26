@@ -74,5 +74,5 @@ age = int(  input("Age:")  )
 print(type(age))
 ```
 
-肯定没问题了。相反，能不能把字符串转成数字呢？必然可以，`str( yourStr )`
+肯定没问题了。相反，能不能把数字转成字符串呢？必然可以，`str( yourStr )`
 
