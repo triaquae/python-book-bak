@@ -137,7 +137,7 @@ class Foo:
 
 class Bar(Foo):
     def f1(self):
-        print('Foo.f1')
+        print('Bar.f1')
 
 
 b=Bar()
@@ -145,7 +145,7 @@ b.f2()
 
 # 打印结果:
 # Foo.f2
-# Foo.f1
+# Bar.f1
 ```
 
 ### 派生
