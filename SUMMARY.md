@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [第1章     Python基础](1/chapter1.md)
+* [第1章     Python基础](di-1-zhang-python-ji-chu/chapter1.md)
   * [1.1 编程语言介绍](di-1-zhang-python-ji-chu/bi.md)
   * [1.2 Python介绍](di-1-zhang-python-ji-chu/12-pythonjie-shao.md)
   * [1.3 Python安装](di-1-zhang-python-ji-chu/13-pythonan-zhuang.md)
