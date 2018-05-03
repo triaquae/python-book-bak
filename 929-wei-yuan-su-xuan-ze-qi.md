@@ -14,7 +14,6 @@ p:first-letter {
 }
 ```
 
-
 ## before
 
 用于在元素的内容前面插入新内容。
@@ -22,12 +21,12 @@ p:first-letter {
 例如：
 
 ```css
-
 p:before {
   content: "*";
   color: red;
 }
 ```
+
 在所有p标签的内容前面加上一个红色的`*`。
 
 ## after
@@ -37,14 +36,11 @@ p:before {
 例如：
 
 ```css
-
 p:after {
-  content: "*";
+  content: "?";
   color: red;
 }
 ```
+
 在所有p标签的内容后面加上一个蓝色的`?`。
-
-
-
 
