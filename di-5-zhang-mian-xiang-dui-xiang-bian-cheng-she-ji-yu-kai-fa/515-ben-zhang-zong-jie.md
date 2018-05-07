@@ -25,7 +25,7 @@
 8. 如下示例, 请用面向对象的形式优化以下代码
  
   ```python
-      def exc1(host,port,db,charset):
+      def exc1(host,port,db,charset,sql):
           conn=connect(host,port,db,charset)
           conn.execute(sql)
           return xxx
