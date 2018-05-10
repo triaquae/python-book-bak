@@ -261,7 +261,7 @@ find * from staff_table where enroll_date like "2013"
 3.可删除指定员工信息纪录，输入员工id，即可删除
 
 ```py
-语法: del from staff where  id=3
+语法: del from staff_table where  id=3
 ```
 
 4.可修改员工信息，语法如下:
