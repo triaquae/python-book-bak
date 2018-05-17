@@ -45,7 +45,7 @@
     * [习题答案](di-3-zhang-python-ji-chu-2014-wen-jian-cao-4f5c26-han-shu/38-ben-zhang-xiao-jie/xi-ti-da-an.md)
 * [第4章  Python基础—常用模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai.md)
   * [4.1 模块、包介绍和相关语法](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/mo-kuai-3001-bao-jie-shao-he-xiang-guan-yu-fa.md)
-  * [4.2 time & datetime 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/chang-yong-mo-kuai-xue-xi.md)
+  * [4.2 time & datetime 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/chang-yong-mo-kuai-xue-xi.md)
   * [4.3 random 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/random-mo-kuai.md)
   * [4.4 os 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/os-mo-kuai.md)
   * [4.5 sys 模块](di-4-zhang-python-ji-chu-2014-chang-yong-mo-kuai/sys-mo-kuai.md)
