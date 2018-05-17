@@ -181,3 +181,18 @@
 	```  
 
 
+5. 一球从100米高度自由落下，每次落地后反跳回原高度的一半；再落下，求它在第10次落地时，共经过多少米？第10次反弹多高？
+
+```
+	count = 0
+	height = 100
+	meter = 0
+	
+	while count < 10:
+	
+	    meter +=  height #下落
+	    height /= 2
+	    meter += height  #反弹
+	    count +=1
+	    print(meter,height)
+```
