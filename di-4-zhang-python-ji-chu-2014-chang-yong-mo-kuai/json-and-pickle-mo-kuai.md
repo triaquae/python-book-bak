@@ -25,7 +25,27 @@ Json模块提供了四个功能：dumps、dump、loads、load
 
 pickle模块提供了四个功能：dumps、dump、loads、load
 
+```py
+import pickle
+data = {'k1':123,'k2':'Hello'}
 
+# pickle.dumps 将数据通过特殊的形式转换位只有python语言认识的字符串
+p_str = pickle.dumps(data)
+print(p_str)
+
+#pickle.dump 将数据通过特殊的形式转换位只有python语言认识的字符串，并写入文件
+with open('D:/result.pk','wb',encoding='utf8') as fp:
+    pickle.dump(data,fp)
+
+import json
+# json.dumps 将数据通过特殊的形式转换位所有程序语言都认识的字符串
+j_str = json.dumps(data)
+print(j_str)
+
+#pickle.dump 将数据通过特殊的形式转换位只有python语言认识的字符串，并写入文件
+with open('D:/result.json','wb',encoding='utf8') as fp:
+    json.dump(data,fp)
+```
 
 ![](/assets/chapter5/json-pickle.png)
 
