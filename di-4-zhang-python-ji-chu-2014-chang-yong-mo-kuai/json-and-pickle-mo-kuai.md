@@ -47,7 +47,7 @@ with open('D:/result.json','wb',encoding='utf8') as fp:
     json.dump(data,fp)
 ```
 
-![](/assets/chapter5/json-pickle.png)
+
 
 
 
