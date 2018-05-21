@@ -2,31 +2,29 @@
 
 1、请用代码实现：利用下划线将列表的每一个元素拼接成字符串，li＝\['alex', 'eric', 'rain'\]
 
-  ```
+```
   该题目主要是考的字符串的拼接,join方法,
       s = ""
       li = ['alex', 'eric', 'rain']
       s = "_".join(li)
-  ```
+```
 
 2、查找列表中元素，移除每个元素的空格，并查找以a或A开头并且以c结尾的所有元素。
 
-  li = \["alec", " aric", "Alex", "Tony", "rain"\]
+li = \["alec", " aric", "Alex", "Tony", "rain"\]
 
-  tu = \("alec", " aric", "Alex", "Tony", "rain"\)
+tu = \("alec", " aric", "Alex", "Tony", "rain"\)
 
-  dic = {'k1': "alex", 'k2': ' aric', "k3": "Alex", "k4": "Tony"}
+dic = {'k1': "alex", 'k2': ' aric', "k3": "Alex", "k4": "Tony"}
 
-  ```
-
+```
   li = ["alec", " aric", "Alex", "Tony", "rain"]
 
   for i in li:
       i = i.strip()
       if i.startswith("a") or i.startswith("A")  and i.endswith("c"):
           print(i)
-
-  ```
+```
 
 3、写代码，有如下列表，按照要求实现每一个功能
 
@@ -90,6 +88,7 @@ for index, val in enumerate(li, 100):
 for i in li:
     print(i)
 ```
+
 4、写代码，有如下列表，请按照功能要求实现每一个功能
 
 li = \["hello", 'seven', \["mon", \["h", "kelly"\], 'all'\], 123, 446\]
@@ -212,6 +211,7 @@ list(tu)
 # 将列表li = ["alex", "seven"]转换成字典且字典的key按照10开始向后递增
 dict(zip([i for i in range(10, len(li)+11)], li))
 ```
+
 9、元素分类
 
 有如下值集合\[11,22,33,44,55,66,77,88,99,90\]，将所有大于66的值保存至字典的第一个key中，将小于66的值保存至第二个key的值中。
@@ -299,9 +299,9 @@ while not exit_flag:
 
 13、有两个列表
 
-​	l1 = \[11,22,33\]
+​    l1 = \[11,22,33\]
 
-​	l2 = \[22,33,44\]
+​    l2 = \[22,33,44\]
 
 * 获取内容相同的元素列表
 * 获取l1中有，l2中没有的元素列表
@@ -327,6 +327,8 @@ print('\n'.join([ ' '.join([ "%d*%d=%2s" %(y,x,x*y) for y in range(1,x+1)]) for 
 
 16、求100以内的素数和。（编程题）
 
+\#求解思路，loop 100次，每次拿当前的值依次除以比它小的值，比如 当前值 是10， 那就拿10除以9，8，7，6，...2，如果其中任何一个可以被整除，就代表 10不是素数
+
 ```python
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
@@ -345,4 +347,29 @@ print("100以内的所有素数:",L)
 print(sum(L))
 ```
 
-17、将\[1,3,2,7,6,23,41,24,33,85,56\]从小到大排序（冒泡法）（编程）
+17. 在不改变列表中数据排列结构的前提下，找出以下列表中最接近最大值和最小值的平均值 的数
+
+```python
+# 解题思路，找到最大值 ，找到最小值 ，求平均值 ，找到列表中离这个平均值 最近的值
+li = [-100,1,3,2,7,6,120,121,140,23,411,99,243,33,85,56]
+
+max_n = li[0]
+min_n = li[0]
+
+for i in li:
+    if i > max_n:
+        max_n = i
+    if i < min_n:
+        min_n = i
+avg_n = (min_n+max_n)//2
+print(min_n,max_n,avg_n)
+
+avg_like = li[0]
+for i in li:
+    if abs(i - avg_n) < abs(avg_like - avg_n):
+        avg_like = i
+print('最接近平均值 的是',avg_like)
+```
+
+
+
