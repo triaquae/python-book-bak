@@ -247,8 +247,9 @@
   * [10.3 Django简介](102-djangojian-jie.md)
   * [10.4 Django-2的路由层（URLconf）](103-django-2de-lu-you-ceng-ff08-urlconf.md)
   * [10.5 Django的视图层](105-djangode-shi-tu-ceng.md)
-  * [10.6 Django模型层](106-djangomo-xing-ceng.md)
-  * 10.7 Django模型层
+  * [10.6 Django模板层](106-djangomo-xing-ceng.md)
+  * [10.7 Django模型层](107-djangomo-xing-ceng.md)
+    * [模型层一](107-djangomo-xing-ceng/mo-xing-ceng-yi.md)
 * [第11章  BBS项目（博客系统）](di-11-zhang-bbs-xiang-mu-ff08-bo-ke-xi-tong-ff09.md)
   * 11.1 基于Ajax和用户认证系统的登录验证
   * 11.2 基于Ajax和forms组件的实现注册功能
