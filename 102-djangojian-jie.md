@@ -40,5 +40,75 @@ settings.py ---- 包含了项目的默认设置，包括数据库信息，调试
 urls.py ----- 负责把URL模式映射到应用程序。  
 
 
+3、在mysite目录下创建应用
 
+```py
+python manage.py startapp blog
+```
+
+![](https://hcdn1.luffycity.com/data/python-book/10102/04.png) 
+
+4、启动django项目
+
+```py
+python manage.py runserver 8080
+```
+
+这样我们的django就启动起来了！当我们访问：http://127.0.0.1:8080/时就可以看到：
+
+![](https://hcdn1.luffycity.com/data/python-book/10102/05.png) 
+
+### 3.3 基于Django实现的一个简单示例
+
+url控制器
+
+
+```py
+from django.contrib import admin
+from django.urls import path
+
+from app01 import views
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('index/',views.index),
+]
+```
+
+视图
+
+```py
+from django.shortcuts import render
+
+# Create your views here.
+
+def index(request):
+
+    import datetime
+    now=datetime.datetime.now()
+    ctime=now.strftime("%Y-%m-%d %X")
+
+    return render(request,"index.html",{"ctime":ctime})
+```
+
+模板
+
+```py
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h4>当前时间:{{ ctime }}</h4>
+
+</body>
+</html>
+```
+
+执行效果如下：
+
+![](https://hcdn1.luffycity.com/data/python-book/10102/06.png) 
 
