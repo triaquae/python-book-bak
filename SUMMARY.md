@@ -243,10 +243,10 @@
 * [第10章 Django](di-10-zhang-django.md)
   * [10.1 web应用与http协议](101-webying-yong-yu-http-xie-yi.md)
     * [10.1.1 web应用与web框架](101-webying-yong-yu-http-xie-yi/1011.md)
-    * [10.1.2 http协议简介](101-webying-yong-yu-http-xie-yi/1012-httpxie-yi-jian-jie.md)
-  * [10.2 Django简介](102-djangojian-jie.md)
-  * [10.3 Django-2的路由层（URLconf）](103-django-2de-lu-you-ceng-ff08-urlconf.md)
-  * 10.4 Django的视图层
+  * [10.2 http协议简介](101-webying-yong-yu-http-xie-yi/1012-httpxie-yi-jian-jie.md)
+  * [10.3 Django简介](102-djangojian-jie.md)
+  * [10.4 Django-2的路由层（URLconf）](103-django-2de-lu-you-ceng-ff08-urlconf.md)
+  * 10.5 Django的视图层
 * [第11章  BBS项目（博客系统）](di-11-zhang-bbs-xiang-mu-ff08-bo-ke-xi-tong-ff09.md)
   * 11.1 基于Ajax和用户认证系统的登录验证
   * 11.2 基于Ajax和forms组件的实现注册功能
