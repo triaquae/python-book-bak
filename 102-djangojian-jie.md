@@ -14,5 +14,31 @@ Django的MTV模式本质上和MVC是一样的，也是为了各组件间保持�
 ![](https://hcdn1.luffycity.com/data/python-book/10102/02.png)   
 
 
+一般是用户通过浏览器向我们的服务器发起一个请求(request)，这个请求回去访问视图函数，（如果不涉及到数据调用，那么这个时候视图函数返回一个模板也就是一个网页给用户），视图函数调用模型，模型去数据库查找数据，然后逐级返回，视图函数把返回的数据填充到模板中空格中，最后返回网页给用户。
+
+### 3.2 Django的下载与基本命令
+
+1、下载Django：
+
+```py
+pip3 install django
+```
+
+2、创建一个django project
+
+```py
+django-admin.py startproject mysite
+```
+
+当前目录下会生成mysite的工程，目录结构如下：
+
+![](https://hcdn1.luffycity.com/data/python-book/10102/03.png) 
+
+    
+manage.py ----- Django项目里面的工具，通过它可以调用django shell和数据库等。  
+settings.py ---- 包含了项目的默认设置，包括数据库信息，调试标志以及其他一些工作的变量。  
+urls.py ----- 负责把URL模式映射到应用程序。  
+
+
 
 
