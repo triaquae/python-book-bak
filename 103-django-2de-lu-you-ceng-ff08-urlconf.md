@@ -124,4 +124,62 @@ def redirect_to_year(request):
 由于name没有作用域，Django在反解URL时，会在项目全局顺序搜索，当查找到第一个name指定URL时，立即返回  
 我们在开发项目时，会经常使用name属性反解出URL，当不小心在不同的app的urls中定义相同的name时，可能会导致URL反解错误，为了避免这种事情发生，引入了命名空间。  
 
+project的urls.py:
 
+```py
+urlpatterns = [
+    re_path(r'^admin/', admin.site.urls),
+    re_path(r'^app01/', include("app01.urls",namespace="app01")),
+    re_path(r'^app02/', include("app02.urls",namespace="app02")),
+]
+```
+
+app01.urls:
+
+```py
+urlpatterns = [
+    re_path(r'^index/', index,name="index"),
+]
+```
+
+app02.urls:
+```py
+urlpatterns = [
+    re_path(r'^index/', index,name="index"),
+]
+```
+
+app01.views
+
+```py
+from django.core.urlresolvers import reverse
+def index(request):
+    return  HttpResponse(reverse("app01:index"))
+```
+
+app02.views
+
+```py
+from django.core.urlresolvers import reverse
+def index(request):
+    return  HttpResponse(reverse("app02:index"))
+
+```
+
+### 4.6 django2.0版的path
+
+思考情况如下：
+
+```py
+urlpatterns = [  
+    re_path('articles/(?P<year>[0-9]{4})/', year_archive),  
+    re_path('article/(?P<article_id>[a-zA-Z0-9]+)/detail/', detail_view),  
+    re_path('articles/(?P<article_id>[a-zA-Z0-9]+)/edit/', edit_view),  
+    re_path('articles/(?P<article_id>[a-zA-Z0-9]+)/delete/', delete_view),  
+]
+```
+
+考虑下这样的两个问题：  
+第一个问题，函数 year_archive 中year参数是字符串类型的，因此需要先转化为整数类型的变量值，当然year=int(year) 不会有诸如如TypeError或者ValueError的异常。那么有没有一种方法，在url中，使得这一转化步骤可以由Django自动完成？  
+第二个问题，三个路由中article\_id都是同样的正则表达式，但是你需要写三遍，当之后article_id规则改变后，需要同时修改三处代码，那么有没有一种方法，只需修改一处即可？
+在Django2.0中，可以使用 path 解决以上的两个问题。  
