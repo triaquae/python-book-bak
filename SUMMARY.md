@@ -244,47 +244,7 @@
   * [10.1 web应用与http协议](101-webying-yong-yu-http-xie-yi.md)
     * [10.1.1 web应用与web框架](101-webying-yong-yu-http-xie-yi/1011.md)
     * [10.1.2 http协议简介](101-webying-yong-yu-http-xie-yi/1012-httpxie-yi-jian-jie.md)
-  * [10.2 Django的下载与简介](102-djangode-xia-zai-yu-jian-jie.md)
-    * 10.2.2 Django的下与常用命令
-    * [10.2.3 基于Django实现的一个简单示例](102-djangode-xia-zai-yu-jian-jie/1023-ji-yu-django-shi-xian-de-yi-ge-jian-dan-shi-li.md)
-    * [10.2.1 MTV模型 ](102-djangode-xia-zai-yu-jian-jie/1021-mtvmo-xing.md)
-  * 10.3 Django的路由层
-    * 10.3.1 url的简单配置
-    * 10.3.2 url的分组
-    * 10.3.3 url的分发
-    * 10.3.4 url的反向解析
-    * 10.3.5 url的名称空间
-  * 10.4 Django的视图层
-    * 10.4.1 请求对象
-    * 10.4.2 响应对象
-  * 10.5 Django的模板层
-    * [10.5.1 模板语法之变量](1051-mo-ban-yu-fa-zhi-bian-liang.md)
-    * 10.5.2 模板语法之过滤器
-    * 10.5.3 模板语法之标签
-    * 10.5.4 模板语法之自定义过滤器和标签      
-    * 10.5.5 模板语法之继承
-  * 10.6 Django的ORM
-    * 10.6.1 单表操作
-    * 10.6.2 QuerySet数据类型
-    * 10.6.3 建立多表关系
-    * 10.6.4 一对多表关系操作
-    * 10.6.5 多对多表关系操作
-    * 10.6.6 中介模型
-  * 10.7 cookie与session
-    * 10.7.1 cookie的由来
-    * 10.7.2 cookie的使用
-    * 10.7.3 django的session组件
-    * 10.7.4 session的配置文件
-  * [10.8 Django的用户认证系统 ](108-djangode-yong-hu-ren-zheng-xi-tong.md)
-    * [10.8.1 auth模块的方法](108-djangode-yong-hu-ren-zheng-xi-tong/1081-authmo-kuai-de-fang-fa.md)
-    * [10.8.2 user对象的方法](108-djangode-yong-hu-ren-zheng-xi-tong/1082-userdui-xiang-de-fang-fa.md)
-  * [10.9 基于jquery的Ajax](109-ji-yujquery-de-ajax.md)
-    * 10.9.1 ajax方法的简单使用
-    * 10.9.2 ajax方法的参数
-  * 10.10  Django的forms组件
-    * 10.10.1 forms组件的创建和使用
-    * 10.10.2 局部钩子与全局钩子
-  * 10.11 中间件组件
+  * [10.2 Django简介](102-djangojian-jie.md)
 * [第11章  BBS项目（博客系统）](di-11-zhang-bbs-xiang-mu-ff08-bo-ke-xi-tong-ff09.md)
   * 11.1 基于Ajax和用户认证系统的登录验证
   * 11.2 基于Ajax和forms组件的实现注册功能
