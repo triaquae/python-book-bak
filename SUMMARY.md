@@ -256,6 +256,7 @@
   * [10.10 Django组件-用户认证](1010-djangozu-4ef6-yong-hu-ren-zheng.md)
   * [10.11 Django组件-中间件](1011-djangozu-4ef6-zhong-jian-jian.md)
   * [10.12 Django组件-分页器](1012-djangozu-4ef6-fen-ye-qi.md)
+  * [10.13 Django与Ajax](1013-djangoyu-ajax.md)
 * [第11章  BBS项目（博客系统）](di-11-zhang-bbs-xiang-mu-ff08-bo-ke-xi-tong-ff09.md)
   * 11.1 基于Ajax和用户认证系统的登录验证
   * 11.2 基于Ajax和forms组件的实现注册功能
