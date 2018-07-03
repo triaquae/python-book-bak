@@ -4,13 +4,13 @@
 
 以下链接我会每星期更新一次，简易大家不要偶尔回来逛逛，我会想你们的!
 
-前端HTML+CSS流程导图
+#### 前端HTML+CSS流程导图
 
 链接地址：
 
 [https://www.processon.com/view/link/5ad1c2d0e4b0b74a6dd64f3c](https://www.processon.com/view/link/5ad1c2d0e4b0b74a6dd64f3c)
 
-jquery的事件流程导图
+#### jquery的事件流程导图
 
 链接地址：
 
@@ -20,3 +20,13 @@ javascript流程导图
 
 持续更新中....
 
+#### HTML+CSS+Javascript+jQuery+移动端响应式参考链接：
+HTML:https://www.cnblogs.com/majj/category/1218953.html
+
+CSS:https://www.cnblogs.com/majj/category/1213642.html
+
+JS:https://www.cnblogs.com/majj/category/1223635.html
+
+JQuery:https://www.cnblogs.com/majj/category/1226448.html
+
+移动端响应式:https://www.cnblogs.com/majj/category/1230407.html

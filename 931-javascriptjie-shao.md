@@ -1,3 +1,7 @@
+## Javascript在这里的资料不太全,大家可以参考以下链接来学习js
+参考相关链接：https://www.cnblogs.com/majj/category/1223635.html
+
+
 # 一、javaScript是什么？
 
 javaScript是一种web前端的描述语言，也是一种基于对象（object）和事件驱动（Event Driven）的、安全性好的脚本语言。
