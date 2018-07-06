@@ -151,7 +151,7 @@ value="<a href="">点击</a>"
 for标签  
 遍历每一个元素：
 
-可以利用{% for obj in list reversed %}反向完成循环。  
+可以利用`{% for obj in list reversed %}`反向完成循环。  
 遍历一个字典：
 
 ```py
@@ -172,7 +172,7 @@ forloop.last               True if this is the last time through the loop
 ```
 
 for ... empty  
-for 标签带有一个可选的{% empty %} 从句，以便在给出的组是空的或者没有被找到时，可以有所操作。
+for 标签带有一个可选的`{% empty %}` 从句，以便在给出的组是空的或者没有被找到时，可以有所操作。
 
 ```py
 {% for person in person_list %}
@@ -184,7 +184,7 @@ for 标签带有一个可选的{% empty %} 从句，以便在给出的组是空�
 ```
 
 if 标签  
-{% if %}会对一个变量求值，如果它的值是“True”（存在、不为空、且不是boolean类型的false值），对应的内容块会输出。  
+`{% if %}`会对一个变量求值，如果它的值是“True”（存在、不为空、且不是boolean类型的false值），对应的内容块会输出。  
 
 ```py
 {% if num > 100 or num < 0 %}
@@ -332,15 +332,15 @@ extends 标签是这里的关键。它告诉模版引擎，这个模版“继承
 </html>
 ```
 
-请注意，子模版并没有定义 sidebar block，所以系统使用了父模版中的值。父模版的 {% block %} 标签中的内容总是被用作备选内容（fallback）。  
+请注意，子模版并没有定义 sidebar block，所以系统使用了父模版中的值。父模版的 `{% block %}` 标签中的内容总是被用作备选内容（fallback）。  
 这种方式使代码得到最大程度的复用，并且使得添加内容到共享的内容区域更加简单，例如，部分范围内的导航。  
 这里是使用继承的一些提示：  
 
--	如果你在模版中使用 {% extends %} 标签，它必须是模版中的第一个标签。其他的任何情况下，模版继承都将无法工作。
--	在base模版中设置越多的 {% block %} 标签越好。请记住，子模版不必定义全部父模版中的blocks，所以，你可以在大多数blocks中填充合理的默认内容，然后，只定义你需要的那一个。多一点钩子总比少一点好。
--	如果你发现你自己在大量的模版中复制内容，那可能意味着你应该把内容移动到父模版中的一个 {% block %} 中。
+-	如果你在模版中使用 `{% extends %}` 标签，它必须是模版中的第一个标签。其他的任何情况下，模版继承都将无法工作。
+-	在base模版中设置越多的 `{% block %}` 标签越好。请记住，子模版不必定义全部父模版中的blocks，所以，你可以在大多数blocks中填充合理的默认内容，然后，只定义你需要的那一个。多一点钩子总比少一点好。
+-	如果你发现你自己在大量的模版中复制内容，那可能意味着你应该把内容移动到父模版中的一个 `{% block %}` 中。
 -	If you need to get the content of the block from the parent template, the {{ block.super }} variable will do the trick. This is useful if you want to add to the contents of a parent block instead of completely overriding it. Data inserted using {{ block.super }} will not be automatically escaped (see the next section), since it was already escaped, if necessary, in the parent template.
--	为了更好的可读性，你也可以给你的 {% endblock %} 标签一个 名字 。例如：
+-	为了更好的可读性，你也可以给你的`{% endblock %}` 标签一个 名字 。例如：
 
 ```py
 {% block content %}
@@ -348,6 +348,6 @@ extends 标签是这里的关键。它告诉模版引擎，这个模版“继承
 {% endblock content %}　　
 ```
 
-在大型模版中，这个方法帮你清楚的看到哪一个　 {% block %} 标签被关闭了。
+在大型模版中，这个方法帮你清楚的看到哪一个　 `{% block %}` 标签被关闭了。
 -	不能在一个模版中定义多个相同名字的 block 标签。
  
