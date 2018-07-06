@@ -247,7 +247,7 @@
   * [10.3 Django简介](102-djangojian-jie.md)
   * [10.4 Django-2的路由层（URLconf）](103-django-2de-lu-you-ceng-ff08-urlconf.md)
   * [10.5 Django的视图层](105-djangode-shi-tu-ceng.md)
-  * [10.6 Django模板层](106-djangomo-xing-ceng.md)
+  * [10.6 Django模板层](106-djangomo-ban-ceng.md)
   * [10.7 Django模型层](107-djangomo-xing-ceng.md)
     * [模型层一单表操作](107-djangomo-xing-ceng/mo-xing-ceng-yi.md)
     * [模型层二多表操作](107-djangomo-xing-ceng/mo-xing-ceng-er-duo-biao-cao-zuo.md)
