@@ -24,7 +24,7 @@ class UserInfo(models.Model):
 <body>
 
 <form action="" method="post">
-    {% csrf_token %}
+    {% csrf_token %} 
     <div>
         <label for="user">用户名</label>
         <p><input type="text" name="name" id="name"></p>
