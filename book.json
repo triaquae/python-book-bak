@@ -22,8 +22,6 @@
     "-search",
     "-lunr",
     "search-pro",
-    "prism",
-    "prism-themes",
     "theme-comscore"
 
   ],
