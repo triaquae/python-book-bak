@@ -43,11 +43,6 @@
           "facebook", "google", "twitter",
               "weibo", "instapaper"
       ]
-    },
-    "prism": {
-        "css": [
-            "prism-themes/themes/prism-base16-ateliersulphurpool.light.css"
-        ]
     }
   }
 }
