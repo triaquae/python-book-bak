@@ -30,3 +30,10 @@ JS:https://www.cnblogs.com/majj/category/1223635.html
 JQuery:https://www.cnblogs.com/majj/category/1226448.html
 
 移动端响应式:https://www.cnblogs.com/majj/category/1230407.html
+
+
+##### 前端内容不容小觑，如果有哪个后面的teacher说前端不重要的，请小窗我，我保证拿着菜刀等着他😀
+
+
+
+
