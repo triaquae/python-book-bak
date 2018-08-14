@@ -267,6 +267,6 @@
   * 11.6 点赞与踩灭功能的实现
   * 11.7 评论功能的实现
   * 11.8 基于富文本编辑器框和beautifulSoup模块防止xss攻击
-* [第十二章 CRM项目](di-shi-er-zhang-crm-xiang-mu.md)
+* [第12章 CRM项目](di-shi-er-zhang-crm-xiang-mu.md)
   * [12.1 权限组件之权限控制](di-shi-er-zhang-crm-xiang-mu/121-quan-xian-zu-jian-zhi-quan-xian-kong-zhi.md)
 
