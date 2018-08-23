@@ -222,6 +222,7 @@
         * [09-小米滚动](9312-dom/domxiang-guan-an-li/09xiao-mi-gun-dong.md)
         * [10-无缝轮播](9312-dom/domxiang-guan-an-li/10wu-feng-lun-bo.md)
     * [9.3.13 BOM知识点](9313-bomzhi-shi-dian.md)
+    * [9.3.14 练习题](9314-lian-xi-ti.md)
   * [9.4 jQuery](jquery.md)
     * [9.4.1使用js的一些疼处](jquery/941shi-yong-js-de-yi-xie-teng-chu.md)
     * [9.4.2 js和jquery的区别](jquery/942-jshe-jquery-de-qu-bie.md)
