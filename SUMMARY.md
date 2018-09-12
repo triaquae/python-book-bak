@@ -197,6 +197,7 @@
     * [9.2.16 浮动与清除浮动\(重点\)](9216-fu-dong-yu-qing-chu-fu-dong.md)
     * [9.2.17  background属性\(侧重点\)](9218.md)
     * [9.2.18 定位\(重点\)](9217-wei-zhi-shu-xing.md)
+    * [9.2.19 z-index\(重点\)](9219-z-index.md)
     * [9.2.20 css练习题](9218-csslian-xi-ti.md)
   * [9.3 JavaScript](93-javascript.md)
     * [9.3.1 JavaScript介绍](931-javascriptjie-shao.md)
