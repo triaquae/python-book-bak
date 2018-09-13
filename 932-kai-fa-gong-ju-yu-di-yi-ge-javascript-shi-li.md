@@ -174,19 +174,19 @@ console.log(typeof d1);
 
 以var x = 12,y=5来演示示例
 
-![img](https://images2018.cnblogs.com/blog/1364810/201805/1364810-20180527110502282-357921689.png)
+![](/assets/chapter10/02.png)
 
 ##### 算数运算符
 
 var a = 5,b=2;
 
-![img](https://images2018.cnblogs.com/blog/1364810/201805/1364810-20180527110542094-803310766.png)
+![](/assets/chapter10/03.png)
 
 ##### 比较运算符
 
 var x = 5;
 
-![img](https://images2018.cnblogs.com/blog/1364810/201805/1364810-20180527110620741-188424489.png)
+![](/assets/chapter10/04.png)
 
 #### 数据类型转换
 
@@ -487,7 +487,7 @@ console.log(colors);
 
 ###### 数组的常用方法
 
-![img](https://images2018.cnblogs.com/blog/1364810/201805/1364810-20180527115412171-47405715.png)
+![](/assets/chapter10/05.png)
 
 * 数组的合并 concat\(\)
 
@@ -556,7 +556,7 @@ console.log(names)；// ["alex", "angle", "tanhuang", "xiaoma"]
 
 ##### 字符串string
 
-![img](https://images2018.cnblogs.com/blog/1364810/201805/1364810-20180527115519670-1394154604.png)
+![](/assets/chapter10/06.png)
 
 * chartAt\(\) 返回指定索引的位置的字符
 
@@ -639,7 +639,7 @@ console.log(newNum)
 
 ##### Math内置对象
 
-![img](https://images2018.cnblogs.com/blog/1364810/201805/1364810-20180527115730266-1931075271.png)
+![](/assets/chapter10/07.png)
 
 * Math.ceil\(\) 向上取整，'天花板函数'
 
@@ -732,7 +732,7 @@ arguments代表的是实参。有个讲究的地方是：arguments**只在函数
 
 结果：
 
-![img](https://images2018.cnblogs.com/blog/1364810/201805/1364810-20180528211812538-79786405.png)
+![](/assets/chapter10/08.png)
 
 （2）之所以说arguments是伪数组，是因为：**arguments可以修改元素，但不能改变数组的长短**。举例：
 
@@ -967,7 +967,7 @@ alert(stu1.alertName == stu2.alertName);  //true 二者共享同一函数
 var myDate = new Date();
 ```
 
-![img](https://images2018.cnblogs.com/blog/1364810/201805/1364810-20180527115655555-1984356276.png)
+![](/assets/chapter10/09.png)
 
 ```javascript
 //返回本地时间
