@@ -24,8 +24,6 @@
 
 [https://www.processon.com/view/link/5ad1c48de4b0b74a6dd65426](https://www.processon.com/view/link/5ad1c48de4b0b74a6dd65426)
 
-
-
 #### HTML+CSS+Javascript+jQuery+移动端响应式参考链接：
 
 HTML:[https://www.cnblogs.com/majj/category/1218953.html](https://www.cnblogs.com/majj/category/1218953.html)
