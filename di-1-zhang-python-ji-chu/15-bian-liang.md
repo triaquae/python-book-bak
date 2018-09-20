@@ -1,3 +1,5 @@
+!INCLUDE "../baidutongji/baidu.js"
+
 ## 本节重点：
 
 * 让学生掌握变量的作用
