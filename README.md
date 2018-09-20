@@ -10,3 +10,4 @@ pluginsConfig:
 
 [linux-book链接](https://www.luffycity.com/linux-book/index.html)
 
+!INCLUDE "baidutongji/baidu.js"
