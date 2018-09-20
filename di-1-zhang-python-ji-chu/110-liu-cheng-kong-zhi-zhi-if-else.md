@@ -1,3 +1,5 @@
+!INCLUDE "../baidutongji/baidu.js"
+
 ## 本节重点：
 
 * 使学生理解和掌握基本流程控制if ... else 

@@ -24,3 +24,4 @@
 
 
 
+!INCLUDE "../baidutongji/baidu.js"
