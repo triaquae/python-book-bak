@@ -4,5 +4,3 @@
 * 能独立开发基于面向对象的程序
 
 
-
-!INCLUDE "baidutongji/baidu.js"

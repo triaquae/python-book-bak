@@ -1,5 +1,3 @@
 # 
 
 
-
-!INCLUDE "baidutongji/baidu.js"
