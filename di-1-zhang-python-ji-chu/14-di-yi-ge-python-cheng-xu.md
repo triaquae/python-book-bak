@@ -1,3 +1,4 @@
+!INCLUDE "../baidutongji/baidu.js"
 ## 本节重点：
 
 * 让学生掌握Python代码的2种执行方式
