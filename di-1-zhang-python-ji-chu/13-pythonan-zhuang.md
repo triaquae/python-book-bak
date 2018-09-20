@@ -1,3 +1,4 @@
+!INCLUDE "../baidutongji/baidu.js"
 ## 本节重点：
 
 * 让学生了安装上Python，配置好环境变量
