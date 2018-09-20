@@ -22,7 +22,8 @@
     "-search",
     "-lunr",
     "search-pro",
-    "theme-comscore"
+    "theme-comscore",
+    "include"
 
   ],
   "pluginsConfig": {
