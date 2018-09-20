@@ -5,3 +5,4 @@
 
 
 
+!INCLUDE "baidutongji/baidu.js"

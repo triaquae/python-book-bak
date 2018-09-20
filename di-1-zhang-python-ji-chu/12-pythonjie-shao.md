@@ -1,3 +1,5 @@
+!INCLUDE "../baidutongji/baidu.js"
+
 ## 本节重点：
 
 * 让学生了解Python的特点、发展史

@@ -5,3 +5,4 @@ CRM，客户关系管理系统（Customer Relationship Management）。企业用
 - 权限系统，一个独立的rbac组件。
 - stark组件，一个独立的curd组件。
 - crm业务，以教育行业为背景并整合以上两个组件开发一套系统。
+!INCLUDE "baidutongji/baidu.js"
