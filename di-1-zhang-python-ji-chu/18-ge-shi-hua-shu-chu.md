@@ -1,3 +1,5 @@
+!INCLUDE "../baidutongji/baidu.js"
+
 ## 本节重点：
 
 * 使学生掌握字符串格式的方法
