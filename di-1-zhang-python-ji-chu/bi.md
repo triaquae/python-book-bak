@@ -1,4 +1,4 @@
-!INCLUDE "../baidutongji/baidu.js"
+
 ## 本节重点：
 
 * 让学生理解为编程语言是什么？为什么要编程？

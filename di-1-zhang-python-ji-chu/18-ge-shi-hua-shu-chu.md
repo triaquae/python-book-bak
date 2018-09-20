@@ -1,4 +1,4 @@
-!INCLUDE "../baidutongji/baidu.js"
+
 
 ## 本节重点：
 
