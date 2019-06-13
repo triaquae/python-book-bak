@@ -262,4 +262,15 @@
   * [1.1 编程语言介绍与分类](di-1-zhang-python-ji-chu-yu-6cd528-new/bian-cheng-yu-yan-jie-shao-yu-fen-lei.md)
   * [1.2 Python介绍、发展趋势](di-1-zhang-python-ji-chu-yu-6cd528-new/pythonjie-shao-3001-fa-zhan-qu-shi.md)
   * [1.3 Python环境安装](di-1-zhang-python-ji-chu-yu-6cd528-new/13-pythonhuan-jing-an-pai.md)
+  * [1.4 开发你的第一个Python程序](di-1-zhang-python-ji-chu-yu-6cd528-new/14-kai-fa-ni-de-di-yi-ge-python-cheng-xu.md)
+  * 1.5 选择最好用的PyCharm IDE
+  * [1.6 变量](di-1-zhang-python-ji-chu-yu-6cd528-new/16-bian-liang.md)
+  * [1.7 注释](di-1-zhang-python-ji-chu-yu-6cd528-new/17-zhu-shi.md)
+  * [1.8 基本数据类型](di-1-zhang-python-ji-chu-yu-6cd528-new/18-ji-ben-shu-ju-lei-xing.md)
+  * [1.9 读取用户指令](di-1-zhang-python-ji-chu-yu-6cd528-new/19-du-qu-yong-hu-zhi-ling.md)
+  * [1.10 格式化打印](di-1-zhang-python-ji-chu-yu-6cd528-new/110-ge-shi-hua-da-yin.md)
+  * [1.11 运算符](di-1-zhang-python-ji-chu-yu-6cd528-new/111-yun-suan-fu.md)
+  * [1.12 流程控制之if...else](di-1-zhang-python-ji-chu-yu-6cd528-new/112-liu-cheng-kong-zhi-zhi-if-else.md)
+  * [1.13 流程控制之while循环](di-1-zhang-python-ji-chu-yu-6cd528-new/113-liu-cheng-kong-zhi-zhi-while-xun-huan.md)
+  * [1.14 本章练习题&作业](di-1-zhang-python-ji-chu-yu-6cd528-new/114-ben-zhang-lian-xi-989826-zuo-ye.md)
 
