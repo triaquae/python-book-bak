@@ -273,4 +273,8 @@
   * [1.12 流程控制之if...else](di-1-zhang-python-ji-chu-yu-6cd528-new/112-liu-cheng-kong-zhi-zhi-if-else.md)
   * [1.13 流程控制之while循环](di-1-zhang-python-ji-chu-yu-6cd528-new/113-liu-cheng-kong-zhi-zhi-while-xun-huan.md)
   * [1.14 本章练习题&作业](di-1-zhang-python-ji-chu-yu-6cd528-new/114-ben-zhang-lian-xi-989826-zuo-ye.md)
+* [第2章 Python基础-数据类型和文件操作\(new\)](di-2-zhang-python-ji-7840-shu-ju-lei-xing-he-wen-jian-cao-zuo.md)
+  * [2.1 上章补充-Bytes类型](di-2-zhang-python-ji-7840-shu-ju-lei-xing-he-wen-jian-cao-zuo/shang-zhang-bu-5145-bytes-lei-xing.md)
+* 第3章 Python基础-函数编程\(new\)
+* [第4章 Python基础 常用模块\(new\)](di-4-zhang-python-ji-chu-chang-yong-mo-kuai.md)
 
